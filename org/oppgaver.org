@@ -1,6 +1,15 @@
 #+SETUPFILE:orgheader.org
 #+TITLE:Oppgavesamling i R1
 
+#+BEGIN_EXPORT html
+<script type="text/javascript" language="JavaScript"> org_html_manager.set("BASE_URL_QUESTIONS", "https://github.com/tarjeiba/r1/issues/new/");</script>
+#+END_EXPORT
+
+#+BEGIN_SRC emacs-lisp :eval export :exports none
+(add-to-list 'org-html-infojs-options '(sdepth . "2"))
+#+END_SRC
+
+
 * Sannsynlighetsregning
 ** :eksamen:v18:del1:
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
@@ -53,3 +62,31 @@ Jakob har en spilleliste med 20 sanger på mobilen sin. Fire av sangene på spi
 - a :: Forklar at sannsynligheten alltid er $p = 0,2$ for at neste sang som blir spilt, er med Kygo.
 - b :: Jakob vil høre på fem avspillinger fra spillelisten. Bestem sannsynligheten for at nøyaktig to av sangene han spiller, er med Kygo.
 - c :: Hvor mange avspillinger må han høre på for at sannsynligheten for å høre minst én sang med Kygo skal være større enn 90 %?
+** :eksamen:h16:del1:
+I en fabrikk er det to maskiner, maskin A og maskin B, som produserer samme type nøkler.
+- 4 % av nøklene fra maskin A er defekte.
+- 1 % av nøklene fra maskin B er defekte.
+- Maskin B produserer dobbelt så mange nøkler som maskin A.
+
+En nøkkel blir valgt tilfeldig fra lageret.
+
+- a :: Bestem sannsynligheten for at nøkkelen er defekt.
+
+Det viser seg at den valgte nøkkelen er defekt.
+
+- b :: Bestem sannsynligheten for at nøkkelen ble produsert av maskin A.
+** :eksamen:h16:del2:
+I pengespillet Lotto legges 34 kuler i en beholder. Hver kule er nummerert med ett av tallene fra 1 til 34. Sju kuler trekkes tilfeldig uten tilbakelegging. Tallene på de sju kulene er vinnertallene.
+
+Når du spiller Lotto, krysser du av sju av tallene fra 1 til 34 på en kupong.
+
+- a :: Hvor mange måter kan du velge ut sju av de 34 tallene?
+
+Tore har levert inn en lottokupong der han har krysset av tallene.
+$$3, 5, 11, 18, 21, 25, 32$$
+
+- b :: Bestem sannsynligheten for at Tore får nøyaktig 5 rette.
+
+Tore ser lottotrekningen på TV. etter at det er trukket ut fire tall, går strømmen, og TV-en går i svart. Tallene som til da er trukket ut, er 5, 21, 3, og 11.
+
+- c :: Bestem sannsynligheten for at Tore får sju rette på lottokupongen sin.
