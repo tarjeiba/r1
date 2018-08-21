@@ -1,0 +1,6 @@
+#+SETUPFILE:orgheader.org
+#+TITLE:Matematikk R1 - økter 2018--19
+
+* Uke 34
+** Torsdag
+[[ggb:test.ggb]]

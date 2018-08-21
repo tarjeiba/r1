@@ -1,0 +1,30 @@
+#+SETUPFILE:orgheader_nojs.org
+#+TITLE:Årsplan i Matematikk R1
+
+|      Uke | Emne                           |           Kap |
+|----------+--------------------------------+---------------|
+| 34 -- 36 | Sannsynlighetsregning          |             3 |
+| 37 -- 39 | Algebra                        |             1 |
+|       39 | Vurdering                      |             3 |
+|     +40+ | *Høstferie*                    |               |
+|       41 | Algebra                        |             1 |
+|    42-43 | Logaritmer                     |             2 |
+|       44 | Vurdering                      |          1, 2 |
+|       45 | Geometri                       | 4.1, 4.2, 4.4 |
+|       46 | Repetisjon                     |               |
+|       47 | Heldagsprøve                   |    3, 1, 2, 4 |
+|       48 | Geometri                       |      4.3, 4.9 |
+|  49 -- 1 | Vektorer                       |             5 |
+|     +52+ | *Juleferie*                    |               |
+|   2 -- 4 | Vektorregning                  |             6 |
+|        5 | Vurdering                      |          5, 6 |
+|  6 -- 10 | Funksjonslære                  |             7 |
+|      +8+ | *Vinterferie*                  |               |
+|       11 | Derivasjon og vektorfunksjoner |             8 |
+|       12 | Vurdering                      |          7, 8 |
+|     +13+ | *Påskeferie*                   |               |
+| 14 -- 15 | Repetisjon                     |               |
+|       16 | Heldagsprøve                   |               |
+| 17 -- 20 | Repetisjon                     |               |
+|       21 | *Eksamen*                      |               |
+|       22 | Forberedelse muntlig           |               |
