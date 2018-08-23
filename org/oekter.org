@@ -3,4 +3,12 @@
 
 * Uke 34
 ** Torsdag
-[[ggb:test.ggb]]
+*** Introdukosjon
+- Kun Geogebra som kalkulator
+- Årsplan under [[file:aarsplan1819.org::*%C3%85rsplan%202018--19][Årsplan 2018--19]]
+- Oppgaver blir lansert under [[file:oppgaver.org][Oppgaver]], hvor de også deles i oppgavetyper
+
+*** Bursdagstall
+[[pres:r1_pres_bursdagstall.pdf]]
+
+* Uke 35

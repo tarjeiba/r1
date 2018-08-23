@@ -1,6 +1,7 @@
 #+SETUPFILE:orgheader_nojs.org
 #+TITLE:Årsplan i Matematikk R1
 
+* Årsplan 2018--19
 |      Uke | Emne                           |           Kap |
 |----------+--------------------------------+---------------|
 | 34 -- 36 | Sannsynlighetsregning          |             3 |

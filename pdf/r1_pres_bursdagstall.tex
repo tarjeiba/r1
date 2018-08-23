@@ -1,0 +1,73 @@
+% Created 2018-08-23 to. 10:04
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usetheme{metropolis}
+\date{}
+\title{Bursdagstall}
+\hypersetup{
+ pdfauthor={Tarjei Bærland},
+ pdftitle={Bursdagstall},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 26.1 (Org mode 9.1.13)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section*{Algoritme}
+\label{sec:org5a3dab1}
+
+\begin{frame}[label={sec:org4f09920}]{Algoritme}
+\begin{itemize}[<+->]
+\item Ta måneden du er født (8 om «23. august»)
+\item Gang med fem
+\item Legg til sju
+\item Gang med fire
+\item Legg til tretten
+\item Gang med fem
+\item Legg til dagen du er født i måneden (23 om «23. august»)
+\end{itemize}
+\end{frame}
+
+\section*{Algebra}
+\label{sec:orga643ef8}
+\begin{frame}[label={sec:org267fef5}]{Algebra}
+\begin{EQUATION}
+\begin{align*}
+    \only<1>{m \quad \mbox{Ta måneden du er født}}
+    \only<2>{5m \quad \mbox{Gang med fem}}
+    \only<3>{5m + 7 \quad \mbox{Legg til sju}}
+    \only<4>{4(5m + 7) \quad \mbox{Gang med fire}}
+    \only<5>{4(5m + 7) + 13 \quad \mbox{Legg til tretten}}
+    \only<6>{5(4(5m + 7) + 13) \quad \mbox{Gang med fem}}
+    \only<7>{5(4(5m + 7) + 13 + d) \quad \mbox{Legg til dagen du er født i måneden}}
+\end{align*}
+\end{EQUATION}
+\end{frame}
+
+\begin{frame}[label={sec:org2a09cf4}]{Forenkling}
+\begin{EQUATION}
+\begin{align*}
+  \only<1>{5(4(5m + 7) + 13) + d}
+  \only<2>{20(5m + 7) + 5\cdot 13) + d}
+  \only<3>{20(5m + 7) + 65 + d}
+  \only<4>{100m + 140 + 65 + d}
+  \only<5>{100m + d + 205}
+\end{align*}
+\end{EQUATION}
+\end{frame}
+\end{document}

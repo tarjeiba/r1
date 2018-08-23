@@ -1,0 +1,46 @@
+#+TITLE: Bursdagstall
+#+AUTHOR: Tarjei Bærland
+#+OPTIONS: H:2 toc:nil num:nil author:nil date:nil title:t
+#+LATEX_CLASS: beamer
+#+LATEX_CLASS_OPTIONS: [presentation]
+#+BEAMER_THEME: metropolis
+#+BEAMER_FRAME_LEVEL: 1
+#+COLUMNS: %45ITEM %10BEAMER_ENV(Env) %10BEAMER_ACT(Act) %4BEAMER_COL(Col) %8BEAMER_OPT(Opt)
+#+EXPORT_FILE_NAME: ../pdf/r1_pres_bursdagstall.pdf     
+
+* Algoritme
+
+** Algoritme
+#+ATTR_BEAMER: :overlay <+->
+- Ta måneden du er født (8 om «23. august»)
+- Gang med fem
+- Legg til sju
+- Gang med fire
+- Legg til tretten
+- Gang med fem
+- Legg til dagen du er født i måneden (23 om «23. august»)
+
+* Algebra
+** Algebra
+#+BEGIN_EQUATION
+\begin{align*}
+    \only<1>{m \quad \mbox{Ta måneden du er født}}
+    \only<2>{5m \quad \mbox{Gang med fem}}
+    \only<3>{5m + 7 \quad \mbox{Legg til sju}}
+    \only<4>{4(5m + 7) \quad \mbox{Gang med fire}}
+    \only<5>{4(5m + 7) + 13 \quad \mbox{Legg til tretten}}
+    \only<6>{5(4(5m + 7) + 13) \quad \mbox{Gang med fem}}
+    \only<7>{5(4(5m + 7) + 13 + d) \quad \mbox{Legg til dagen du er født i måneden}}
+\end{align*}
+#+END_EQUATION
+
+** Forenkling
+#+BEGIN_EQUATION
+\begin{align*}
+  \only<1>{5(4(5m + 7) + 13) + d}
+  \only<2>{20(5m + 7) + 5\cdot 13) + d}
+  \only<3>{20(5m + 7) + 65 + d}
+  \only<4>{100m + 140 + 65 + d}
+  \only<5>{100m + d + 205}
+\end{align*}
+#+END_EQUATION
