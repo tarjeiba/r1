@@ -3,10 +3,10 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-08-23 to. 10:26 -->
+<!-- 2018-08-26 sø. 19:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Matematikk R1 - økter 2018&#x2013;19</title>
+<title>Matemamtikk R1 - økter 2018-19</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Tarjei Bærland" />
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
@@ -131,27 +131,174 @@ for the JavaScript code in this tag.
  }
 /*]]>*///-->
 </script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
 </head>
 <body>
 <div id="content">
-<h1 class="title">Matematikk R1 - økter 2018&#x2013;19</h1>
+<h1 class="title">Matemamtikk R1 - økter 2018-19</h1>
 <div id="table-of-contents">
 <h2>Innhold</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgfa4696f">Uke 34</a></li>
-<li><a href="#orga9cbaa9">Uke 35</a></li>
+<li><a href="#orgb4a0726">uke 35</a></li>
+<li><a href="#org7419fb5">uke 34</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgfa4696f" class="outline-2">
-<h2 id="orgfa4696f">Uke 34</h2>
-<div class="outline-text-2" id="text-orgfa4696f">
+<div id="outline-container-orgb4a0726" class="outline-2">
+<h2 id="orgb4a0726">uke 35</h2>
+<div class="outline-text-2" id="text-orgb4a0726">
 </div>
-<div id="outline-container-org5f2ae0d" class="outline-3">
-<h3 id="org5f2ae0d">Torsdag</h3>
-<div class="outline-text-3" id="text-org5f2ae0d">
+<div id="outline-container-org792fadd" class="outline-3">
+<h3 id="org792fadd">mandag</h3>
+<div class="outline-text-3" id="text-org792fadd">
+</div>
+<div id="outline-container-org1e9589a" class="outline-4">
+<h4 id="org1e9589a">Betinget sannsynlighet</h4>
+<div class="outline-text-4" id="text-org1e9589a">
+<div class="DEFINITION">
+<p>
+La \(A\) være en hending der \(P(A)>0\). For en annen hending \(B\) er da \[P(B|A)=\frac{P(A\cap B)}{P(A)}.\]
+</p>
+
+</div>
+
+<p>
+Her leser vi de ulike elementene som følger:
+</p>
+<ul class="org-ul">
+<li>\(P(B|A)\) &#x2013; «sannsynligheten for B gitt A»</li>
+<li>\(P(A\cap B)\) &#x2013; «sannsynligheten for A og B»</li>
+<li>\(P(A)\) &#x2013; «sannsynligheten for A»</li>
+</ul>
+
+<div class="TASK">
+<p>
+Lag en oppgave som kan løses med bruk av betinget sannsynlighet. La den du sitter ved siden av løse oppgaven din.
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdbc3d52" class="outline-4">
+<h4 id="orgdbc3d52">Total sannsynlighet</h4>
+<div class="outline-text-4" id="text-orgdbc3d52">
+<div class="DEFINITION">
+<p>
+\[P(B) = P(A)\cdot P(B|A) + P(\bar{A})\cdot P(B|\bar{A})\]
+</p>
+
+</div>
+
+<p>
+Her leser vi det nye elementet som følger:
+</p>
+<ul class="org-ul">
+<li>\(P(\bar{A})\) &#x2013; «sannsynligheten for ikke-A»</li>
+</ul>
+
+<div class="TASK">
+<p>
+Finn et eksempel som viser at denne formelen stemmer.
+</p>
+
+</div>
+
+<dl class="org-dl">
+<dt>minimum</dt><dd>3.10, 11, 12, 13, 14, 15, 20, 21, 22, 23</dd>
+<dt>ytterligere</dt><dd>3.110, 111, 113, 115, 120, 121, 123, 124, 125, 126, 127, 128</dd>
+<dt>uten hjelpemidler</dt><dd>3.200, 201, 203, 204</dd>
+<dt>med hjelpemidler</dt><dd>3.300, 301, 302, 303, 304</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orga680472" class="outline-4">
+<h4 id="orga680472">Bayes-setningen</h4>
+<div class="outline-text-4" id="text-orga680472">
+<p>
+Vi kan ut fra det foregående vise følgende definisjon.
+</p>
+<div class="DEFINITION">
+<p>
+\[P(B|A) =frac{P(B)\cdot P(A|B)}{P(A)}\]
+</p>
+
+</div>
+
+<div class="TASK">
+<p>
+Utled formelen ut fra de to foregående definisjonene.
+</p>
+
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org14f73f5" class="outline-4">
+<h4 id="org14f73f5">Uavhengige hendelser</h4>
+<div class="outline-text-4" id="text-org14f73f5">
+<div class="DEFINITION">
+<p>
+To hendinger \(A\) og \(B\) er uavhengige hvis \(P(A|B)=P(A)\), eller hvis \(P(B|A)=P(B)\).
+</p>
+
+</div>
+
+<dl class="org-dl">
+<dt>minimum</dt><dd>3.30, 31, 32, 33, 34, 40, 41, 42, 43, 44, 45, 46</dd>
+<dt>ytterligere</dt><dd>3.130, 131, 132, 133, 140, 142, 143, 144, 145</dd>
+<dt>uten hjelpemidler</dt><dd>3.202 (hopp over denne om du heter Dag), 204</dd>
+</dl>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org4a525c1" class="outline-3">
+<h3 id="org4a525c1">torsdag</h3>
+<div class="outline-text-3" id="text-org4a525c1">
+</div>
+<div id="outline-container-orgb447577" class="outline-4">
+<h4 id="orgb447577">Ordnede utvalg</h4>
+</div>
+<div id="outline-container-org091621f" class="outline-4">
+<h4 id="org091621f">Uordnede utvalg</h4>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7419fb5" class="outline-2">
+<h2 id="org7419fb5">uke 34</h2>
+<div class="outline-text-2" id="text-org7419fb5">
+</div>
+<div id="outline-container-org97957ab" class="outline-3">
+<h3 id="org97957ab">torsdag</h3>
+<div class="outline-text-3" id="text-org97957ab">
 </div>
 <div id="outline-container-orgd4406fb" class="outline-4">
 <h4 id="orgd4406fb">Introdukosjon</h4>
@@ -160,6 +307,7 @@ for the JavaScript code in this tag.
 <li>Kun Geogebra som kalkulator</li>
 <li>Årsplan under <a href="aarsplan1819.html#orgdac037f">Årsplan 2018&#x2013;19</a></li>
 <li>Oppgaver blir lansert under <a href="oppgaver.html">Oppgaver</a>, hvor de også deles i oppgavetyper</li>
+<li>Ukentlige Kikora-oppgaver</li>
 </ul>
 </div>
 </div>
@@ -173,10 +321,6 @@ for the JavaScript code in this tag.
 </div>
 </div>
 </div>
-</div>
-
-<div id="outline-container-orga9cbaa9" class="outline-2">
-<h2 id="orga9cbaa9">Uke 35</h2>
 </div>
 </div>
 </body>

@@ -1,14 +1,71 @@
 #+SETUPFILE:orgheader.org
-#+TITLE:Matematikk R1 - økter 2018--19
+#+TITLE:Matemamtikk R1 - økter 2018-19
 
-* Uke 34
-** Torsdag
+* uke 35
+** mandag
+*** Betinget sannsynlighet
+#+BEGIN_DEFINITION
+La $A$ være en hending der $P(A)>0$. For en annen hending $B$ er da $$P(B|A)=\frac{P(A\cap B)}{P(A)}.$$
+#+END_DEFINITION
+
+Her leser vi de ulike elementene som følger:
+- $P(B|A)$ -- «sannsynligheten for B gitt A»
+- $P(A\cap B)$ -- «sannsynligheten for A og B»
+- $P(A)$ -- «sannsynligheten for A»
+
+#+BEGIN_TASK
+Lag en oppgave som kan løses med bruk av betinget sannsynlighet. La den du sitter ved siden av løse oppgaven din.
+#+END_TASK
+
+*** Total sannsynlighet
+#+BEGIN_DEFINITION
+$$P(B) = P(A)\cdot P(B|A) + P(\bar{A})\cdot P(B|\bar{A})$$
+#+END_DEFINITION
+
+Her leser vi det nye elementet som følger:
+- $P(\bar{A})$ -- «sannsynligheten for ikke-A»
+
+#+BEGIN_TASK
+Finn et eksempel som viser at denne formelen stemmer.
+#+END_TASK
+
+- minimum :: 3.10, 11, 12, 13, 14, 15, 20, 21, 22, 23
+- ytterligere :: 3.110, 111, 113, 115, 120, 121, 123, 124, 125, 126, 127, 128
+- uten hjelpemidler :: 3.200, 201, 203, 204
+- med hjelpemidler :: 3.300, 301, 302, 303, 304
+
+*** Bayes-setningen
+Vi kan ut fra det foregående vise følgende definisjon.
+#+BEGIN_DEFINITION
+$$P(B|A) =frac{P(B)\cdot P(A|B)}{P(A)}$$
+#+END_DEFINITION
+
+#+BEGIN_TASK
+Utled formelen ut fra de to foregående definisjonene.
+#+END_TASK
+
+
+*** Uavhengige hendelser
+#+BEGIN_DEFINITION
+To hendinger $A$ og $B$ er uavhengige hvis $P(A|B)=P(A)$, eller hvis $P(B|A)=P(B)$.
+#+END_DEFINITION
+
+- minimum :: 3.30, 31, 32, 33, 34, 40, 41, 42, 43, 44, 45, 46
+- ytterligere :: 3.130, 131, 132, 133, 140, 142, 143, 144, 145
+- uten hjelpemidler :: 3.202 (hopp over denne om du heter Dag), 204
+
+
+** torsdag
+*** Ordnede utvalg
+*** Uordnede utvalg
+
+* uke 34
+** torsdag
 *** Introdukosjon
 - Kun Geogebra som kalkulator
 - Årsplan under [[file:aarsplan1819.org::*%C3%85rsplan%202018--19][Årsplan 2018--19]]
 - Oppgaver blir lansert under [[file:oppgaver.org][Oppgaver]], hvor de også deles i oppgavetyper
+- Ukentlige Kikora-oppgaver
 
 *** Bursdagstall
 [[pres:r1_pres_bursdagstall.pdf]]
-
-* Uke 35
