@@ -6,11 +6,15 @@
 #+END_EXPORT
 
 #+BEGIN_SRC emacs-lisp :eval export :exports none
-(add-to-list 'org-html-infojs-options '(sdepth . "2"))
+(add-to-list 'org-html-infojs-options '(sdepth . "1"))
 #+END_SRC
 
 
 * Sannsynlighetsregning
+** De to terningene :betinget:utfordring:
+Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
+
+Hva er sannsynligheten for at begge blei seksere?
 ** Laderne :eksamen:v18:del1:
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
 - 40 % fra leverandør A

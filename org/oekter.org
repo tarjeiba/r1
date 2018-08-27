@@ -3,6 +3,9 @@
 
 * uke 35
 ** mandag
+*** Til neste gang
+Se på utfordringsoppgaven, [[file:oppgaver.org::*De%20to%20terningene][De to terningene]].
+
 *** Betinget sannsynlighet
 #+BEGIN_DEFINITION
 La $A$ være en hending der $P(A)>0$. For en annen hending $B$ er da $$P(B|A)=\frac{P(A\cap B)}{P(A)}.$$
@@ -37,7 +40,7 @@ Finn et eksempel som viser at denne formelen stemmer.
 *** Bayes-setningen
 Vi kan ut fra det foregående vise følgende definisjon.
 #+BEGIN_DEFINITION
-$$P(B|A) =frac{P(B)\cdot P(A|B)}{P(A)}$$
+$$P(B|A) =\frac{P(B)\cdot P(A|B)}{P(A)}$$
 #+END_DEFINITION
 
 #+BEGIN_TASK
