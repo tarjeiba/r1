@@ -6,6 +6,66 @@
 *** Til neste gang
 Se på utfordringsoppgaven, [[file:oppgaver.org::*De%20to%20terningene][De to terningene]].
 
+*** Oppklaring oppgave 3.11
+
+**** Oppgavetekst
+For en tilfeldig valg familie med to barn har vi definert disse hendingene:
+- $A$: ett barn er jente og ett barn er gutt
+- $B$: det eldste barnet er en gutt
+- $C$: minst ett av barna er en gutt
+
+Regn ut $P(A)$, $P(B)$, $P(C)$, $P(A|B)$ og $P(A|C)$.
+
+**** Mulig løsning
+En grei måte å sortere informasjonen på her, er å si at vi har to barn født uavhengig av hverandre, hvor $J_1$ og $\overline{J_1}$ er at første barn (eldst) er henholdsvis jente og ikke-jente (gutt), og $J_2$ og $\overline{J_2}$ er at andre barn (yngst) er henholdsvis jente og ikke-jente (gutt).
+
+Siden dette bare er to «trinn», kan vi sortere det i en krysstabell (forsøk å gjøre tilsvarende for et tredje barn, og du vil se at krysstabellen raskt mangler dimensjoner):
+
+| Barn 2 \ Barn 1  | $J_1$ | $\overline{J_1}$ | Totalt |
+| $J_2$            |  0.25 |             0.25 |   0.50 |
+| $\overline{J_2}$ |  0.25 |             0.25 |   0.50 |
+| Totalt           |  0.50 |             0.50 |    1.0 |
+
+Alternativt kan vi vise det i et /venndiagram/ som følger:
+
+#+BEGIN_SRC ipython :results silent :exports none
+from matplotlib import pyplot as plt
+import numpy as np
+from matplotlib_venn import venn2, venn2_circles
+import matplotlib.patches as patches
+
+subsets = (1, 1, 1, 1)
+
+fig = plt.figure(figsize=(5,4))
+ax = fig.add_subplot(111)
+v  = venn2(subsets=subsets[:-1], set_labels = ('$J_1$', '$J_2$'), ax=ax)
+a  = v.get_label_by_id('10').set_text('')
+b  = v.get_label_by_id('01').set_text('')
+ab = v.get_label_by_id('11').set_text('$J_1 \cap J_2$')
+
+c = venn2_circles(subsets=subsets[:-1], linestyle='-')
+xmin, xmax = ax.get_xlim()
+ymin, ymax = ax.get_ylim()
+x_span = xmax - xmin
+y_span = ymax - ymin
+rect = patches.Rectangle((xmin - 0.1, ymin - 0.1), x_span+0.2, y_span+0.2,
+                         linewidth=1.2, edgecolor='k', facecolor='none', clip_on=False)
+
+ax.add_patch(rect)
+plt.text(xmin, ymin, '$\overline{J_1}\cap \overline{J_2}$', fontsize=14.0, clip_on=False)
+plt.annotate
+plt.savefig(f"../figurer/l3-11-venn.png")
+#+END_SRC
+
+[[fig:l3-11-venn.png]]
+
+- $P(A)$ :: Her er ett barn jente og ett barn gutt. Vi ser fra det over at vi får $$P(A) = P(J_1 \cap \overline{J_2}) + P(\overline{J_1} \cap J_2)$$ Dette blir altså at $$P(A) = 0.25 + 0.25 = 0.50$$
+- $P(B)$ :: Her er det eldste barnet ei jente, dette er oppsummert i $J_1$-kolonna over. Vi får da at $$P(B) = P(J_1) = 0.5$$ Om vi ønsker å utføre oppgaven ved å bruke total sannsynlighet, kan vi uttrykke det som følger: $$P(J_1) = P(J_1|J_2)\cdot P(J_2) + P(J_1| \overline{J_2})\cdot P(\overline{J_2}) = 0.50 \cdot 0.50 + 0.50\cdot 0.50 = 0.50$$ ...men jeg sier ikke imot deg om du synes dette blir unødvendig komplisert.
+- $P(C)$ :: Her er minst ett av barna gutt. Vi har igjen to muligheter: 1) Legge sammen alle alternativer hvor det er én eller to gutter ($J_1\cap \overline{J_2}$, $\overline{J_1} \cap J_2$, $\overline{J_1} \cap \overline{J_2}$), eller 2) å bruke at sannsynligheten for /minst én gutt/ er /1 minus sannsynligheten for ingen gutter/. Vi får $$P(C)=P(\textrm{minst én gutt}) = 1 - P(\textrm{ingen gutter}) = 1 - P(J_1 \cap J_2) = 1 - 0.25 = 0.75$$
+- $P(A|B)$ :: Denne kan vi løse med $$P(A|B)=\frac{P(A\cap B)}{P(B)}$$ Her er $P(A\cap B) = 0.25$ siden vi kun har én jente og én gutt ($A$), /og/ at den eldste er ei jente ($B$) når den yngste er en gutt ($\overline{J_2}$) og den eldste ei jente ($J_1$). Vi får $$P(A|B) = \frac{0.25}{0.50} = 0.50$$
+- $P(A|C)$ :: Her lurer vi altså på sannsynligheten for at ett barn er jente og ett barn er gutt, /gitt at/ minst ett av barna er gutt. En av utregningene vi kan se på er $$P(A|C) = \frac{P(A\cap C)}{P(C)}$$ hvor vi allerede kjenner $P(C)=0.75$. Vi lurer altså på $(P(A\cap C)$ i første omgang. Vi har $A\cap C$ når ett av barna er jente og ett av barna er gutt /og/ minst ett av barna er gutt *kun* når ett av barna er jente og ett av barna er gutt. (Vi kan ikke ha flere enn én gutt, og fremdeles ha at ett barn er jente og ett barn er gutt.) Vi får da at $P(A\cap C) = P(A) = 0.50$. Vi kan da finne $P(A|C)$ som $$P(A|C)=\frac{P(A)}{P(C)} = \frac{0.50}{0.75}=0.67=67 \%$$
+
+
 *** Betinget sannsynlighet
 #+BEGIN_DEFINITION
 La $A$ være en hending der $P(A)>0$. For en annen hending $B$ er da $$P(B|A)=\frac{P(A\cap B)}{P(A)}.$$

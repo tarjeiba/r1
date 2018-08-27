@@ -1,5 +1,10 @@
 #+SETUPFILE:orgheader_nojs.org
-#+TITLE:Årsplan i Matematikk R1
+#+TITLE:Års- og periodeplan i Matematikk R1
+
+* Gjeldende periode: Sannsynlighetsregning
+
+
+
 
 * Årsplan 2018--19
 |      Uke | Emne                           |           Kap |
@@ -29,3 +34,5 @@
 | 17 -- 20 | Repetisjon                     |               |
 |       21 | *Eksamen*                      |               |
 |       22 | Forberedelse muntlig           |               |
+
+* Tidligere perioder

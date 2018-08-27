@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-08-27 ma. 09:02 -->
+<!-- 2018-08-27 ma. 10:41 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Matemamtikk R1 - økter 2018-19</title>
@@ -184,6 +184,102 @@ Se på utfordringsoppgaven, <a href="oppgaver.html#orgfe12892">De to terningene<
 </div>
 </div>
 
+<div id="outline-container-org915ff66" class="outline-4">
+<h4 id="org915ff66">Oppklaring oppgave 3.11</h4>
+<div class="outline-text-4" id="text-org915ff66">
+</div>
+<ul class="org-ul">
+<li><a id="orge5c7548"></a>Oppgavetekst<br />
+<div class="outline-text-5" id="text-orge5c7548">
+<p>
+For en tilfeldig valg familie med to barn har vi definert disse hendingene:
+</p>
+<ul class="org-ul">
+<li>\(A\): ett barn er jente og ett barn er gutt</li>
+<li>\(B\): det eldste barnet er en gutt</li>
+<li>\(C\): minst ett av barna er en gutt</li>
+</ul>
+
+<p>
+Regn ut \(P(A)\), \(P(B)\), \(P(C)\), \(P(A|B)\) og \(P(A|C)\).
+</p>
+</div>
+</li>
+
+<li><a id="orgf8acc00"></a>Mulig løsning<br />
+<div class="outline-text-5" id="text-orgf8acc00">
+<p>
+En grei måte å sortere informasjonen på her, er å si at vi har to barn født uavhengig av hverandre, hvor \(J_1\) og \(\overline{J_1}\) er at første barn (eldst) er henholdsvis jente og ikke-jente (gutt), og \(J_2\) og \(\overline{J_2}\) er at andre barn (yngst) er henholdsvis jente og ikke-jente (gutt).
+</p>
+
+<p>
+Siden dette bare er to «trinn», kan vi sortere det i en krysstabell (forsøk å gjøre tilsvarende for et tredje barn, og du vil se at krysstabellen raskt mangler dimensjoner):
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">Barn 2 \ Barn 1</td>
+<td class="org-right">\(J_1\)</td>
+<td class="org-right">\(\overline{J_1}\)</td>
+<td class="org-right">Totalt</td>
+</tr>
+
+<tr>
+<td class="org-left">\(J_2\)</td>
+<td class="org-right">0.25</td>
+<td class="org-right">0.25</td>
+<td class="org-right">0.50</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\overline{J_2}\)</td>
+<td class="org-right">0.25</td>
+<td class="org-right">0.25</td>
+<td class="org-right">0.50</td>
+</tr>
+
+<tr>
+<td class="org-left">Totalt</td>
+<td class="org-right">0.50</td>
+<td class="org-right">0.50</td>
+<td class="org-right">1.0</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Alternativt kan vi vise det i et <i>venndiagram</i> som følger:
+</p>
+
+<p>
+<img src="figurer/l3-11-venn.png" alt="l3-11-venn.png"/>
+</p>
+
+<dl class="org-dl">
+<dt>\(P(A)\)</dt><dd>Her er ett barn jente og ett barn gutt. Vi ser fra det over at vi får \[P(A) = P(J_1 \cap \overline{J_2}) + P(\overline{J_1} \cap J_2)\] Dette blir altså at \[P(A) = 0.25 + 0.25 = 0.50\]</dd>
+<dt>\(P(B)\)</dt><dd>Her er det eldste barnet ei jente, dette er oppsummert i $J<sub>1</sub>$-kolonna over. Vi får da at \[P(B) = P(J_1) = 0.5\] Om vi ønsker å utføre oppgaven ved å bruke total sannsynlighet, kan vi uttrykke det som følger: \[P(J_1) = P(J_1|J_2)\cdot P(J_2) + P(J_1| \overline{J_2})\cdot P(\overline{J_2}) = 0.50 \cdot 0.50 + 0.50\cdot 0.50 = 0.50\] &#x2026;men jeg sier ikke imot deg om du synes dette blir unødvendig komplisert.</dd>
+<dt>\(P(C)\)</dt><dd>Her er minst ett av barna gutt. Vi har igjen to muligheter: 1) Legge sammen alle alternativer hvor det er én eller to gutter (\(J_1\cap \overline{J_2}\), \(\overline{J_1} \cap J_2\), \(\overline{J_1} \cap \overline{J_2}\)), eller 2) å bruke at sannsynligheten for <i>minst én gutt</i> er <i>1 minus sannsynligheten for ingen gutter</i>. Vi får \[P(C)=P(\textrm{minst én gutt}) = 1 - P(\textrm{ingen gutter}) = 1 - P(J_1 \cap J_2) = 1 - 0.25 = 0.75\]</dd>
+<dt>\(P(A|B)\)</dt><dd>Denne kan vi løse med \[P(A|B)=\frac{P(A\cap B)}{P(B)}\] Her er \(P(A\cap B) = 0.25\) siden vi kun har én jente og én gutt (\(A\)), <i>og</i> at den eldste er ei jente (\(B\)) når den yngste er en gutt (\(\overline{J_2}\)) og den eldste ei jente (\(J_1\)). Vi får \[P(A|B) = \frac{0.25}{0.50} = 0.50\]</dd>
+<dt>\(P(A|C)\)</dt><dd>Her lurer vi altså på sannsynligheten for at ett barn er jente og ett barn er gutt, <i>gitt at</i> minst ett av barna er gutt. En av utregningene vi kan se på er \[P(A|C) = \frac{P(A\cap C)}{P(C)}\] hvor vi allerede kjenner \(P(C)=0.75\). Vi lurer altså på \((P(A\cap C)\) i første omgang. Vi har \(A\cap C\) når ett av barna er jente og ett av barna er gutt <i>og</i> minst ett av barna er gutt <b>kun</b> når ett av barna er jente og ett av barna er gutt. (Vi kan ikke ha flere enn én gutt, og fremdeles ha at ett barn er jente og ett barn er gutt.) Vi får da at \(P(A\cap C) = P(A) = 0.50\). Vi kan da finne \(P(A|C)\) som \[P(A|C)=\frac{P(A)}{P(C)} = \frac{0.50}{0.75}=0.67=67 \%\]</dd>
+</dl>
+</div>
+</li>
+</ul>
+</div>
+
+
 <div id="outline-container-org1e9589a" class="outline-4">
 <h4 id="org1e9589a">Betinget sannsynlighet</h4>
 <div class="outline-text-4" id="text-org1e9589a">
@@ -288,9 +384,9 @@ To hendinger \(A\) og \(B\) er uavhengige hvis \(P(A|B)=P(A)\), eller hvis \(P(B
 </div>
 
 
-<div id="outline-container-orgda0bf94" class="outline-3">
-<h3 id="orgda0bf94">torsdag</h3>
-<div class="outline-text-3" id="text-orgda0bf94">
+<div id="outline-container-org4996f2a" class="outline-3">
+<h3 id="org4996f2a">torsdag</h3>
+<div class="outline-text-3" id="text-org4996f2a">
 </div>
 <div id="outline-container-orgb447577" class="outline-4">
 <h4 id="orgb447577">Ordnede utvalg</h4>
@@ -305,9 +401,9 @@ To hendinger \(A\) og \(B\) er uavhengige hvis \(P(A|B)=P(A)\), eller hvis \(P(B
 <h2 id="org7419fb5">uke 34</h2>
 <div class="outline-text-2" id="text-org7419fb5">
 </div>
-<div id="outline-container-orga8ed9a3" class="outline-3">
-<h3 id="orga8ed9a3">torsdag</h3>
-<div class="outline-text-3" id="text-orga8ed9a3">
+<div id="outline-container-orgbcf899f" class="outline-3">
+<h3 id="orgbcf899f">torsdag</h3>
+<div class="outline-text-3" id="text-orgbcf899f">
 </div>
 <div id="outline-container-orgd4406fb" class="outline-4">
 <h4 id="orgd4406fb">Introdukosjon</h4>
