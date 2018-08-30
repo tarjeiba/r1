@@ -6,7 +6,7 @@
 #+END_EXPORT
 
 #+BEGIN_SRC emacs-lisp :eval export :exports none
-(add-to-list 'org-html-infojs-options '(sdepth . "1"))
+(add-to-list 'org-html-infojs-options '(sdepth . "2"))
 #+END_SRC
 
 
