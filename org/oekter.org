@@ -1,6 +1,11 @@
 #+SETUPFILE:orgheader.org
 #+TITLE:Matemamtikk R1 - økter 2018-19
 
+#+BEGIN_SRC emacs-lisp :eval query-export :exports none
+(add-to-list 'org-html-infojs-options '(sdepth . "2"))
+#+END_SRC
+
+
 * uke 35
 ** mandag
 *** Til neste gang
@@ -103,6 +108,28 @@ Finn et eksempel som viser at denne formelen stemmer.
 
      
 ** torsdag
+*** Oppklaring oppgave 3.33
+**** *Oppgavetekst*
+På en skole er det 60 % jenter og 40 % gutter. Blant jentene er det 8 % som har hatt kyssesyke. Blant guttene er det 6 % som har hatt kyssesyke. 12 % av elevene på skolen har hatt mer enn 10 dagers fravær. Blant dem som har hatt kyssesyke, er det 60 % som har hatt mer enn 10 dagers fravær.
+
+- a :: Finn sannsynligheten for at en tilfeldig valgt eleven har hatt kyssesyke.
+- b :: Finn sannsynligheten for at en tilfeldig valgt elev har hatt kyssesyke når vi vet at eleven har hatt mer enn 10 dagers fravær.
+**** *Mulig løsning*
+I denne løsningen har jeg satt følgende hendelser:
+- $J$ -- eleven er jente
+- $K$ -- eleven har hatt kyssesyke
+- $F$ -- eleven har mer enn 10 dagers fravær.
+
+Fra oppgaveteksten får vi da følgende opplysninger:
+- $P(J)=0.60$
+- $P(K|J)=0.08$
+- $P(K|\bar{J})=0.06$ (Merk: $\bar{J}$ er gutt)
+- $P(F)=0.12$
+- $P(F|K)=0.60$
+ 
+- a :: Vi kan bruke [[*Total sannsynlighet][Total sannsynlighet]] for å løse dette. Vi har da at $$P(K)=P(K|J)\cdot P(J) + P(K|\bar{J})\cdot P(\bar{J})=0.08\cdot 0.60 + 0.06 \cdot 0.40 = 0.072$$ Altså er sannsynligheten for at en tilfeldig valgt elev har kyssesyken 7,2 %.
+- b :: Vi er ute etter $P(K|F)$. Siden vi kjenner $P(F|K)$, kan vi her bruke Bayes' setning. Vi får $$P(K|F)=\frac{P(F|K) \cdot P(K)}{P(F)} = \frac{0.60\cdot 0.072}{0.12}=0.36$$ Altså er sannsynligheten for at en tilfeldig valgt eleven med mer enn 10 dagers fravær har hatt kyssesyken 36 %.
+
 *** Bayes-setningen
 :PROPERTIES:
 :ID:       18fa1197-c466-4dd2-90b7-82b4b2cee90e
