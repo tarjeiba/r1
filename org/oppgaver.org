@@ -20,8 +20,6 @@ Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt 
 
 [[fig:zombietesten.png]]
 
-[[fig:zombie-testen.png]]
-
 Resultatene er klare, testen var *positiv*.
 
 Hva er sannsynligheten for at du har viruset?
