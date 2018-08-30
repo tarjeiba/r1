@@ -15,6 +15,15 @@
 Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
 
 Hva er sannsynligheten for at begge blei seksere?
+** Zombietesten :bayes:utfordring:
+Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt ut en liten zombieepidemi. Zombieviruset har en inkubasjonstid på omtrent et år, så du kan være bærer av det, uten å vise zombietrekk (f.eks. ingen selvbevissthet, trang til å maltraktere de rundt deg, mangelfull personlig hygiene). Det er anslått at det i dag er 250 personer som er rammet av viruset. Du tar en test som er 99 % sikker.
+
+[[fig:zombietesten.png]]
+
+Resultatene er klare, testen var *positiv*.
+
+Hva er sannsynligheten for at du har viruset?
+
 ** Laderne :eksamen:v18:del1:
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
 - 40 % fra leverandør A

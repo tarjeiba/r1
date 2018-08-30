@@ -7,8 +7,10 @@
 Se på utfordringsoppgaven, [[file:oppgaver.org::*De%20to%20terningene][De to terningene]].
 
 *** Oppklaring oppgave 3.11
-
 **** Oppgavetekst
+:PROPERTIES:
+:ID:       9639d8d8-cdce-4d7c-9941-8f1c27af8fef
+:END:
 For en tilfeldig valg familie med to barn har vi definert disse hendingene:
 - $A$: ett barn er jente og ett barn er gutt
 - $B$: det eldste barnet er en gutt
@@ -17,6 +19,9 @@ For en tilfeldig valg familie med to barn har vi definert disse hendingene:
 Regn ut $P(A)$, $P(B)$, $P(C)$, $P(A|B)$ og $P(A|C)$.
 
 **** Mulig løsning
+:PROPERTIES:
+:ID:       cd085f8e-590c-4d19-bec1-084559d7d22e
+:END:
 En grei måte å sortere informasjonen på her, er å si at vi har to barn født uavhengig av hverandre, hvor $J_1$ og $\overline{J_1}$ er at første barn (eldst) er henholdsvis jente og ikke-jente (gutt), og $J_2$ og $\overline{J_2}$ er at andre barn (yngst) er henholdsvis jente og ikke-jente (gutt).
 
 Siden dette bare er to «trinn», kan vi sortere det i en krysstabell (forsøk å gjøre tilsvarende for et tredje barn, og du vil se at krysstabellen raskt mangler dimensjoner):
@@ -65,7 +70,6 @@ plt.savefig(f"../figurer/l3-11-venn.png")
 - $P(A|B)$ :: Denne kan vi løse med $$P(A|B)=\frac{P(A\cap B)}{P(B)}$$ Her er $P(A\cap B) = 0.25$ siden vi kun har én jente og én gutt ($A$), /og/ at den eldste er ei jente ($B$) når den yngste er en gutt ($\overline{J_2}$) og den eldste ei jente ($J_1$). Vi får $$P(A|B) = \frac{0.25}{0.50} = 0.50$$
 - $P(A|C)$ :: Her lurer vi altså på sannsynligheten for at ett barn er jente og ett barn er gutt, /gitt at/ minst ett av barna er gutt. En av utregningene vi kan se på er $$P(A|C) = \frac{P(A\cap C)}{P(C)}$$ hvor vi allerede kjenner $P(C)=0.75$. Vi lurer altså på $(P(A\cap C)$ i første omgang. Vi har $A\cap C$ når ett av barna er jente og ett av barna er gutt /og/ minst ett av barna er gutt *kun* når ett av barna er jente og ett av barna er gutt. (Vi kan ikke ha flere enn én gutt, og fremdeles ha at ett barn er jente og ett barn er gutt.) Vi får da at $P(A\cap C) = P(A) = 0.50$. Vi kan da finne $P(A|C)$ som $$P(A|C)=\frac{P(A)}{P(C)} = \frac{0.50}{0.75}=0.67=67 \%$$
 
-
 *** Betinget sannsynlighet
 #+BEGIN_DEFINITION
 La $A$ være en hending der $P(A)>0$. For en annen hending $B$ er da $$P(B|A)=\frac{P(A\cap B)}{P(A)}.$$
@@ -97,7 +101,12 @@ Finn et eksempel som viser at denne formelen stemmer.
 - uten hjelpemidler :: 3.200, 201, 203, 204
 - med hjelpemidler :: 3.300, 301, 302, 303, 304
 
+     
+** torsdag
 *** Bayes-setningen
+:PROPERTIES:
+:ID:       18fa1197-c466-4dd2-90b7-82b4b2cee90e
+:END:
 Vi kan ut fra det foregående vise følgende definisjon.
 #+BEGIN_DEFINITION
 $$P(B|A) =\frac{P(B)\cdot P(A|B)}{P(A)}$$
@@ -107,8 +116,10 @@ $$P(B|A) =\frac{P(B)\cdot P(A|B)}{P(A)}$$
 Utled formelen ut fra de to foregående definisjonene.
 #+END_TASK
 
-
 *** Uavhengige hendelser
+:PROPERTIES:
+:ID:       5edb3ed2-27e3-472e-a930-b551eafde6af
+:END:
 #+BEGIN_DEFINITION
 To hendinger $A$ og $B$ er uavhengige hvis $P(A|B)=P(A)$, eller hvis $P(B|A)=P(B)$.
 #+END_DEFINITION
@@ -116,19 +127,31 @@ To hendinger $A$ og $B$ er uavhengige hvis $P(A|B)=P(A)$, eller hvis $P(B|A)=P(B
 - minimum :: 3.30, 31, 32, 33, 34, 40, 41, 42, 43, 44, 45, 46
 - ytterligere :: 3.130, 131, 132, 133, 140, 142, 143, 144, 145
 - uten hjelpemidler :: 3.202 (hopp over denne om du heter Dag), 204
-
-
-** torsdag
 *** Ordnede utvalg
 *** Uordnede utvalg
 
+
+
 * uke 34
+:PROPERTIES:
+:ID:       9f7f7c52-ccf4-4334-8c22-72d692282bca
+:PUBDATE:  <2018-08-27 ma. 11:00>
+:END:
 ** torsdag
+:PROPERTIES:
+:ID:       43e85ab6-9e4c-40f8-8a5e-637bd8831124
+:END:
 *** Introdukosjon
+:PROPERTIES:
+:ID:       e45a1d58-5cb3-4a21-87a4-f36521a367e1
+:END:
 - Kun Geogebra som kalkulator
 - Årsplan under [[file:aarsplan1819.org::*%C3%85rsplan%202018--19][Årsplan 2018--19]]
 - Oppgaver blir lansert under [[file:oppgaver.org][Oppgaver]], hvor de også deles i oppgavetyper
 - Ukentlige Kikora-oppgaver
 
 *** Bursdagstall
+:PROPERTIES:
+:ID:       fbcc4f7b-0906-4ccd-863b-26c0f1407773
+:END:
 [[pres:r1_pres_bursdagstall.pdf]]
