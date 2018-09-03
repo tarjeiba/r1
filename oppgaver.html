@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-09-03 ma. 10:21 -->
+<!-- 2018-09-03 ma. 14:53 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgavesamling i R1</title>
@@ -163,9 +163,9 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#orgc0cbe26">Sannsynlighetsregning</a>
 <ul>
-<li><a href="#orgfe12892">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span></span></a></li>
-<li><a href="#orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span></span></a></li>
-<li><a href="#org44701c6">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span></span></a></li>
+<li><a href="#orgfe12892">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
+<li><a href="#orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
+<li><a href="#org44701c6">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
 <li><a href="#orgd13dfab">Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></a></li>
 <li><a href="#org9b93be2">Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></a></li>
 <li><a href="#orgfe9fdce">Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></a></li>
@@ -183,7 +183,7 @@ for the JavaScript code in this tag.
 <div class="outline-text-2" id="text-orgc0cbe26">
 </div>
 <div id="outline-container-orgfe12892" class="outline-3">
-<h3 id="orgfe12892">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span></span></h3>
+<h3 id="orgfe12892">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
 <div class="outline-text-3" id="text-orgfe12892">
 <p>
 Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
@@ -192,11 +192,11 @@ Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og 
 <p>
 Hva er sannsynligheten for at begge blei seksere?
 </p>
-</div>
 
-<div id="outline-container-org201b05f" class="outline-4">
-<h4 id="org201b05f">Løsning</h4>
-<div class="outline-text-4" id="text-org201b05f">
+
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+<div class="LOESNING">
 <p>
 Vi kan definere følgende to hendelser:
 </p>
@@ -308,12 +308,13 @@ Vi veit altså at vi er i en av rutene med <code>O</code> eller <code>X</code> (
 Siden det er 11 ruter med <code>O</code> eller <code>X</code>, og én rute med <code>X</code>, er sannsynligheten gitt som
 \[P(T_1 \cap T_2 | T_1 \cup t_2) = \frac{1}{11}\]
 </p>
+
 </div>
 </div>
 </div>
 
 <div id="outline-container-orga5f060b" class="outline-3">
-<h3 id="orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span></span></h3>
+<h3 id="orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
 <div class="outline-text-3" id="text-orga5f060b">
 <p>
 Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt ut en liten zombieepidemi. Zombieviruset har en inkubasjonstid på omtrent et år, så du kan være bærer av det, uten å vise zombietrekk (f.eks. ingen selvbevissthet, trang til å maltraktere de rundt deg, mangelfull personlig hygiene). Det er anslått at det i dag er 250 personer som er rammet av viruset. Du tar en test som er 99 % sikker.
@@ -330,11 +331,10 @@ Resultatene er klare, testen var <b>positiv</b>.
 <p>
 Hva er sannsynligheten for at du har viruset?
 </p>
-</div>
 
-<div id="outline-container-org7b1b9b0" class="outline-4">
-<h4 id="org7b1b9b0">Løsning</h4>
-<div class="outline-text-4" id="text-org7b1b9b0">
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+<div class="LOESNING">
 <p>
 Vi definerer følgende hendelser:
 </p>
@@ -346,12 +346,13 @@ Vi definerer følgende hendelser:
 <p>
 En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele landet, vil omtrent 1 % av 5 millioner få positivt svar, altså 50 000 personer. Sannsynligheten for at du er en av 250 personene som faktisk er smittet, er da \[P(Z|P)=250/50000=0.005\] Sannsynligheten for at du har viruset er med andre ord omtrent 0.5 %.
 </p>
+
 </div>
 </div>
 </div>
 
 <div id="outline-container-org44701c6" class="outline-3">
-<h3 id="org44701c6">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span></span></h3>
+<h3 id="org44701c6">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
 <div class="outline-text-3" id="text-org44701c6">
 <p>
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
@@ -377,6 +378,25 @@ Vi tenker oss at vi velger ut en lader tilfeldig.
 <dt>a</dt><dd>Bestem sannsynligheten for at laderen kommer fra leverandør A og er defekt.</dd>
 <dt>b</dt><dd>Bestem sannsynligheten for at en lader som er defekt, kommer fra leverandør A.</dd>
 </dl>
+
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+<div class="LOESNING">
+<p>
+Vi kan sortere informasjonen fra oppgava som følger:
+</p>
+<ul class="org-ul">
+<li>\(P(A)=0.40\)</li>
+<li>\(P(B)=P(\bar{A})=0.60\)</li>
+<li>\(P(D|A)=0.03\) &#x2013; hvor vi har laget hendelsen \(D\) for at en gjenstand er defekt</li>
+<li>\(P(D|\bar{A})=0.02\)</li>
+
+<li id="a">Her er vi ute etter \(P(A\cap D)\). Siden vi kjenner \(P(A)\) og \(P(D|A)\), kan vi løse denne oppgaven som \[P(A\cap D)=P(A)\cdot P(D|A)=0.40\cdot 0.03=0.012\] Sannsynligheten for at en lader kommer fra A og er defekt er altså 1,2 %.</li>
+
+<li id="b">Vi veit her at en lader er defekt, og vi ønsker å finne sannsynligheten for at den er fra A, altså er vi ute etter \(P(A|D)\). Vi kan finne denne ved å bruke Bayes' setning, som \[P(A|D)=\frac{P(A)\cdot P(D|A)}{P(D)},\] hvor det eneste vi mangler for å kunne løse oppgaven er \(P(D)\). Denne kan vi finne ved å bruke total sannsynlighet, og vi får \[P(D)=P(D|A)\cdot P(A) + P(D|\bar{A})\cdot P(\bar{A}),\] hvor vi bruker at \(\bar{A}\) er det sammme som \(B\), siden \(A\) og \(B\) sammen utgjør hele hendelsesrommet. Satt inn får vi da \[P(D)=0.03\cdot 0.40 + 0.02\cdot 0.60=0.024\]Vi kan da løse for \(P(A|D)\) som \[P(A|D)=\frac{0.40\cdot 0.03}{0.024}=0.50\]Altså er det 50 % sannsynlig at en tilfeldig defekt lader kommer fra A, til tross for at B leverer flere ladere.</li>
+</ul>
+
+</div>
 </div>
 </div>
 

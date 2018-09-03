@@ -138,6 +138,8 @@ h1.title {
 
 /* @group Org Keywords */
 
+
+
 .todo {
     color: red;
 }
@@ -178,6 +180,30 @@ h1.title {
     align: center;
     display: inline-block;
   }
+
+.LOESNING {
+    border-left: 6px solid #aaa;
+    background-color: #eee;
+    padding: 8pt;
+    max-width: 100%;
+}
+
+
+div.LOESNING:before {
+    content: 'LØSNING';
+    font-weight: bold;
+}
+
+/* Bruker '+' for å velge direkte påfølgende, se */
+/* https://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean */
+input[type=checkbox]:checked + .LOESNING {
+   display: inline-block;
+}
+
+input[type=checkbox]:not(:checked) + .LOESNING {
+   display: none;
+}
+
 
 .TASK {
     border-left: 6px solid #aaa;

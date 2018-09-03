@@ -11,12 +11,17 @@
 
 
 * Sannsynlighetsregning
-** De to terningene :betinget:utfordring:
+** De to terningene :betinget:utfordring:løsning:
 Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
 
 Hva er sannsynligheten for at begge blei seksere?
 
-*** Løsning
+
+#+BEGIN_EXPORT html
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+#+END_EXPORT
+#+BEGIN_LOESNING
 Vi kan definere følgende to hendelser:
 - $T_1$ -- sekser på terning én
 - $T_2$ -- sekser på terning to
@@ -35,8 +40,9 @@ Vi veit altså at vi er i en av rutene med ~O~ eller ~X~ (siden det er her det e
 
 Siden det er 11 ruter med ~O~ eller ~X~, og én rute med ~X~, er sannsynligheten gitt som
 $$P(T_1 \cap T_2 | T_1 \cup t_2) = \frac{1}{11}$$
+#+END_LOESNING
 
-** Zombietesten :bayes:utfordring:
+** Zombietesten :bayes:utfordring:løsning:
 Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt ut en liten zombieepidemi. Zombieviruset har en inkubasjonstid på omtrent et år, så du kan være bærer av det, uten å vise zombietrekk (f.eks. ingen selvbevissthet, trang til å maltraktere de rundt deg, mangelfull personlig hygiene). Det er anslått at det i dag er 250 personer som er rammet av viruset. Du tar en test som er 99 % sikker.
 
 [[fig:zombietesten.png]]
@@ -45,14 +51,19 @@ Resultatene er klare, testen var *positiv*.
 
 Hva er sannsynligheten for at du har viruset?
 
-*** Løsning
+#+BEGIN_EXPORT html
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+#+END_EXPORT
+#+BEGIN_LOESNING
 Vi definerer følgende hendelser:
 - $Z$ -- smittet av zombieviruset
 - $P$ -- testen er positiv
 
 En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele landet, vil omtrent 1 % av 5 millioner få positivt svar, altså 50 000 personer. Sannsynligheten for at du er en av 250 personene som faktisk er smittet, er da $$P(Z|P)=250/50000=0.005$$ Sannsynligheten for at du har viruset er med andre ord omtrent 0.5 %.
+#+END_LOESNING
 
-** Laderne :eksamen:v18:del1:
+** Laderne :eksamen:v18:del1:løsning:
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
 - 40 % fra leverandør A
 - 60 % fra leverandør B
@@ -65,6 +76,22 @@ Vi tenker oss at vi velger ut en lader tilfeldig.
 
 - a :: Bestem sannsynligheten for at laderen kommer fra leverandør A og er defekt.
 - b :: Bestem sannsynligheten for at en lader som er defekt, kommer fra leverandør A.
+
+#+BEGIN_EXPORT html
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+#+END_EXPORT
+#+BEGIN_LOESNING
+Vi kan sortere informasjonen fra oppgava som følger:
+- $P(A)=0.40$
+- $P(B)=P(\bar{A})=0.60$
+- $P(D|A)=0.03$ -- hvor vi har laget hendelsen $D$ for at en gjenstand er defekt
+- $P(D|\bar{A})=0.02$
+
+- a :: Her er vi ute etter $P(A\cap D)$. Siden vi kjenner $P(A)$ og $P(D|A)$, kan vi løse denne oppgaven som $$P(A\cap D)=P(A)\cdot P(D|A)=0.40\cdot 0.03=0.012$$ Sannsynligheten for at en lader kommer fra A og er defekt er altså 1,2 %.
+
+- b :: Vi veit her at en lader er defekt, og vi ønsker å finne sannsynligheten for at den er fra A, altså er vi ute etter $P(A|D)$. Vi kan finne denne ved å bruke Bayes' setning, som $$P(A|D)=\frac{P(A)\cdot P(D|A)}{P(D)},$$ hvor det eneste vi mangler for å kunne løse oppgaven er $P(D)$. Denne kan vi finne ved å bruke total sannsynlighet, og vi får $$P(D)=P(D|A)\cdot P(A) + P(D|\bar{A})\cdot P(\bar{A}),$$ hvor vi bruker at $\bar{A}$ er det sammme som $B$, siden $A$ og $B$ sammen utgjør hele hendelsesrommet. Satt inn får vi da $$P(D)=0.03\cdot 0.40 + 0.02\cdot 0.60=0.024$$Vi kan da løse for $P(A|D)$ som $$P(A|D)=\frac{0.40\cdot 0.03}{0.024}=0.50$$Altså er det 50 % sannsynlig at en tilfeldig defekt lader kommer fra A, til tross for at B leverer flere ladere.
+#+END_LOESNING
 
 ** Flyselskapet :eksamen:v18:del2:
 Et flyselskap har en flyrute mellom Oslo og Bergen. Flyene som brukes har plass til 116 passasjerer. Sannsynligheten for at en passasjer som har kjøpt billett, ikke møter til flyavgang er 6 %.
