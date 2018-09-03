@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-08-30 to. 12:39 -->
+<!-- 2018-09-03 ma. 10:21 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgavesamling i R1</title>
@@ -193,7 +193,125 @@ Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og 
 Hva er sannsynligheten for at begge blei seksere?
 </p>
 </div>
+
+<div id="outline-container-org201b05f" class="outline-4">
+<h4 id="org201b05f">Løsning</h4>
+<div class="outline-text-4" id="text-org201b05f">
+<p>
+Vi kan definere følgende to hendelser:
+</p>
+<ul class="org-ul">
+<li>\(T_1\) &#x2013; sekser på terning én</li>
+<li>\(T_2\) &#x2013; sekser på terning to</li>
+</ul>
+
+<p>
+Vi ønsker altså å finne \(P(T_1 \cap T_2 | T_1 \cup t_2)\). Dette virker kanskje svært innviklet, men la oss stille opp mulighetene i en tabell.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">T<sub>2</sub> \ T<sub>1</sub></td>
+<td class="org-right">1</td>
+<td class="org-right">2</td>
+<td class="org-right">3</td>
+<td class="org-right">4</td>
+<td class="org-right">5</td>
+<td class="org-left">6</td>
+</tr>
+
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>O</code></td>
+</tr>
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>O</code></td>
+</tr>
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>O</code></td>
+</tr>
+
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>O</code></td>
+</tr>
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left"><code>O</code></td>
+</tr>
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-right"><code>O</code></td>
+<td class="org-right"><code>O</code></td>
+<td class="org-right"><code>O</code></td>
+<td class="org-right"><code>O</code></td>
+<td class="org-right"><code>O</code></td>
+<td class="org-left"><code>X</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Vi veit altså at vi er i en av rutene med <code>O</code> eller <code>X</code> (siden det er her det er minst én sekser), og vi lurer på sannsynligheten for at vi da er i ruta med <code>X</code> (siden det er her det er to seksere).
+</p>
+
+<p>
+Siden det er 11 ruter med <code>O</code> eller <code>X</code>, og én rute med <code>X</code>, er sannsynligheten gitt som
+\[P(T_1 \cap T_2 | T_1 \cup t_2) = \frac{1}{11}\]
+</p>
 </div>
+</div>
+</div>
+
 <div id="outline-container-orga5f060b" class="outline-3">
 <h3 id="orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span></span></h3>
 <div class="outline-text-3" id="text-orga5f060b">
@@ -212,6 +330,23 @@ Resultatene er klare, testen var <b>positiv</b>.
 <p>
 Hva er sannsynligheten for at du har viruset?
 </p>
+</div>
+
+<div id="outline-container-org7b1b9b0" class="outline-4">
+<h4 id="org7b1b9b0">Løsning</h4>
+<div class="outline-text-4" id="text-org7b1b9b0">
+<p>
+Vi definerer følgende hendelser:
+</p>
+<ul class="org-ul">
+<li>\(Z\) &#x2013; smittet av zombieviruset</li>
+<li>\(P\) &#x2013; testen er positiv</li>
+</ul>
+
+<p>
+En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele landet, vil omtrent 1 % av 5 millioner få positivt svar, altså 50 000 personer. Sannsynligheten for at du er en av 250 personene som faktisk er smittet, er da \[P(Z|P)=250/50000=0.005\] Sannsynligheten for at du har viruset er med andre ord omtrent 0.5 %.
+</p>
+</div>
 </div>
 </div>
 

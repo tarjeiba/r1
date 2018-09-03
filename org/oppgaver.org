@@ -15,6 +15,27 @@
 Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
 
 Hva er sannsynligheten for at begge blei seksere?
+
+*** Løsning
+Vi kan definere følgende to hendelser:
+- $T_1$ -- sekser på terning én
+- $T_2$ -- sekser på terning to
+
+Vi ønsker altså å finne $P(T_1 \cap T_2 | T_1 \cup t_2)$. Dette virker kanskje svært innviklet, men la oss stille opp mulighetene i en tabell.
+
+| T_2 \ T_1 |   1 |   2 |   3 |   4 |   5 | 6   |
+|         1 |     |     |     |     |     | ~O~ |
+|         2 |     |     |     |     |     | ~O~ |
+|         3 |     |     |     |     |     | ~O~ |
+|         4 |     |     |     |     |     | ~O~ |
+|         5 |     |     |     |     |     | ~O~ |
+|         6 | ~O~ | ~O~ | ~O~ | ~O~ | ~O~ | ~X~ |
+
+Vi veit altså at vi er i en av rutene med ~O~ eller ~X~ (siden det er her det er minst én sekser), og vi lurer på sannsynligheten for at vi da er i ruta med ~X~ (siden det er her det er to seksere).
+
+Siden det er 11 ruter med ~O~ eller ~X~, og én rute med ~X~, er sannsynligheten gitt som
+$$P(T_1 \cap T_2 | T_1 \cup t_2) = \frac{1}{11}$$
+
 ** Zombietesten :bayes:utfordring:
 Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt ut en liten zombieepidemi. Zombieviruset har en inkubasjonstid på omtrent et år, så du kan være bærer av det, uten å vise zombietrekk (f.eks. ingen selvbevissthet, trang til å maltraktere de rundt deg, mangelfull personlig hygiene). Det er anslått at det i dag er 250 personer som er rammet av viruset. Du tar en test som er 99 % sikker.
 
@@ -23,6 +44,13 @@ Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt 
 Resultatene er klare, testen var *positiv*.
 
 Hva er sannsynligheten for at du har viruset?
+
+*** Løsning
+Vi definerer følgende hendelser:
+- $Z$ -- smittet av zombieviruset
+- $P$ -- testen er positiv
+
+En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele landet, vil omtrent 1 % av 5 millioner få positivt svar, altså 50 000 personer. Sannsynligheten for at du er en av 250 personene som faktisk er smittet, er da $$P(Z|P)=250/50000=0.005$$ Sannsynligheten for at du har viruset er med andre ord omtrent 0.5 %.
 
 ** Laderne :eksamen:v18:del1:
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer

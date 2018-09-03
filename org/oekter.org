@@ -6,6 +6,26 @@
 #+END_SRC
 
 
+* uke 36
+** mandag
+*** Oppgavejobbing
+** torsdag
+*** Binomiske forsøk
+- minimum           :: 3.70, 71, 72, 73, 74, 75
+- ytterligere       :: 3.171, 172, 174, 175, 176
+- uten hjelpemidler :: 3.207
+- med hjelpemidler  :: 3.178, 308, 309
+*** Hypergeometriske forsøk
+- minimum           :: 3.80, 81, 82, 83, 84, 85, 86
+- ytterligere       :: 3.181, 182, 183, 184,
+- uten hjelpemidler :: 3.208, 209, 210, 211
+- med hjelpemidler  :: 3.310
+*** Valg av sannsynlighetsmodell
+- minimum           :: 3.90, 91, 92, 93
+- ytterligere       :: 3.181, 182, 183, 184,
+- uten hjelpemidler :: 3.208, 209, 210, 211
+- med hjelpemidler  :: 3.310- ytterligere
+
 * uke 35
 ** mandag
 *** Til neste gang
