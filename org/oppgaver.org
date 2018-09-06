@@ -11,7 +11,36 @@
 
 
 * Sannsynlighetsregning
+** Regnværsdagene
+:PROPERTIES:
+:CUSTOM_ID: sanns-regnvaersdagene
+:END:
+#+BEGIN_NOTES
+Inspirert av «Logic -- A very short introduction» av Graham Pries, Oxford University Press, 2000
+#+END_NOTES
+
+Turid fører statistikk over været. Hun har definert seg hendelesene $V$ for «været var varmt» og $R$ for «det regnet». «✓» betyr «hendelsen inntraff den dagen». En gitt uke har hun fått følgende oversikt:
+
+|     | man | tirs | ons | tors | fre | lør | søn |
+|-----+-----+------+-----+------+-----+-----+-----|
+| $V$ |     |      | ✓   | ✓    |     | ✓   | ✓   |
+| $R$ |     | ✓    | ✓   |      |     | ✓   |     |
+
+Ved å bruke tabellen over, hva er...
+- a :: $P(V)$?
+- b :: $P(R)$?
+- c :: $P(V∩R)$?
+- d :: $P(V∪R)$?
+- e :: $P(V|R)$?
+- f :: $P(R|V)$?
+
+...og, til slutt...
+- g :: bruk Bayes' setning til å kontrollere *f* ved hjelp av svarene du fikk i *a* til *e*.
+
 ** De to terningene :betinget:utfordring:løsning:
+:PROPERTIES:
+:CUSTOM_ID: sanns-detoterningene
+:END:
 Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
 
 Hva er sannsynligheten for at begge blei seksere?
@@ -43,6 +72,9 @@ $$P(T_1 \cap T_2 | T_1 \cup t_2) = \frac{1}{11}$$
 #+END_LOESNING
 
 ** Zombietesten :bayes:utfordring:løsning:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-zombietesten
+:END:
 Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt ut en liten zombieepidemi. Zombieviruset har en inkubasjonstid på omtrent et år, så du kan være bærer av det, uten å vise zombietrekk (f.eks. ingen selvbevissthet, trang til å maltraktere de rundt deg, mangelfull personlig hygiene). Det er anslått at det i dag er 250 personer som er rammet av viruset. Du tar en test som er 99 % sikker.
 
 [[fig:zombietesten.png]]
@@ -64,6 +96,9 @@ En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele l
 #+END_LOESNING
 
 ** Laderne :eksamen:v18:del1:løsning:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-laderne
+:END:
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
 - 40 % fra leverandør A
 - 60 % fra leverandør B
@@ -94,6 +129,9 @@ Vi kan sortere informasjonen fra oppgava som følger:
 #+END_LOESNING
 
 ** Flyselskapet :eksamen:v18:del2:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-flyselskapet
+:END:
 Et flyselskap har en flyrute mellom Oslo og Bergen. Flyene som brukes har plass til 116 passasjerer. Sannsynligheten for at en passasjer som har kjøpt billett, ikke møter til flyavgang er 6 %.
 
 Vi lar /X/ være antall passasjerer som møter til en tilfeldig valgt flyavgang.
@@ -109,6 +147,9 @@ Flyselskapet ønsker at sannsynligheten skal være minst 95 % for at alle som m
 - c :: Hvor mange billetter kan flyselskapet maksimalt selge da?
 
 ** Nøkkelboksene :eksamen:h17:del1:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-noekkelboksene
+:END:
 En nøkkelboks er en boks med plass til nøkler. Noen slike bokser har kodelås.
 
 For én type nøkkelboks lages en kode ved å stille inn fire tal. Hvert tall velges blant tallene 0 til 9. Et tall kan velges flere ganger. Tallene må være stilt i en bestemt rekkefølge.
@@ -125,12 +166,20 @@ For en annen type nøkkelboks lages en kode ved å belge et bestemt antall forsk
 - c :: Hvor mange tall må koden bestå av for at antallet mulige koder skal bli størst mulig? Hvor mange mulige koder er det da?
 
 ** Spillelista :eksamen:h17:del2:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-spillelista
+:END:
 Jakob har en spilleliste med 20 sanger på mobilen sin. Fire av sangene på spillelisten er med artisten Kygo. Programmet spiller av sangene i tilfeldig rekkefølge (shuffle) med tilbakelegging. Det vil si at samme sang kan bli spilt av flere ganger etter hverandre.
 
 - a :: Forklar at sannsynligheten alltid er $p = 0,2$ for at neste sang som blir spilt, er med Kygo.
 - b :: Jakob vil høre på fem avspillinger fra spillelisten. Bestem sannsynligheten for at nøyaktig to av sangene han spiller, er med Kygo.
 - c :: Hvor mange avspillinger må han høre på for at sannsynligheten for å høre minst én sang med Kygo skal være større enn 90 %?
+
 ** Nøklene :eksamen:h16:del1:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-noeklene
+:END:
+
 I en fabrikk er det to maskiner, maskin A og maskin B, som produserer samme type nøkler.
 - 4 % av nøklene fra maskin A er defekte.
 - 1 % av nøklene fra maskin B er defekte.
@@ -143,7 +192,12 @@ En nøkkel blir valgt tilfeldig fra lageret.
 Det viser seg at den valgte nøkkelen er defekt.
 
 - b :: Bestem sannsynligheten for at nøkkelen ble produsert av maskin A.
+
 ** Lottospillet :eksamen:h16:del2:
+:PROPERTIES:
+:CUSTOM_ID: sannsynlighet-lottospillet
+:END:
+
 I pengespillet Lotto legges 34 kuler i en beholder. Hver kule er nummerert med ett av tallene fra 1 til 34. Sju kuler trekkes tilfeldig uten tilbakelegging. Tallene på de sju kulene er vinnertallene.
 
 Når du spiller Lotto, krysser du av sju av tallene fra 1 til 34 på en kupong.

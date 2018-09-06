@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-09-03 ma. 14:53 -->
+<!-- 2018-09-06 to. 09:31 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgavesamling i R1</title>
@@ -163,14 +163,15 @@ for the JavaScript code in this tag.
 <ul>
 <li><a href="#orgc0cbe26">Sannsynlighetsregning</a>
 <ul>
-<li><a href="#orgfe12892">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#org44701c6">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#orgd13dfab">Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></a></li>
-<li><a href="#org9b93be2">Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#orgfe9fdce">Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></a></li>
-<li><a href="#orgc37e268">Nøklene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#orgd6f3a44">Lottospillet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del2">del2</span></span></a></li>
+<li><a href="#sanns-regnvaersdagene">Regnværsdagene</a></li>
+<li><a href="#sanns-detoterningene">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
+<li><a href="#sannsynlighet-zombietesten">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
+<li><a href="#sannsynlighet-laderne">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
+<li><a href="#sannsynlighet-flyselskapet">Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></a></li>
+<li><a href="#sannsynlighet-noekkelboksene">Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></a></li>
+<li><a href="#sannsynlighet-spillelista">Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></a></li>
+<li><a href="#sannsynlighet-noeklene">Nøklene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></a></li>
+<li><a href="#sannsynlighet-lottospillet">Lottospillet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del2">del2</span></span></a></li>
 </ul>
 </li>
 </ul>
@@ -182,9 +183,101 @@ for the JavaScript code in this tag.
 <h2 id="orgc0cbe26">Sannsynlighetsregning</h2>
 <div class="outline-text-2" id="text-orgc0cbe26">
 </div>
+<div id="outline-container-orgec39b54" class="outline-3">
+<h3 id="sanns-regnvaersdagene"><a id="orgec39b54"></a>Regnværsdagene</h3>
+<div class="outline-text-3" id="text-sanns-regnvaersdagene">
+<div class="NOTES">
+<p>
+Inspirert av «Logic &#x2013; A very short introduction» av Graham Pries, Oxford University Press, 2000
+</p>
+
+</div>
+
+<p>
+Turid fører statistikk over været. Hun har definert seg hendelesene \(V\) for «været var varmt» og \(R\) for «det regnet». «✓» betyr «hendelsen inntraff den dagen». En gitt uke har hun fått følgende oversikt:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">man</th>
+<th scope="col" class="org-left">tirs</th>
+<th scope="col" class="org-left">ons</th>
+<th scope="col" class="org-left">tors</th>
+<th scope="col" class="org-left">fre</th>
+<th scope="col" class="org-left">lør</th>
+<th scope="col" class="org-left">søn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(V\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">✓</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">✓</td>
+</tr>
+
+<tr>
+<td class="org-left">\(R\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">✓</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Ved å bruke tabellen over, hva er&#x2026;
+</p>
+<dl class="org-dl">
+<dt>a</dt><dd>\(P(V)\)?</dd>
+<dt>b</dt><dd>\(P(R)\)?</dd>
+<dt>c</dt><dd>\(P(V∩R)\)?</dd>
+<dt>d</dt><dd>\(P(V∪R)\)?</dd>
+<dt>e</dt><dd>\(P(V|R)\)?</dd>
+<dt>f</dt><dd>\(P(R|V)\)?</dd>
+</dl>
+
+<p>
+&#x2026;og, til slutt&#x2026;
+</p>
+<dl class="org-dl">
+<dt>g</dt><dd>bruk Bayes' setning til å kontrollere <b>f</b> ved hjelp av svarene du fikk i <b>a</b> til <b>e</b>.</dd>
+</dl>
+</div>
+</div>
+
 <div id="outline-container-orgfe12892" class="outline-3">
-<h3 id="orgfe12892">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
-<div class="outline-text-3" id="text-orgfe12892">
+<h3 id="sanns-detoterningene"><a id="orgfe12892"></a>De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
+<div class="outline-text-3" id="text-sanns-detoterningene">
 <p>
 Jeg kaster to terninger og holder dem skjult for deg. Jeg ser på resultatet og sier til deg «minst en av dem blei en sekser».
 </p>
@@ -314,8 +407,8 @@ Siden det er 11 ruter med <code>O</code> eller <code>X</code>, og én rute med <
 </div>
 
 <div id="outline-container-orga5f060b" class="outline-3">
-<h3 id="orga5f060b">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
-<div class="outline-text-3" id="text-orga5f060b">
+<h3 id="sannsynlighet-zombietesten"><a id="orga5f060b"></a>Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-zombietesten">
 <p>
 Du bor i et land med ca. 5 millioner innbyggere. I dette landet har det brutt ut en liten zombieepidemi. Zombieviruset har en inkubasjonstid på omtrent et år, så du kan være bærer av det, uten å vise zombietrekk (f.eks. ingen selvbevissthet, trang til å maltraktere de rundt deg, mangelfull personlig hygiene). Det er anslått at det i dag er 250 personer som er rammet av viruset. Du tar en test som er 99 % sikker.
 </p>
@@ -352,8 +445,8 @@ En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele l
 </div>
 
 <div id="outline-container-org44701c6" class="outline-3">
-<h3 id="org44701c6">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
-<div class="outline-text-3" id="text-org44701c6">
+<h3 id="sannsynlighet-laderne"><a id="org44701c6"></a>Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-laderne">
 <p>
 En butikk kjøper samme type ladere fra to leverandører. Av disse kommer
 </p>
@@ -401,8 +494,8 @@ Vi kan sortere informasjonen fra oppgava som følger:
 </div>
 
 <div id="outline-container-orgd13dfab" class="outline-3">
-<h3 id="orgd13dfab">Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></h3>
-<div class="outline-text-3" id="text-orgd13dfab">
+<h3 id="sannsynlighet-flyselskapet"><a id="orgd13dfab"></a>Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-flyselskapet">
 <p>
 Et flyselskap har en flyrute mellom Oslo og Bergen. Flyene som brukes har plass til 116 passasjerer. Sannsynligheten for at en passasjer som har kjøpt billett, ikke møter til flyavgang er 6 %.
 </p>
@@ -434,8 +527,8 @@ Flyselskapet ønsker at sannsynligheten skal være minst 95 % for at alle som m
 </div>
 
 <div id="outline-container-org9b93be2" class="outline-3">
-<h3 id="org9b93be2">Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></h3>
-<div class="outline-text-3" id="text-org9b93be2">
+<h3 id="sannsynlighet-noekkelboksene"><a id="org9b93be2"></a>Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-noekkelboksene">
 <p>
 En nøkkelboks er en boks med plass til nøkler. Noen slike bokser har kodelås.
 </p>
@@ -468,8 +561,8 @@ For en annen type nøkkelboks lages en kode ved å belge et bestemt antall forsk
 </div>
 
 <div id="outline-container-orgfe9fdce" class="outline-3">
-<h3 id="orgfe9fdce">Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></h3>
-<div class="outline-text-3" id="text-orgfe9fdce">
+<h3 id="sannsynlighet-spillelista"><a id="orgfe9fdce"></a>Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-spillelista">
 <p>
 Jakob har en spilleliste med 20 sanger på mobilen sin. Fire av sangene på spillelisten er med artisten Kygo. Programmet spiller av sangene i tilfeldig rekkefølge (shuffle) med tilbakelegging. Det vil si at samme sang kan bli spilt av flere ganger etter hverandre.
 </p>
@@ -481,9 +574,10 @@ Jakob har en spilleliste med 20 sanger på mobilen sin. Fire av sangene på spi
 </dl>
 </div>
 </div>
+
 <div id="outline-container-orgc37e268" class="outline-3">
-<h3 id="orgc37e268">Nøklene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></h3>
-<div class="outline-text-3" id="text-orgc37e268">
+<h3 id="sannsynlighet-noeklene"><a id="orgc37e268"></a>Nøklene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-noeklene">
 <p>
 I en fabrikk er det to maskiner, maskin A og maskin B, som produserer samme type nøkler.
 </p>
@@ -510,9 +604,10 @@ Det viser seg at den valgte nøkkelen er defekt.
 </dl>
 </div>
 </div>
+
 <div id="outline-container-orgd6f3a44" class="outline-3">
-<h3 id="orgd6f3a44">Lottospillet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del2">del2</span></span></h3>
-<div class="outline-text-3" id="text-orgd6f3a44">
+<h3 id="sannsynlighet-lottospillet"><a id="orgd6f3a44"></a>Lottospillet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del2">del2</span></span></h3>
+<div class="outline-text-3" id="text-sannsynlighet-lottospillet">
 <p>
 I pengespillet Lotto legges 34 kuler i en beholder. Hver kule er nummerert med ett av tallene fra 1 til 34. Sju kuler trekkes tilfeldig uten tilbakelegging. Tallene på de sju kulene er vinnertallene.
 </p>

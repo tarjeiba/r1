@@ -136,8 +136,39 @@ h1.title {
 
 /* @end */
 
-/* @group Org Keywords */
 
+/* @group Lister */
+
+dl {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+dt {
+  float: left;
+  width: 5%;
+  /* adjust the width; make sure the total of both is 100% */
+  padding: 0;
+}
+
+dt:after {
+    content: ")";
+}
+		 
+
+dd {
+  float: left;
+  width: 95%;
+  /* adjust the width; make sure the total of both is 100% */
+  /* background: #dd0 */
+  padding: 0;
+  margin: 0 0 1em 0;
+}
+
+/* @end */
+
+/* @group Org Keywords */
 
 
 .todo {
@@ -151,7 +182,7 @@ h1.title {
 .tag {
     color: gray;
     text-transform: lowercase;
-    /* This will be obscured by the surrounding span tag, so blank everything. */
+    /* this will be obscured by the surrounding span tag, so blank everything. */
     background: #fff;
     border: none;
 	/* position: relative;
@@ -163,14 +194,14 @@ h1.title {
 }
 
 .timestamp-kwd  {
-	/* keyword associated with a time stamp, like SCHEDULED */
+	/* keyword associated with a time stamp, like scheduled */
 }
 
 .target {
 	/* target for links */
 }
 
-.NOTES {
+.notes {
     border: 1px solid #ccc;
     box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
@@ -181,7 +212,7 @@ h1.title {
     display: inline-block;
   }
 
-.LOESNING {
+.loesning {
     border-left: 6px solid #aaa;
     background-color: #eee;
     padding: 8pt;
@@ -189,12 +220,12 @@ h1.title {
 }
 
 
-div.LOESNING:before {
-    content: 'LØSNING';
+div.loesning:before {
+    content: 'løsning';
     font-weight: bold;
 }
 
-/* Bruker '+' for å velge direkte påfølgende, se */
+/* bruker '+' for å velge direkte påfølgende, se */
 /* https://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean */
 input[type=checkbox]:checked + .LOESNING {
    display: inline-block;
@@ -205,7 +236,7 @@ input[type=checkbox]:not(:checked) + .LOESNING {
 }
 
 
-.TASK {
+.task {
     border-left: 6px solid #aaa;
     background-color: #ccc;
     padding: 8pt;
@@ -217,13 +248,13 @@ input[type=checkbox]:not(:checked) + .LOESNING {
     margin-bottom: 0px !important;
 }
 
-.TASK .src {
+.task .src {
     padding: 0pt;
 }
 
 /* @end */
 
-/* @group Table of Contents */
+/* @group table of contents */
 
 #table-of-contents h2 {
 	letter-spacing: -0.1em;
@@ -236,7 +267,7 @@ input[type=checkbox]:not(:checked) + .LOESNING {
 
 /* @end */
 
-/* @group Outline Level 2 */
+/* @group outline level 2 */
 
 .outline-2 h2 {
     /* background: #6699ff; */
@@ -304,11 +335,11 @@ a:hover {
 
 
 /*********************************************************************************/
-/* Popup-vindu									 */
-/* Det følgende er hentet fra https://www.w3schools.com/howto/howto_js_popup.asp */
+/* popup-vindu									 */
+/* det følgende er hentet fra https://www.w3schools.com/howto/howto_js_popup.asp */
 /*********************************************************************************/
 
-/* Popup container */
+/* popup container */
 .popup {
     position: relative;
     cursor: pointer;
@@ -317,7 +348,7 @@ a:hover {
 }
 
 
-/* The actual popup (appears on top) */
+/* the actual popup (appears on top) */
 .popup .popuptext {
     visibility: hidden;
     width: 160px;
@@ -333,7 +364,7 @@ a:hover {
     margin-left: -80px;
 }
 
-/* Popup arrow */
+/* popup arrow */
 .popup .popuptext::after {
     content: "";
     position: absolute;
@@ -345,25 +376,25 @@ a:hover {
     border-color: #555 transparent transparent transparent;
 }
 
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
+/* toggle this class when clicking on the popup container (hide and show the popup) */
 .popup .show {
     visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
+    -webkit-animation: fadein 1s;
+    animation: fadein 1s
 }
 
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
+/* add animation (fade in the popup) */
+@-webkit-keyframes fadein {
     from {opacity: 0;} 
     to {opacity: 1;}
 }
 
-@keyframes fadeIn {
+@keyframes fadein {
     from {opacity: 0;}
     to {opacity:1 ;}
 }
 
-/* Foreslått css for inputfelt */
+/* foreslått css for inputfelt */
 
 /* #txt { */
 /*     border:none; */
