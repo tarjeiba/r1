@@ -26,21 +26,39 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** mandag
 *** Oppgavejobbing
 ** torsdag
+*** Statusoppdatering
+Oppgave: [[file:oppgaver.org::#sanns-regnvaersdagene][Regnværsdagene]]
+
 *** Binomiske forsøk
-- minimum           :: 3.70, 71, 72, 73, 74, 75
-- ytterligere       :: 3.171, 172, 174, 175, 176
-- uten hjelpemidler :: 3.207
-- med hjelpemidler  :: 3.178, 308, 309
+For å få hodet rundt binomiske forsøk, er vi nødt til å forstå hva binomialkoeffisienten gir oss. Husk at \[\binom{N}{K}\] gir oss antall måter vi kan velge $K$ ut av $N$ på.
+
+
+#+BEGIN_DEFINITION
+I et binomisk forsøk gjør vi $n$ uavhengige delforsøk og teller hvor mange ganger vi får en hending $A$. I hvert delforsøk er sannsynligheten for hending $A$ lik $p$. La $X$ være antallet ganger $A$ inntreffer. Sannsynligheten for at $A$ inntreffer nøyaktig $k$ ganger, er
+\[P(X=k) = \binom{n}{k}\cdot p^{k}\cdot (1-p)^{n-k}\]
+#+END_DEFINITION
+
+| *minimum*          | 3.70, 71, 72, 73, 74, 75  |
+| *ytterligere*      | 3.171, 172, 174, 175, 176 |
+| *utenhjelpemidler* | 3.207                     |
+| *medhjelpemidler*  | 3.178, 308, 309           |
+
 *** Hypergeometriske forsøk
-- minimum           :: 3.80, 81, 82, 83, 84, 85, 86
-- ytterligere       :: 3.181, 182, 183, 184,
-- uten hjelpemidler :: 3.208, 209, 210, 211
-- med hjelpemidler  :: 3.310
+#+BEGIN_DEFINITION
+I et hypergeometrisk forsøk har vi $n$ gjenstander av to typer. Det er $n_1$ gjenstander av type 1 og $n_2$ gjenstander av type 2. Vi trekker tilfeldig $k$ gjenstander uten tilbakelegging. Sannsynligheten for å få $k_1$ gjenstander av type 1 og $k_2$ gjenstander av type 2 er da
+\[\frac{ \binom{n_1}{k_1}\cdot \binom{n_2}{k_2} }{\binom{n}{k} }\]
+#+END_DEFINITION
+
+| *minimum*          | 3.80, 81, 82, 83, 84, 85, 86 |
+| *ytterligere*      | 3.181, 182, 183, 184,        |
+| *utenhjelpemidler* | 3.208, 209, 210, 211         |
+| *medhjelpemidler*  | 3.310                        |
+
 *** Valg av sannsynlighetsmodell
-- minimum           :: 3.90, 91, 92, 93
-- ytterligere       :: 3.181, 182, 183, 184,
-- uten hjelpemidler :: 3.208, 209, 210, 211
-- med hjelpemidler  :: 3.310- ytterligere
+| *minimum*          | 3.90, 91, 92, 93      |
+| *ytterligere*      | 3.181, 182, 183, 184, |
+| *utenhjelpemidler* | 3.208, 209, 210, 211  |
+| *medhjelpemidler*  | 3.310                 |
 
 * uke 35
 ** mandag
@@ -137,12 +155,10 @@ Her leser vi det nye elementet som følger:
 Finn et eksempel som viser at denne formelen stemmer.
 #+END_TASK
 
-- minimum :: 3.10, 11, 12, 13, 14, 15, 20, 21, 22, 23
-- ytterligere :: 3.110, 111, 113, 115, 120, 121, 123, 124, 125, 126, 127, 128
-- uten hjelpemidler :: 3.200, 201, 203, 204
-- med hjelpemidler :: 3.300, 301, 302, 303, 304
-
-     
+| *minimum*          | 3.10, 11, 12, 13, 14, 15, 20, 21, 22, 23                     |
+| *ytterligere*      | 3.110, 111, 113, 115, 120, 121, 123, 124, 125, 126, 127, 128 |
+| *utenhjelpemidler* | 3.200, 201, 203, 204                                         |
+| *medhjelpemidler*  | 3.300, 301, 302, 303, 304                                    |
 ** torsdag
 *** Oppklaring oppgave 3.33
 **** *Oppgavetekst*
@@ -187,11 +203,12 @@ Utled formelen ut fra de to foregående definisjonene.
 To hendinger $A$ og $B$ er uavhengige hvis $P(A|B)=P(A)$, eller hvis $P(B|A)=P(B)$.
 #+END_DEFINITION
 
-- minimum :: 3.30, 31, 32, 33, 34, 40, 41, 42, 43, 44, 45, 46
-- ytterligere :: 3.130, 131, 132, 133, 140, 142, 143, 144, 145
-- uten hjelpemidler :: 3.202 (hopp over denne om du heter Dag), 204
+| *minimum*          | 3.30, 31, 32, 33, 34, 40, 41, 42, 43, 44, 45, 46 |
+| *ytterligere*      | 3.130, 131, 132, 133, 140, 142, 143, 144, 145    |
+| *utenhjelpemidler* | 3.202 (hopp over denne om du heter Dag), 204     |
 *** Ordnede utvalg
 *** Uordnede utvalg
+
 
 * uke 34
 :PROPERTIES:
