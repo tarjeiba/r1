@@ -15,6 +15,7 @@
 :PROPERTIES:
 :CUSTOM_ID: sanns-regnvaersdagene
 :END:
+
 #+BEGIN_NOTES
 Inspirert av «Logic -- A very short introduction» av Graham Pries, Oxford University Press, 2000
 #+END_NOTES

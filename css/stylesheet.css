@@ -201,7 +201,7 @@ dd {
 	/* target for links */
 }
 
-.notes {
+.NOTES {
     border: 1px solid #ccc;
     box-shadow: 3px 3px 3px #eee;
     padding: 8pt;
@@ -209,10 +209,10 @@ dd {
     /* margin: 1.2em; */
     margin: auto;
     align: center;
-    display: inline-block;
+    display: none;
   }
 
-.loesning {
+.LOESNING {
     border-left: 6px solid #aaa;
     background-color: #eee;
     padding: 8pt;
