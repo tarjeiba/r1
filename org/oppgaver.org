@@ -176,7 +176,7 @@ Jakob har en spilleliste med 20 sanger på mobilen sin. Fire av sangene på spi
 - b :: Jakob vil høre på fem avspillinger fra spillelisten. Bestem sannsynligheten for at nøyaktig to av sangene han spiller, er med Kygo.
 - c :: Hvor mange avspillinger må han høre på for at sannsynligheten for å høre minst én sang med Kygo skal være større enn 90 %?
 
-** Nøklene :eksamen:h16:del1:
+** Nøklene                                                                 :eksamen:h16:del1:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-noeklene
 :END:
