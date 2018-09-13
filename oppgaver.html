@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-09-06 to. 09:41 -->
+<!-- 2018-09-13 to. 21:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgavesamling i R1</title>
@@ -73,7 +73,7 @@ for the JavaScript code in this tag.
 */
 
 <!--/*--><![CDATA[/*><!--*/
-org_html_manager.set("TOC_DEPTH", "2");
+org_html_manager.set("TOC_DEPTH", "1");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
@@ -161,19 +161,7 @@ for the JavaScript code in this tag.
 <h2>Innhold</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgc0cbe26">Sannsynlighetsregning</a>
-<ul>
-<li><a href="#sanns-regnvaersdagene">Regnværsdagene</a></li>
-<li><a href="#sanns-detoterningene">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#sannsynlighet-zombietesten">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#sannsynlighet-laderne">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#sannsynlighet-flyselskapet">Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></a></li>
-<li><a href="#sannsynlighet-noekkelboksene">Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#sannsynlighet-spillelista">Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></a></li>
-<li><a href="#sannsynlighet-noeklene">Nøklene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#sannsynlighet-lottospillet">Lottospillet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del2">del2</span></span></a></li>
-</ul>
-</li>
+<li><a href="#orgc0cbe26">Sannsynlighetsregning</a></li>
 </ul>
 </div>
 </div>
@@ -199,35 +187,57 @@ Turid fører statistikk over været. Hun har definert seg hendelesene \(V\) for 
 
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
 <tr>
-<th>&#xa0;</th>
-<th>man</th>
-<th>tirs</th>
-<th>ons</th>
-<th>tors</th>
-<th>fre</th>
-<th>lør</th>
-<th>søn</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">man</th>
+<th scope="col" class="org-left">tirs</th>
+<th scope="col" class="org-left">ons</th>
+<th scope="col" class="org-left">tors</th>
+<th scope="col" class="org-left">fre</th>
+<th scope="col" class="org-left">lør</th>
+<th scope="col" class="org-left">søn</th>
 </tr>
+</thead>
+<tbody>
 <tr>
-<td>\(V\)</td>
-<td>&#xa0;</td>
-<td>&#xa0;</td>
-<td>✓</td>
-<td>✓</td>
-<td>&#xa0;</td>
-<td>✓</td>
-<td>✓</td>
+<td class="org-left">\(V\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">✓</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">✓</td>
 </tr>
+
 <tr>
-<td>\(R\)</td>
-<td>&#xa0;</td>
-<td>✓</td>
-<td>✓</td>
-<td>&#xa0;</td>
-<td>&#xa0;</td>
-<td>✓</td>
-<td>&#xa0;</td>
+<td class="org-left">\(R\)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">✓</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">✓</td>
+<td class="org-left">&#xa0;</td>
 </tr>
 </tbody>
 </table>
@@ -501,6 +511,23 @@ Flyselskapet ønsker at sannsynligheten skal være minst 95 % for at alle som m
 <dl class="org-dl">
 <dt>c</dt><dd>Hvor mange billetter kan flyselskapet maksimalt selge da?</dd>
 </dl>
+
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+<div class="LOESNING">
+<dl class="org-dl">
+<dt>a</dt><dd>For at vi skal kunne bruke en binomisk sannsynlighetsmodell alle delforsøkene (her, hvorvidt en person møter opp til flyet eller ei) være uavhengige av hverandre. Dette virker som en antagelse det er lett å ha motforestillinger til (som i at hvis en i familien ikke kommer, kommer ikke de andre heller), men det har neppe mye å si for konklusjonene i denne oppgaven.</dd>
+<dt>b</dt><dd>Til denne oppgaven kan vi bruke sannsynlighetskalkulatoren i Geogebra. Det mest naturlige blir å definere \(n\) som antall solgte billetter, her 122, og \(p\) som sannsynligheten for at en enkeltperson møter opp, her 94 %. Alle får plass på flyet dersom 116 eller færre personer møter opp, vi skal altså finne \(P(X\leq 116)\). Vi ser fra sannsynlighetskalkulatorutklippet under at det 75 % sannsynlig at alle som møter får plass på flyet.</dd>
+</dl>
+<p>
+<img src="figurer/oppgaver_20180913_214648.png" alt="oppgaver_20180913_214648.png"/>
+</p>
+
+<dl class="org-dl">
+<dt>c</dt><dd>Dersom flyselskapet ønsker at det skal være minst 95 % sannsynlig at alle som møter får plass på flyet, må de altså selge et antall mellom 116 (alle får garantert plass) og 122 (75 % sannsynlig at alle får plass) billetter. Ved å endre \(n\) i sannsynlighetskalkulatoren, finner vi at ved 119 solgte billetter, er det 98 % sannsynlig at alle som møter opp får plass, mens det ved 120 solgte billetter er 93 % sannsynlig at alle som møter opp får plass. Dersom de ønsker at det skal være minst 95 % sannsynlig at alle som møter opp får plass, kan de med andre ord ikke selge flere enn 119 billetter.</dd>
+</dl>
+
+</div>
 </div>
 </div>
 

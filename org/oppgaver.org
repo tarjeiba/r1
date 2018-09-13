@@ -147,6 +147,18 @@ Flyselskapet ønsker at sannsynligheten skal være minst 95 % for at alle som m
 
 - c :: Hvor mange billetter kan flyselskapet maksimalt selge da?
 
+#+BEGIN_EXPORT html
+<label for="toggle-1">Vis løsning: </label>
+<input type="checkbox" id="toggle-1">
+#+END_EXPORT
+#+BEGIN_LOESNING
+- a :: For at vi skal kunne bruke en binomisk sannsynlighetsmodell alle delforsøkene (her, hvorvidt en person møter opp til flyet eller ei) være uavhengige av hverandre. Dette virker som en antagelse det er lett å ha motforestillinger til (som i at hvis en i familien ikke kommer, kommer ikke de andre heller), men det har neppe mye å si for konklusjonene i denne oppgaven.
+- b :: Til denne oppgaven kan vi bruke sannsynlighetskalkulatoren i Geogebra. Det mest naturlige blir å definere $n$ som antall solgte billetter, her 122, og $p$ som sannsynligheten for at en enkeltperson møter opp, her 94 %. Alle får plass på flyet dersom 116 eller færre personer møter opp, vi skal altså finne $P(X\leq 116)$. Vi ser fra sannsynlighetskalkulatorutklippet under at det 75 % sannsynlig at alle som møter får plass på flyet.
+[[fig:oppgaver_20180913_214648.png]]
+
+- c :: Dersom flyselskapet ønsker at det skal være minst 95 % sannsynlig at alle som møter får plass på flyet, må de altså selge et antall mellom 116 (alle får garantert plass) og 122 (75 % sannsynlig at alle får plass) billetter. Ved å endre $n$ i sannsynlighetskalkulatoren, finner vi at ved 119 solgte billetter, er det 98 % sannsynlig at alle som møter opp får plass, mens det ved 120 solgte billetter er 93 % sannsynlig at alle som møter opp får plass. Dersom de ønsker at det skal være minst 95 % sannsynlig at alle som møter opp får plass, kan de med andre ord ikke selge flere enn 119 billetter.
+#+END_LOESNING
+
 ** Nøkkelboksene :eksamen:h17:del1:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-noekkelboksene
