@@ -30,8 +30,16 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** mandag
 Vurdering
 Dette dekker hele kapittel 3 (Sannsynlighetsregning), samt 1.1 og 1.2
-* uke 38                                                                            :noexport:
+* uke 38
 ** mandag
+*Øveprøve gitt klassen til Fredrik*
+- Del 1 [[file:docx/R1 - Test - Sannsynlighet del 1.docx]]
+- Del 2 [[file:docx/R1 - Test - Sannsynlighet del 2.docx]]
+
+Merk, dette er i all hovedsak eksamensoppgaver.
+
+Det kan også være en idé å se på Cappelen Damms nettsted for boka. Der finner du kontrolloppgaver til [[http://sinus-r1.cappelendamm.no/binfil/download2.php?tid=2335925&h=8c271addcb9dd3d205d55a97691bd7a5&sec_tid=2310926][Sannsynlighetsregning]] ([[http://sinus-r1.cappelendamm.no/binfil/download2.php?tid=2335935&h=92269eb6d8014e81c40a0b17d5eb5037&sec_tid=2310926][LF]]) og [[http://sinus-r1.cappelendamm.no/binfil/download2.php?tid=2312365&h=a11ec766bfac2122c02b04be001093e4&sec_tid=2310918][Algebra]] ([[http://sinus-r1.cappelendamm.no/binfil/download2.php?tid=2312367&h=de2c81220b50814c75b30a2df9af42d8&sec_tid=2310918][LF]]). Fra Algebra-kapittelet er det kun oppgave 1 som er relevant til vår prøve mandag 24. september.
+
 ** torsdag
 * uke 37
 ** mandag
