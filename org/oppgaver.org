@@ -9,7 +9,6 @@
 (add-to-list 'org-html-infojs-options '(sdepth . "2"))
 #+END_SRC
 
-
 * Sannsynlighetsregning
 ** Regnværsdagene
 :PROPERTIES:
@@ -37,8 +36,12 @@ Ved å bruke tabellen over, hva er...
 
 ...og, til slutt...
 - g :: bruk Bayes' setning til å kontrollere *f* ved hjelp av svarene du fikk i *a* til *e*.
+** Luremynten                                                                         :bayes:
+I en sekk med ti mynter, er en av myntene slik at den har /mynt/ på begge sider, dette er luremynten. De øvrige er «vanlige» og har dermed en side /mynt/ og en side /kron/.
 
-** De to terningene :betinget:utfordring:løsning:
+- a :: Vi trekker en mynt og kaster den, det blir /mynt/. Hva er sannsynligheten for at vi trakk luremynten?
+- b :: Vi trekker atter en mynt (mynten fra forrige oppgave er lagt tilbake). Med denne kaster vi /mynt/ to ganger på rad. Hva er nå sannsynligheten for at vi trakk luremynten?
+** De to terningene                                             :betinget:utfordring:løsning:
 :PROPERTIES:
 :CUSTOM_ID: sanns-detoterningene
 :END:
@@ -72,7 +75,7 @@ Siden det er 11 ruter med ~O~ eller ~X~, og én rute med ~X~, er sannsynligheten
 $$P(T_1 \cap T_2 | T_1 \cup t_2) = \frac{1}{11}$$
 #+END_LOESNING
 
-** Zombietesten :bayes:utfordring:løsning:
+** Zombietesten                                                    :bayes:utfordring:løsning:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-zombietesten
 :END:
@@ -96,7 +99,7 @@ Vi definerer følgende hendelser:
 En test som er 99 % sikker vil vise feil 1 % av gangen, om vi da tester hele landet, vil omtrent 1 % av 5 millioner få positivt svar, altså 50 000 personer. Sannsynligheten for at du er en av 250 personene som faktisk er smittet, er da $$P(Z|P)=250/50000=0.005$$ Sannsynligheten for at du har viruset er med andre ord omtrent 0.5 %.
 #+END_LOESNING
 
-** Laderne :eksamen:v18:del1:løsning:
+** Laderne                                                         :eksamen:v18:del1:løsning:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-laderne
 :END:
@@ -129,7 +132,7 @@ Vi kan sortere informasjonen fra oppgava som følger:
 - b :: Vi veit her at en lader er defekt, og vi ønsker å finne sannsynligheten for at den er fra A, altså er vi ute etter $P(A|D)$. Vi kan finne denne ved å bruke Bayes' setning, som $$P(A|D)=\frac{P(A)\cdot P(D|A)}{P(D)},$$ hvor det eneste vi mangler for å kunne løse oppgaven er $P(D)$. Denne kan vi finne ved å bruke total sannsynlighet, og vi får $$P(D)=P(D|A)\cdot P(A) + P(D|\bar{A})\cdot P(\bar{A}),$$ hvor vi bruker at $\bar{A}$ er det sammme som $B$, siden $A$ og $B$ sammen utgjør hele hendelsesrommet. Satt inn får vi da $$P(D)=0.03\cdot 0.40 + 0.02\cdot 0.60=0.024$$Vi kan da løse for $P(A|D)$ som $$P(A|D)=\frac{0.40\cdot 0.03}{0.024}=0.50$$Altså er det 50 % sannsynlig at en tilfeldig defekt lader kommer fra A, til tross for at B leverer flere ladere.
 #+END_LOESNING
 
-** Flyselskapet :eksamen:v18:del2:
+** Flyselskapet                                                            :eksamen:v18:del2:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-flyselskapet
 :END:
@@ -159,7 +162,7 @@ Flyselskapet ønsker at sannsynligheten skal være minst 95 % for at alle som m
 - c :: Dersom flyselskapet ønsker at det skal være minst 95 % sannsynlig at alle som møter får plass på flyet, må de altså selge et antall mellom 116 (alle får garantert plass) og 122 (75 % sannsynlig at alle får plass) billetter. Ved å endre $n$ i sannsynlighetskalkulatoren, finner vi at ved 119 solgte billetter, er det 98 % sannsynlig at alle som møter opp får plass, mens det ved 120 solgte billetter er 93 % sannsynlig at alle som møter opp får plass. Dersom de ønsker at det skal være minst 95 % sannsynlig at alle som møter opp får plass, kan de med andre ord ikke selge flere enn 119 billetter.
 #+END_LOESNING
 
-** Nøkkelboksene :eksamen:h17:del1:
+** Nøkkelboksene                                                           :eksamen:h17:del1:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-noekkelboksene
 :END:
@@ -178,7 +181,7 @@ For en annen type nøkkelboks lages en kode ved å belge et bestemt antall forsk
 - b :: Hvor mange ulike koder finnes det for denne typen nøkkelboks dersom koden skal bestå av fire forskjellige tall?
 - c :: Hvor mange tall må koden bestå av for at antallet mulige koder skal bli størst mulig? Hvor mange mulige koder er det da?
 
-** Spillelista :eksamen:h17:del2:
+** Spillelista                                                             :eksamen:h17:del2:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-spillelista
 :END:
@@ -206,7 +209,7 @@ Det viser seg at den valgte nøkkelen er defekt.
 
 - b :: Bestem sannsynligheten for at nøkkelen ble produsert av maskin A.
 
-** Lottospillet :eksamen:h16:del2:
+** Lottospillet                                                            :eksamen:h16:del2:
 :PROPERTIES:
 :CUSTOM_ID: sannsynlighet-lottospillet
 :END:
