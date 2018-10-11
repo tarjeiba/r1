@@ -26,20 +26,17 @@ Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer
 #+END_QUOTE
 
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
-
-
-
-* uke 44
+* uke 44                                                                            :noexport:
 ** torsdag                                                                         :noexport:
 ** mandag                                                                          :noexport:
-* uke 43
+* uke 43                                                                            :noexport:
 ** torsdag                                                                         :noexport:
 ** mandag                                                                          :noexport:
-* uke 42
+* uke 42                                                                            :noexport:
 ** torsdag                                                                         :noexport:
 ** mandag                                                                          :noexport:
 * uke 41
-** torsdag                                                                         :noexport:
+** torsdag
 *** Faktorisering av polynomer
 | *minimum*           | 1.60, 61, 62, 63, 64, 65, 66 |
 | *ytterligere*       | 1.160, 164, 167, 168, 169    |
