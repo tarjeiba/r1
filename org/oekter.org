@@ -32,9 +32,11 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 43                                                                            :noexport:
 ** torsdag                                                                         :noexport:
 ** mandag                                                                          :noexport:
-* uke 42                                                                            :noexport:
+* uke 42
 ** torsdag                                                                         :noexport:
-** mandag                                                                          :noexport:
+** mandag
+
+
 * uke 41
 ** torsdag
 *** Faktorisering av polynomer

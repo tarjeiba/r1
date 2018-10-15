@@ -1,4 +1,4 @@
-#+SETUPFILE:orgheader.org
+q#+SETUPFILE:orgheader.org
 #+TITLE:Oppgavesamling i R1
 
 #+BEGIN_EXPORT html
@@ -10,6 +10,10 @@
 #+END_SRC
 
 * Sannsynlighetsregning
+:PROPERTIES:
+:custom_id: sannsynlighetsregning
+:END:
+
 ** Regnværsdagene
 :PROPERTIES:
 :CUSTOM_ID: sanns-regnvaersdagene
@@ -37,6 +41,9 @@ Ved å bruke tabellen over, hva er...
 ...og, til slutt...
 - g :: bruk Bayes' setning til å kontrollere *f* ved hjelp av svarene du fikk i *a* til *e*.
 ** Luremynten                                                                         :bayes:
+:PROPERTIES:
+:custom_id: luremynten
+:END:
 I en sekk med ti mynter, er en av myntene slik at den har /mynt/ på begge sider, dette er luremynten. De øvrige er «vanlige» og har dermed en side /mynt/ og en side /kron/.
 
 - a :: Vi trekker en mynt og kaster den, det blir /mynt/. Hva er sannsynligheten for at vi trakk luremynten?
@@ -228,3 +235,22 @@ $$3, 5, 11, 18, 21, 25, 32$$
 Tore ser lottotrekningen på TV. etter at det er trukket ut fire tall, går strømmen, og TV-en går i svart. Tallene som til da er trukket ut, er 5, 21, 3, og 11.
 
 - c :: Bestem sannsynligheten for at Tore får sju rette på lottokupongen sin.
+
+
+* Algebra
+:PROPERTIES:
+:custom_id: algebra
+:END:
+** Forenkling                                                              :eksamen:v18:del1:
+:PROPERTIES:
+:custom_id: forenkling
+:END:
+Skriv så enkelt som mulig \[\frac{1}{2x-2} + \frac{2}{x-3} - \frac{x-2}{x^2 - 4x + 3}\] 
+** Divisjon som går opp                                                    :eksamen:v18:del1:
+:PROPERTIES:
+:custom_id: divisjonsomgaaropp
+:END:
+Funksjonen $f$ er gitt ved \[f(x) = x^3 + k\cdot x + 12\]
+- a :: Bestem $k$ slik at divisjonen $f(x):(x-1)$ går opp.
+- b :: Sett inn verdien for $k$ fra oppgave a), og bruk blant annet polynomdivisjon til skrive $f(x)$ som et produkt av lineære faktorer.
+- c :: Løs ulikheten \[\frac{x^2 - x - 12}{x - 1} > 0\]
