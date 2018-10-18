@@ -9,7 +9,6 @@
 
 ** Fredriks periodeplan
 [[https://udeoslokommuneno-my.sharepoint.com/:w:/r/personal/frwoa003_osloskolen_no/_layouts/15/Doc.aspx?sourcedoc=%257B7B9B6F50-5A41-45C2-ADDC-13645CBCC975%257D&file=R1%2520-%2520Gjeldende%2520periodeplan.docx&action=default&mobileredirect=true][Forhåpentligvis fungerende lenke]]
-
 ** Polynomdivisjon
 Det følgende er hentet fra «Kort innføring i polynomdivisjon for MAT 1100». Her ønsker jeg kun å se på mulighetene for et direkte bevis av at $P(a)=r$ dersom vi forsøker å gjennomføre divisjonen $P(x):(x-a)$.
 
@@ -26,15 +25,48 @@ Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer
 #+END_QUOTE
 
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
+
 * uke 44                                                                            :noexport:
 ** torsdag                                                                         :noexport:
 ** mandag                                                                          :noexport:
 * uke 43                                                                            :noexport:
 ** torsdag                                                                         :noexport:
+Repetisjonstid
+
 ** mandag                                                                          :noexport:
+
+*** Eksponentielle ulikheter
+| *minimum*     | 2.30, 31, 32, 33, 34 |
+| *ytterligere* | 2.130, 131, 132      |
+
+*** Likninger og ulikheter med $\lg x$
+| *minimum*           | 2.40, 41, 42, 43, 44      |
+| *ytterligere*       | 2.140, 141, 142, 143, 144 |
+| *uten hjelpemidler* | 2.204                     |
+| *med hjelpemidler*  | 2.304                     |
+
 * uke 42
-** torsdag                                                                         :noexport:
+** torsdag
+*** Rasjonale ulikheter
+| *minimum*           | 1.90, 91, 92, 93, 94 |
+| *ytterliger*        | 1.191, 192,          |
+| *uten hjelpemidler* | 1.218                |
+
+*** Briggske logaritmer
+| *minumum*           | 2.10, 11, 12, 13, 14, 15, 16 |
+| *ytterligere*       | 2.110, 111, 112, 113, 114    |
+| *uten hjelpemidler* | 2.220                        |
+
+*** Eksponentiallikninger
+| *minimum*           | 2.20, 21, 22                   |
+| *ytterligere*       | 2.120, 121, 122, 123, 124, 125 |
+| *uten hjelpemidler* | 2.202                          |
+| *med hjelpemidler*  | 2.300, 301                     |
+
 ** mandag
+*** Rasjonale likninger
+| *minimum*     | 1.80, 81, 82, 83 |
+| *ytterligere* | 1.181, 182       |
 
 
 * uke 41
