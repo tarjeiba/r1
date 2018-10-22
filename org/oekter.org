@@ -29,11 +29,11 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 44                                                                            :noexport:
 ** torsdag                                                                         :noexport:
 ** mandag                                                                          :noexport:
-* uke 43                                                                            :noexport:
-** torsdag                                                                         :noexport:
+* uke 43
+** torsdag
 Repetisjonstid
 
-** mandag                                                                          :noexport:
+** mandag
 
 *** Eksponentielle ulikheter
 | *minimum*     | 2.30, 31, 32, 33, 34 |
@@ -67,7 +67,6 @@ Repetisjonstid
 *** Rasjonale likninger
 | *minimum*     | 1.80, 81, 82, 83 |
 | *ytterligere* | 1.181, 182       |
-
 
 * uke 41
 ** torsdag
