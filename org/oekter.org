@@ -33,6 +33,17 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** torsdag
 Repetisjonstid
 
+*Forberedelsestemaer til prøva:*
+
+*** Forenkling av logaritmeuttrykk
+2.112, 2.113
+
+*** Polynomfunksjoner og rasjonale uttrykk
+1.314, 1.226, 1.222, 1.231, 1.232
+
+*** Likninger og ulikheter
+2.120, 2.123, 2.131, 2.131, 2.140, 2.141, 2.142
+
 ** mandag
 
 *** Eksponentielle ulikheter
