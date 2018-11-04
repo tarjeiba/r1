@@ -34,8 +34,8 @@ Vi skal regne ut $(1 + t)^{1/t}$ for lavere og lavere verdier av $t$. Bruk Geoge
 1. I hodet, definer «høy» til å være en verdi over fem. I Geogebra, sett antall desimaler til å være en høy verdi.
 2. Åpne CAS. Du trenger ingen øvrige vinduer i Geogebra.
 3. Definer funksjonen $f(x) = (1 + t)^{1/t}$ ved å skrive ~f(x) := (1 + t)^(1/t)~ i CAS. Merk at det er vesentlig å skrive ~:=~, ikke kun ~=~. Vi skal her fortelle CAS om en ny funksjon, $f(x)$, ikke løse en likning.
-4. Regn ut $f(0.1)$ i CAS ved å skrive ~f(0.1)~ og å trykke på $\approx$-knappen. Forsøk gjerne det samme, ved å trykke på $=$-knappen òg.
-5. Gjenta gjenta 4. for $x$-verdiene ~0.01~, ~0.001~, ~0.0001~, ~0.00001~, ~0.000001~, ~0.0000001~, ~0.00000001~, og ~0.000000001~.
+4. Regn ut $f(0.1)$ i CAS ved å skrive ~f(0.1)~ og å trykke på $\approx$ -knappen. Forsøk gjerne det samme, ved å trykke på $=$ -knappen òg.
+5. Gjenta gjenta 4. for $x$ -verdiene ~0.01~, ~0.001~, ~0.0001~, ~0.00001~, ~0.000001~, ~0.0000001~, ~0.00000001~, og ~0.000000001~.
 6. Kommenter svaret ditt fra 5.
 
 *Selvstudie del 2 - tilsynelatende uavhengig av del 1*
@@ -56,10 +56,10 @@ Her er det jeg vil du skal gjøre.
 
 1. Tegn et koordinatsystem på arket foran deg. La det spenne fra verdiene $x=-10$ til $x=10$.
 2. Start ved å markere punktet $(0,1)$.
-3. Tegn en linje som går gjennom dette punktet, og la linja ha stigningstallet 1, altså det samme som $y$-verdien til punktet.
-4. Flytt deg en $x$-verdi bortover denne linja, i positiv retning, til punktet $(1, 2)$. Gjenta 3. for dette nye punktet.
+3. Tegn en linje som går gjennom dette punktet, og la linja ha stigningstallet 1, altså det samme som $y$ -verdien til punktet.
+4. Flytt deg en $x$ -verdi bortover denne linja, i positiv retning, til punktet $(1, 2)$. Gjenta 3. for dette nye punktet.
 5. Så lenge du har plass, gjenta 4. for denne nye linja.
-6. Når du går tom for plass i positiv retning ($y$-aksen blir fort for kort), forsøk å gå bakover, men da kan du ikke gå i heltallssteg (du ønsker /ikke/ å komme under $x$-aksen).
+6. Når du går tom for plass i positiv retning ($y$ -aksen blir fort for kort), forsøk å gå bakover, men da kan du ikke gå i heltallssteg (du ønsker /ikke/ å komme under $x$ -aksen).
 
 Pust lettet ut. Du er ferdig med oppgaven.
 
