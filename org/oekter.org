@@ -50,7 +50,7 @@ Vi skal regne ut $(1 + t)^{1/t}$ for lavere og lavere verdier av $t$. Bruk Geoge
 
 1. I hodet, definer «høy» til å være en verdi over fem. I Geogebra, sett antall desimaler til å være en høy verdi.
 2. Åpne CAS. Du trenger ingen øvrige vinduer i Geogebra.
-3. Definer funksjonen $f(x) = (1 + t)^{1/t}$ ved å skrive ~f(x) := (1 + t)^(1/t)~ i CAS. Merk at det er vesentlig å skrive ~:=~, ikke kun ~=~. Vi skal her fortelle CAS om en ny funksjon, $f(x)$, ikke løse en likning.
+3. Definer funksjonen $f(t) = (1 + t)^{1/t}$ ved å skrive ~f(t) := (1 + t)^(1/t)~ i CAS. Merk at det er vesentlig å skrive ~:=~, ikke kun ~=~. Vi skal her fortelle CAS om en ny funksjon, $f(t)$, ikke løse en likning.
 4. Regn ut $f(0.1)$ i CAS ved å skrive ~f(0.1)~ og å trykke på $\approx$ -knappen. Forsøk gjerne det samme, ved å trykke på $=$ -knappen òg.
 5. Gjenta gjenta 4. for $x$ -verdiene ~0.01~, ~0.001~, ~0.0001~, ~0.00001~, ~0.000001~, ~0.0000001~, ~0.00000001~, og ~0.000000001~.
 6. Kommenter svaret ditt fra 5.
