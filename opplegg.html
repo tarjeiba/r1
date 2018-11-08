@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-11-02 Fri 11:28 -->
+<!-- 2018-11-02 Fri 12:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgavesamling i R1</title>
@@ -173,13 +173,10 @@ for the JavaScript code in this tag.
 <p>
 Vi skal nå komme oss dit hvor vi kan løse følgende eksamensoppgave:
 </p>
-</div>
 
-<div id="outline-container-orgcdf2328" class="outline-3">
-<h3 id="orgcdf2328">Logaritmefunksjon</h3>
-<div class="outline-text-3" id="text-orgcdf2328">
+<div class="TASK">
 <p>
-Funksjonen \(f\) er gitt ved \[f(x)\]
+Funksjonen \(f\) er gitt ved \[f(x) = 2 \ln (x^2 - 4) - \frac{1}{2} x\]
 </p>
 <dl class="org-dl">
 <dt>a</dt><dd>Bruk graftegner til å tegne grafen til \(f\) når \(x \in \langle -4, 16 \rangle\).</dd>
@@ -193,15 +190,104 @@ Funksjonen \(g\) er gitt ved \[g(x) = 2\ln (x^2 + k) - \frac{1}{2}x,\quad k>0.\]
 <dt>c</dt><dd>Bruk CAS til å bestemme \(k\) slik at \(g\) har et ekstremalpunkt i \(x-1\).</dd>
 <dt>d</dt><dd>Bruk blant annet CAS til å bestemme hvor mange ekstremalpunkt \(g\) har for ulike verdier av \(k\).</dd>
 </dl>
+
 </div>
+
+<p>
+Veien dit, leder via CAS som kalkulator og som likningsløser.
+</p>
 </div>
 
 <div id="outline-container-orgc1db89d" class="outline-3">
 <h3 id="orgc1db89d">Som kalkulator</h3>
 <div class="outline-text-3" id="text-orgc1db89d">
 <p>
-Aller førs
+Aller først, må vi føle oss trygge på at vi klarer å bruke CAS som kalkulator. Da er det i utgangspunktet følgende knapper vi er interessert i:
+</p>
+
+<p>
 <img src="figurer/cas-knapper.png" alt="cas-knapper.png"/>
+</p>
+
+<p>
+Her har vi «eksakt utregning»-knappen, «numerisk utregning»-knappen og «behold inntasting»-knappen. Test hva de ulike knappene gjør med følgende beregninger.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Utregning</th>
+<th scope="col" class="org-left">Inntasting</th>
+<th scope="col" class="org-left">Kommentar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">\(2\cdot 2\)</td>
+<td class="org-left"><code>2 * 2</code></td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">$\frac{1}{2}+3</td>
+<td class="org-left"><code>1/2 "hp" + 3</code></td>
+<td class="org-left"><code>"hp"</code> er «høyrepil» på tastaturet</td>
+</tr>
+
+<tr>
+<td class="org-left">\(2 + a + 2a\)</td>
+<td class="org-left"><code>2 + a + 2 a</code></td>
+<td class="org-left">Legg merke til mellomrommet i <code>2 a</code></td>
+</tr>
+
+<tr>
+<td class="org-left">\(2 + \lg a\)</td>
+<td class="org-left"><code>2 + lg(a)</code></td>
+<td class="org-left">Legg merke til CAS' håndtering av logaritmer</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div id="outline-container-org20e1868" class="outline-3">
+<h3 id="org20e1868">Som likningsløser</h3>
+<div class="outline-text-3" id="text-org20e1868">
+<p>
+Videre kan vi bruke CAS til å løse likninger. La oss forsøke å løse likninga \[2x^2 - 5x + 3 = 0.\] Om vi her gyver løs med abc-formelen, får vi \[x = \frac{-(-5) \pm \sqrt{(-5)^2 - 4\cdot 2 \cdot 3}{2 \cdot 2} = 1 \vee \frac{3}{2}.\]
+</p>
+
+<p>
+Dette kunne vi sjølsagt også ha løst med CAS som kalkulator, med følgende linjer
+</p>
+
+<p>
+<img src="figurer/cas-uttrykk-abc.png" alt="cas-uttrykk-abc.png"/>
+</p>
+
+<p>
+Enda enklere blir det om vi skriver likninga direkte inn i CAS, sjekker inntastinga, og velger en av likningsløsningsknappene.
+</p>
+
+<p>
+<img src="figurer/cas-likningsknapper.png" alt="cas-likningsknapper.png"/>
+</p>
+
+<p>
+Under taster jeg først inn i likninga i rad en, som så kan refereres til via <code>$1</code>, som jeg så løser eksakt med <img src="figurer/cas-knapp-eksakt.png" alt="cas-knapp-eksakt.png"/>-knappen og så numerisk med <img src="figurer/cas-knapp-numerisk.png" alt="cas-knapp-numerisk.png"/>-knappen.
+</p>
+
+<p>
+<img src="figurer/cas-likningssolve.png" alt="cas-likningssolve.png"/>
 </p>
 </div>
 </div>

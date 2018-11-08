@@ -236,7 +236,6 @@ Tore ser lottotrekningen på TV. etter at det er trukket ut fire tall, går str�
 
 - c :: Bestem sannsynligheten for at Tore får sju rette på lottokupongen sin.
 
-
 * Algebra
 :PROPERTIES:
 :custom_id: algebra
@@ -255,6 +254,10 @@ Funksjonen $f$ er gitt ved \[f(x) = x^3 + k\cdot x + 12\]
 - b :: Sett inn verdien for $k$ fra oppgave a), og bruk blant annet polynomdivisjon til skrive $f(x)$ som et produkt av lineære faktorer.
 - c :: Løs ulikheten \[\frac{x^2 - x - 12}{x - 1} > 0\]
 
+** Likninger                                                               :eksamen:h16:del1:
+Løs likningene
+- a :: $2^{3x-2}-13=13$
+- b :: $(\lg x)^2 + \lg x - 2 = 0$
 * CAS
 ** Vektor-punktene :v16:del2:
 Gitt tre punkt $A(1,3)$, $B(4,0)$, og $C(5,5)$.
@@ -264,7 +267,7 @@ Gitt tre punkt $A(1,3)$, $B(4,0)$, og $C(5,5)$.
 - d :: Bruk CAS til å bestemme hvilke koordinater $P$ kan ha når $\angle BAP = 45^\circ$.
 
 ** Logaritmefunksjon
-Funksjonen $f$ er gitt ved $$f(x)$$
+Funksjonen $f$ er gitt ved $$f(x) = 2 \ln (x^2 - 4) - \frac{1}{2} x$$
 - a :: Bruk graftegner til å tegne grafen til $f$ når $x \in \langle -4, 16 \rangle$.
 - b :: Bestem eventuelle topp- og bunnpunkter på grafen til $f$.
 
