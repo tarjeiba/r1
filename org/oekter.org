@@ -26,12 +26,52 @@ Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer
 #+END_QUOTE
 
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
+* uke 51                                                                            :noexport:
+** Juleverksted
+* uke 50                                                                            :noexport:
+** Produkt av tall og vektorer
+| *minimum*           | 5.30, 31, 32, 33, 35 |
+| *utforsking*        |                 5.34 |
+| *ytterligere*       |                      |
+| *med hjelpemidler*  |                      |
+| *uten hjelpemidler* |                      |
+
+
+
+
+* uke 49
+** Vektorer
+*** Vektorer og skalarer
+#+BEGIN_DEFINITION
+To vektorer er /like/ dersom vektorene har samme retning og samme lengde.
+#+END_DEFINITION
+
+#+BEGIN_DEFINITION
+To vektorer er /parallelle/ dersom vewktorene har samme retning eller motsatt retning.
+#+END_DEFINITION
+
+| *minimum*           | 5.12, 13                  |
+| *ytterligere*       | 5.110, 111, 112, 113, 114 |
+| *med hjelpemidler*  |                           |
+| *uten hjelpemidler* |                           |
+
+*Utvidelse av 5.13*
+Tegn $n$ punkter hvor ingen tre punkter ligger på linje. Hvor mange forskjellige vektorer kan du trekke mellom punktene?
+
+
+*** Sum og differanse av vektorer
+
+| *minimum*           | 5.20, 21, 22, 23, 24, 25, 26        |
+| *ytterligere*       | 5.120, 121, 121, 122, 123, 124, 128 |
+
 * uke 48
 ** torsdag
-*** Medianer
-*** Midtnormaler
-*** Høyder i trekanter
-*** Halveringslinjer
+*** Medianer, midtnormaler, høyder i trekanter, halveringslinjer
+*Minimum** -- 4.50, 51, 52, 60, 61, 62, 63, 64, 70, 71, 72, 73, 80, 81, 82, 83
+
+*Uten hjelpemidler* -- 4.215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227
+
+*Med hjelpemidler* -- 4.310, 311, 314, 315, 316, 317, 318, 319, 320
 ** mandag
 *** Sentral og periferivinkel
 | Oppgaver                       |
