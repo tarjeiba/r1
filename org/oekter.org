@@ -28,12 +28,12 @@ Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
 * uke 51                                                                            :noexport:
 ** Juleverksted
-* uke 50                                                                            :noexport:
+* uke 50
 ** Produkt av tall og vektorer
 | *minimum*           | 5.30, 31, 32, 33, 35 |
-| *utforsking*        |                 5.34 |
-| *ytterligere*       |                      |
-| *med hjelpemidler*  |                      |
+| *utforsking*        | 5.34                 |
+| *ytterligere*       | 5.131, 131, *133*    |
+| *med hjelpemidler*  | 5.136                |
 | *uten hjelpemidler* |                      |
 
 
