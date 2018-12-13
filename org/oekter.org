@@ -1,4 +1,4 @@
-#+SETUPFILE:orgheader.org
+2#+SETUPFILE:orgheader.org
 #+TITLE:Matemamtikk R1 - økter 2018-19
 #+LATEXHEADER:\usepackage{yhmath}
 
@@ -29,15 +29,17 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 51                                                                            :noexport:
 ** Juleverksted
 * uke 50
+** Tidligere terminprøve
+[[pdf:Terminpr_ve_R1_H2014.pdf][Forlagets terminprøve høsten 2014]]
+
+(Merk: Oppgave 8, konstruksjonen kan du gjøre i Geogebra.)
+
 ** Produkt av tall og vektorer
 | *minimum*           | 5.30, 31, 32, 33, 35 |
 | *utforsking*        | 5.34                 |
 | *ytterligere*       | 5.131, 131, *133*    |
 | *med hjelpemidler*  | 5.136                |
 | *uten hjelpemidler* |                      |
-
-
-
 
 * uke 49
 ** Vektorer
