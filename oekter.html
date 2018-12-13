@@ -1,185 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-12-13 Thu 12:04 -->
+<!-- 2018-12-13 Thu 12:05 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Matemamtikk R1 - økter 2018-19</title>
 <meta name="generator" content="Org mode" />
-<meta name="author" content="tarjei" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
-  .title  { text-align: center;
-             margin-bottom: .2em; }
-  .subtitle { text-align: center;
-              font-size: medium;
-              font-weight: bold;
-              margin-top:0; }
-  .todo   { font-family: monospace; color: red; }
-  .done   { font-family: monospace; color: green; }
-  .priority { font-family: monospace; color: orange; }
-  .tag    { background-color: #eee; font-family: monospace;
-            padding: 2px; font-size: 80%; font-weight: normal; }
-  .timestamp { color: #bebebe; }
-  .timestamp-kwd { color: #5f9ea0; }
-  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
-  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
-  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
-  .underline { text-decoration: underline; }
-  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
-  p.verse { margin-left: 3%; }
-  pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    font-family: monospace;
-    overflow: auto;
-    margin: 1.2em;
-  }
-  pre.src {
-    position: relative;
-    overflow: visible;
-    padding-top: 1.2em;
-  }
-  pre.src:before {
-    display: none;
-    position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
-    padding: 3px;
-    border: 1px solid black;
-  }
-  pre.src:hover:before { display: inline;}
-  /* Languages per Org manual */
-  pre.src-asymptote:before { content: 'Asymptote'; }
-  pre.src-awk:before { content: 'Awk'; }
-  pre.src-C:before { content: 'C'; }
-  /* pre.src-C++ doesn't work in CSS */
-  pre.src-clojure:before { content: 'Clojure'; }
-  pre.src-css:before { content: 'CSS'; }
-  pre.src-D:before { content: 'D'; }
-  pre.src-ditaa:before { content: 'ditaa'; }
-  pre.src-dot:before { content: 'Graphviz'; }
-  pre.src-calc:before { content: 'Emacs Calc'; }
-  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
-  pre.src-fortran:before { content: 'Fortran'; }
-  pre.src-gnuplot:before { content: 'gnuplot'; }
-  pre.src-haskell:before { content: 'Haskell'; }
-  pre.src-hledger:before { content: 'hledger'; }
-  pre.src-java:before { content: 'Java'; }
-  pre.src-js:before { content: 'Javascript'; }
-  pre.src-latex:before { content: 'LaTeX'; }
-  pre.src-ledger:before { content: 'Ledger'; }
-  pre.src-lisp:before { content: 'Lisp'; }
-  pre.src-lilypond:before { content: 'Lilypond'; }
-  pre.src-lua:before { content: 'Lua'; }
-  pre.src-matlab:before { content: 'MATLAB'; }
-  pre.src-mscgen:before { content: 'Mscgen'; }
-  pre.src-ocaml:before { content: 'Objective Caml'; }
-  pre.src-octave:before { content: 'Octave'; }
-  pre.src-org:before { content: 'Org mode'; }
-  pre.src-oz:before { content: 'OZ'; }
-  pre.src-plantuml:before { content: 'Plantuml'; }
-  pre.src-processing:before { content: 'Processing.js'; }
-  pre.src-python:before { content: 'Python'; }
-  pre.src-R:before { content: 'R'; }
-  pre.src-ruby:before { content: 'Ruby'; }
-  pre.src-sass:before { content: 'Sass'; }
-  pre.src-scheme:before { content: 'Scheme'; }
-  pre.src-screen:before { content: 'Gnu Screen'; }
-  pre.src-sed:before { content: 'Sed'; }
-  pre.src-sh:before { content: 'shell'; }
-  pre.src-sql:before { content: 'SQL'; }
-  pre.src-sqlite:before { content: 'SQLite'; }
-  /* additional languages in org.el's org-babel-load-languages alist */
-  pre.src-forth:before { content: 'Forth'; }
-  pre.src-io:before { content: 'IO'; }
-  pre.src-J:before { content: 'J'; }
-  pre.src-makefile:before { content: 'Makefile'; }
-  pre.src-maxima:before { content: 'Maxima'; }
-  pre.src-perl:before { content: 'Perl'; }
-  pre.src-picolisp:before { content: 'Pico Lisp'; }
-  pre.src-scala:before { content: 'Scala'; }
-  pre.src-shell:before { content: 'Shell Script'; }
-  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
-  /* additional language identifiers per "defun org-babel-execute"
-       in ob-*.el */
-  pre.src-cpp:before  { content: 'C++'; }
-  pre.src-abc:before  { content: 'ABC'; }
-  pre.src-coq:before  { content: 'Coq'; }
-  pre.src-groovy:before  { content: 'Groovy'; }
-  /* additional language identifiers from org-babel-shell-names in
-     ob-shell.el: ob-shell is the only babel language using a lambda to put
-     the execution function name together. */
-  pre.src-bash:before  { content: 'bash'; }
-  pre.src-csh:before  { content: 'csh'; }
-  pre.src-ash:before  { content: 'ash'; }
-  pre.src-dash:before  { content: 'dash'; }
-  pre.src-ksh:before  { content: 'ksh'; }
-  pre.src-mksh:before  { content: 'mksh'; }
-  pre.src-posh:before  { content: 'posh'; }
-  /* Additional Emacs modes also supported by the LaTeX listings package */
-  pre.src-ada:before { content: 'Ada'; }
-  pre.src-asm:before { content: 'Assembler'; }
-  pre.src-caml:before { content: 'Caml'; }
-  pre.src-delphi:before { content: 'Delphi'; }
-  pre.src-html:before { content: 'HTML'; }
-  pre.src-idl:before { content: 'IDL'; }
-  pre.src-mercury:before { content: 'Mercury'; }
-  pre.src-metapost:before { content: 'MetaPost'; }
-  pre.src-modula-2:before { content: 'Modula-2'; }
-  pre.src-pascal:before { content: 'Pascal'; }
-  pre.src-ps:before { content: 'PostScript'; }
-  pre.src-prolog:before { content: 'Prolog'; }
-  pre.src-simula:before { content: 'Simula'; }
-  pre.src-tcl:before { content: 'tcl'; }
-  pre.src-tex:before { content: 'TeX'; }
-  pre.src-plain-tex:before { content: 'Plain TeX'; }
-  pre.src-verilog:before { content: 'Verilog'; }
-  pre.src-vhdl:before { content: 'VHDL'; }
-  pre.src-xml:before { content: 'XML'; }
-  pre.src-nxml:before { content: 'XML'; }
-  /* add a generic configuration mode; LaTeX export needs an additional
-     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
-  pre.src-conf:before { content: 'Configuration File'; }
+<meta name="author" content="Tarjei Bærland" />
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
+<script type="text/javascript" src="js/popup.js"></script>
 
-  table { border-collapse:collapse; }
-  caption.t-above { caption-side: top; }
-  caption.t-bottom { caption-side: bottom; }
-  td, th { vertical-align:top;  }
-  th.org-right  { text-align: center;  }
-  th.org-left   { text-align: center;   }
-  th.org-center { text-align: center; }
-  td.org-right  { text-align: right;  }
-  td.org-left   { text-align: left;   }
-  td.org-center { text-align: center; }
-  dt { font-weight: bold; }
-  .footpara { display: inline; }
-  .footdef  { margin-bottom: 1em; }
-  .figure { padding: 1em; }
-  .figure p { text-align: center; }
-  .inlinetask {
-    padding: 10px;
-    border: 2px solid gray;
-    margin: 10px;
-    background: #ffffcc;
-  }
-  #org-div-home-and-up
-   { text-align: right; font-size: 70%; white-space: nowrap; }
-  textarea { overflow-x: auto; }
-  .linenr { font-size: smaller }
-  .code-highlighted { background-color: #ffff00; }
-  .org-info-js_info-navigation { border-style: none; }
-  #org-info-js_console-label
-    { font-size: 10px; font-weight: bold; white-space: nowrap; }
-  .org-info-js_search-highlight
-    { background-color: #ffff00; color: #000000; font-weight: bold; }
-  .org-svg { width: 90%; }
-  /*]]>*/-->
-</style>
+<script type="text/javascript" src="js/org-info-js-nb/org-info-src.js">
+/**
+ *
+ * @source: js/org-info-js-nb/org-info-src.js
+ *
+ * @licstart  The following is the entire license notice for the
+ *  JavaScript code in js/org-info-js-nb/org-info-src.js.
+ *
+ * Copyright (C) 2012-2018 Free Software Foundation, Inc.
+ *
+ *
+ * The JavaScript code in this tag is free software: you can
+ * redistribute it and/or modify it under the terms of the GNU
+ * General Public License (GNU GPL) as published by the Free Software
+ * Foundation, either version 3 of the License, or (at your option)
+ * any later version.  The code is distributed WITHOUT ANY WARRANTY;
+ * without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+ *
+ * As additional permission under GNU GPL version 3 section 7, you
+ * may distribute non-source (e.g., minimized or compacted) forms of
+ * that code without the copy of the GNU GPL normally required by
+ * section 4, provided you include this license notice and a URL
+ * through which recipients can access the Corresponding Source.
+ *
+ * @licend  The above is the entire license notice
+ * for the JavaScript code in js/org-info-js-nb/org-info-src.js.
+ *
+ */
+</script>
+
+<script type="text/javascript">
+
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+
+<!--/*--><![CDATA[/*><!--*/
+org_html_manager.set("TOC_DEPTH", "2");
+org_html_manager.set("LINK_HOME", "");
+org_html_manager.set("LINK_UP", "");
+org_html_manager.set("LOCAL_TOC", "1");
+org_html_manager.set("VIEW_BUTTONS", "0");
+org_html_manager.set("MOUSE_HINT", "underline");
+org_html_manager.set("FIXED_TOC", "0");
+org_html_manager.set("TOC", "0");
+org_html_manager.set("VIEW", "info");
+org_html_manager.setup();  // activate after the parameters are set
+/*]]>*///-->
+</script>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -252,9 +157,88 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Matemamtikk R1 - økter 2018-19</h1>
-<p>
-2#+SETUPFILE:orgheader.org
-</p>
+<div id="table-of-contents">
+<h2>Innhold</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgacdc7df">uke 50</a>
+<ul>
+<li><a href="#orgbd71c6e">Tidligere terminprøve</a></li>
+<li><a href="#orgb59c7b2">Produkt av tall og vektorer</a></li>
+</ul>
+</li>
+<li><a href="#org0278aa1">uke 49</a>
+<ul>
+<li><a href="#org9c51ae3">Vektorer</a></li>
+</ul>
+</li>
+<li><a href="#org197aea8">uke 48</a>
+<ul>
+<li><a href="#orgc07f086">torsdag</a></li>
+<li><a href="#org797ebd4">mandag</a></li>
+</ul>
+</li>
+<li><a href="#org39851b1">uke 45</a>
+<ul>
+<li><a href="#org62cc4ea">torsdag</a></li>
+<li><a href="#org29a4a2d">mandag</a></li>
+</ul>
+</li>
+<li><a href="#org8146048">uke 43</a>
+<ul>
+<li><a href="#orgdaa3495">torsdag</a></li>
+<li><a href="#org3a8e2ce">mandag</a></li>
+</ul>
+</li>
+<li><a href="#org13712cc">uke 42</a>
+<ul>
+<li><a href="#org881f9c7">torsdag</a></li>
+<li><a href="#org088035a">mandag</a></li>
+</ul>
+</li>
+<li><a href="#orgafe868a">uke 41</a>
+<ul>
+<li><a href="#org5b1799a">torsdag</a></li>
+<li><a href="#org30c6ddb">mandag</a></li>
+</ul>
+</li>
+<li><a href="#org20465bc">uke 39</a>
+<ul>
+<li><a href="#org8bee068">mandag</a></li>
+</ul>
+</li>
+<li><a href="#org6535fa5">uke 38</a>
+<ul>
+<li><a href="#org74ac7aa">mandag</a></li>
+<li><a href="#org68ac957">torsdag</a></li>
+</ul>
+</li>
+<li><a href="#org2c2afd0">uke 37</a>
+<ul>
+<li><a href="#org000f5a2">mandag</a></li>
+<li><a href="#org6cd037a">torsdag</a></li>
+</ul>
+</li>
+<li><a href="#org979e0b3">uke 36</a>
+<ul>
+<li><a href="#orgf25c5fc">mandag</a></li>
+<li><a href="#org3446cba">torsdag</a></li>
+</ul>
+</li>
+<li><a href="#orgb4a0726">uke 35</a>
+<ul>
+<li><a href="#org69e56ad">mandag</a></li>
+<li><a href="#orgb58d633">torsdag</a></li>
+</ul>
+</li>
+<li><a href="#org7419fb5">uke 34</a>
+<ul>
+<li><a href="#org42451f8">torsdag</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
 
 <div id="outline-container-orgacdc7df" class="outline-2">
 <h2 id="orgacdc7df">uke 50</h2>
@@ -411,9 +395,9 @@ Tegn \(n\) punkter hvor ingen tre punkter ligger på linje. Hvor mange forskjell
 <h2 id="org197aea8">uke 48</h2>
 <div class="outline-text-2" id="text-org197aea8">
 </div>
-<div id="outline-container-orga8c81fc" class="outline-3">
-<h3 id="orga8c81fc">torsdag</h3>
-<div class="outline-text-3" id="text-orga8c81fc">
+<div id="outline-container-orgc07f086" class="outline-3">
+<h3 id="orgc07f086">torsdag</h3>
+<div class="outline-text-3" id="text-orgc07f086">
 </div>
 <div id="outline-container-orgd807211" class="outline-4">
 <h4 id="orgd807211">Medianer, midtnormaler, høyder i trekanter, halveringslinjer</h4>
@@ -432,9 +416,9 @@ Tegn \(n\) punkter hvor ingen tre punkter ligger på linje. Hvor mange forskjell
 </div>
 </div>
 </div>
-<div id="outline-container-org01b8f2c" class="outline-3">
-<h3 id="org01b8f2c">mandag</h3>
-<div class="outline-text-3" id="text-org01b8f2c">
+<div id="outline-container-org797ebd4" class="outline-3">
+<h3 id="org797ebd4">mandag</h3>
+<div class="outline-text-3" id="text-org797ebd4">
 </div>
 <div id="outline-container-org3d65c7f" class="outline-4">
 <h4 id="org3d65c7f">Sentral og periferivinkel</h4>
@@ -506,9 +490,9 @@ På grunn av sentralvinkelteoremet, kan vi da si at \(c = a / 2\) og \(d = b / 2
 <h2 id="org39851b1">uke 45</h2>
 <div class="outline-text-2" id="text-org39851b1">
 </div>
-<div id="outline-container-org7de1ae9" class="outline-3">
-<h3 id="org7de1ae9">torsdag</h3>
-<div class="outline-text-3" id="text-org7de1ae9">
+<div id="outline-container-org62cc4ea" class="outline-3">
+<h3 id="org62cc4ea">torsdag</h3>
+<div class="outline-text-3" id="text-org62cc4ea">
 </div>
 <div id="outline-container-org902cb29" class="outline-4">
 <h4 id="org902cb29">Den naturlige logaritmen</h4>
@@ -603,9 +587,9 @@ På grunn av sentralvinkelteoremet, kan vi da si at \(c = a / 2\) og \(d = b / 2
 </div>
 </div>
 
-<div id="outline-container-orgcff1292" class="outline-3">
-<h3 id="orgcff1292">mandag</h3>
-<div class="outline-text-3" id="text-orgcff1292">
+<div id="outline-container-org29a4a2d" class="outline-3">
+<h3 id="org29a4a2d">mandag</h3>
+<div class="outline-text-3" id="text-org29a4a2d">
 <p>
 <b>Selvstudie del 1</b>
 </p>
@@ -683,9 +667,9 @@ Vi ses!
 <h2 id="org8146048">uke 43</h2>
 <div class="outline-text-2" id="text-org8146048">
 </div>
-<div id="outline-container-org770a9a8" class="outline-3">
-<h3 id="org770a9a8">torsdag</h3>
-<div class="outline-text-3" id="text-org770a9a8">
+<div id="outline-container-orgdaa3495" class="outline-3">
+<h3 id="orgdaa3495">torsdag</h3>
+<div class="outline-text-3" id="text-orgdaa3495">
 <p>
 Repetisjonstid
 </p>
@@ -723,9 +707,9 @@ Repetisjonstid
 </div>
 </div>
 
-<div id="outline-container-org3ddcc01" class="outline-3">
-<h3 id="org3ddcc01">mandag</h3>
-<div class="outline-text-3" id="text-org3ddcc01">
+<div id="outline-container-org3a8e2ce" class="outline-3">
+<h3 id="org3a8e2ce">mandag</h3>
+<div class="outline-text-3" id="text-org3a8e2ce">
 </div>
 <div id="outline-container-org6a8bcb7" class="outline-4">
 <h4 id="org6a8bcb7">Eksponentielle ulikheter</h4>
@@ -795,9 +779,9 @@ Repetisjonstid
 <h2 id="org13712cc">uke 42</h2>
 <div class="outline-text-2" id="text-org13712cc">
 </div>
-<div id="outline-container-orgf6dfa01" class="outline-3">
-<h3 id="orgf6dfa01">torsdag</h3>
-<div class="outline-text-3" id="text-orgf6dfa01">
+<div id="outline-container-org881f9c7" class="outline-3">
+<h3 id="org881f9c7">torsdag</h3>
+<div class="outline-text-3" id="text-org881f9c7">
 </div>
 <div id="outline-container-org52a644d" class="outline-4">
 <h4 id="org52a644d">Rasjonale ulikheter</h4>
@@ -898,9 +882,9 @@ Repetisjonstid
 </div>
 </div>
 
-<div id="outline-container-org3702470" class="outline-3">
-<h3 id="org3702470">mandag</h3>
-<div class="outline-text-3" id="text-org3702470">
+<div id="outline-container-org088035a" class="outline-3">
+<h3 id="org088035a">mandag</h3>
+<div class="outline-text-3" id="text-org088035a">
 </div>
 <div id="outline-container-org5650800" class="outline-4">
 <h4 id="org5650800">Rasjonale likninger</h4>
@@ -934,9 +918,9 @@ Repetisjonstid
 <h2 id="orgafe868a">uke 41</h2>
 <div class="outline-text-2" id="text-orgafe868a">
 </div>
-<div id="outline-container-org9079cf4" class="outline-3">
-<h3 id="org9079cf4">torsdag</h3>
-<div class="outline-text-3" id="text-org9079cf4">
+<div id="outline-container-org5b1799a" class="outline-3">
+<h3 id="org5b1799a">torsdag</h3>
+<div class="outline-text-3" id="text-org5b1799a">
 </div>
 <div id="outline-container-orge22aa52" class="outline-4">
 <h4 id="orge22aa52">Faktorisering av polynomer</h4>
@@ -994,9 +978,9 @@ Repetisjonstid
 </div>
 </div>
 </div>
-<div id="outline-container-orgee86fd4" class="outline-3">
-<h3 id="orgee86fd4">mandag</h3>
-<div class="outline-text-3" id="text-orgee86fd4">
+<div id="outline-container-org30c6ddb" class="outline-3">
+<h3 id="org30c6ddb">mandag</h3>
+<div class="outline-text-3" id="text-org30c6ddb">
 </div>
 <div id="outline-container-org5f0566d" class="outline-4">
 <h4 id="org5f0566d">Polynomdivisjon</h4>
@@ -1035,9 +1019,9 @@ Repetisjonstid
 <h2 id="org20465bc">uke 39</h2>
 <div class="outline-text-2" id="text-org20465bc">
 </div>
-<div id="outline-container-org2481bb2" class="outline-3">
-<h3 id="org2481bb2">mandag</h3>
-<div class="outline-text-3" id="text-org2481bb2">
+<div id="outline-container-org8bee068" class="outline-3">
+<h3 id="org8bee068">mandag</h3>
+<div class="outline-text-3" id="text-org8bee068">
 <p>
 Vurdering
 Dette dekker hele kapittel 3 (Sannsynlighetsregning), samt 1.1 og 1.2
@@ -1048,8 +1032,8 @@ Dette dekker hele kapittel 3 (Sannsynlighetsregning), samt 1.1 og 1.2
 <h4 id="org1cd45da">Løsningsforslag</h4>
 <div class="outline-text-4" id="text-org1cd45da">
 </div>
-<div id="outline-container-org2a4f614" class="outline-5">
-<h5 id="org2a4f614">Oppgave 1</h5>
+<ul class="org-ul">
+<li><a id="org2a4f614"></a>Oppgave 1<br />
 <div class="outline-text-5" id="text-org2a4f614">
 <dl class="org-dl">
 <dt>a 1</dt><dd>\(2 < x < 5 \iff x\in \langle 2, 5 \rangle\)</dd>
@@ -1059,18 +1043,16 @@ Dette dekker hele kapittel 3 (Sannsynlighetsregning), samt 1.1 og 1.2
 <dt>c</dt><dd>\(\frac{2}{3}\not\in \mathbb{Z} \quad \frac{2}{3} \in \mathbb{Q} \quad -8\not\in\mathbb{N} \quad \pi\in\mathbb{R}\quad\pi\not\in\mathbb{Q}\quad 3.14\in\mathbb{Q}\)</dd>
 </dl>
 </div>
-</div>
-<div id="outline-container-orgebe973b" class="outline-5">
-<h5 id="orgebe973b">Oppgave 2</h5>
+</li>
+<li><a id="orgebe973b"></a>Oppgave 2<br />
 <div class="outline-text-5" id="text-orgebe973b">
 <dl class="org-dl">
 <dt>a</dt><dd>\(x^3 = 27\quad\iff x=3\)</dd>
 <dt>b</dt><dd>\(x^4 = 16\Leftarrow x=2\)</dd>
 </dl>
 </div>
-</div>
-<div id="outline-container-orga79330b" class="outline-5">
-<h5 id="orga79330b">Oppgave 3</h5>
+</li>
+<li><a id="orga79330b"></a>Oppgave 3<br />
 <div class="outline-text-5" id="text-orga79330b">
 <p>
 I klasse 2STA er det 18 jenter og 12 gutter. Vi trekker tilfeldig to elever og innfører disse hendingene:
@@ -1085,18 +1067,16 @@ I klasse 2STA er det 18 jenter og 12 gutter. Vi trekker tilfeldig to elever og i
 <li id="d">\(P(A|B) = \frac{P(A\cap B)}{P(B)} = \frac{\frac{51}{145}}{\frac{3}{5}} = \frac{17}{29}\) Alts å er \(P(A|B)\) og \(P(B| A)\) like store, naturlig nok.</li>
 </ul>
 </div>
-</div>
-<div id="outline-container-org667fb7a" class="outline-5">
-<h5 id="org667fb7a">Oppgave 4</h5>
+</li>
+<li><a id="org667fb7a"></a>Oppgave 4<br />
 <div class="outline-text-5" id="text-org667fb7a">
 <dl class="org-dl">
 <dt>a</dt><dd>Anne, Berit og Cecilie bryr her seg ikke om i hvilken <i>rekkefølge</i> de tre guttene fra klassen blir trukket ut i, da de uansett skal være på det samme laget. Vi får da ta vi kan trekke tre gutter ut av de tolv guttene på \[\binom{12}{3}=\frac{12!}{(12-3)!\cdot 3!}=\frac{12\cdot 11\cdot 10}{3\cdot 2\cdot 1} = 4\cdot 11\cdot 5 = 220\] Altså kan de tre jentene spille mot 220 ulike guttelag à tre spillere.</dd>
 <dt>b</dt><dd>Her vil rekkefølge ha noe å si, siden det blir en ulik konfigurasjon om vi bytter hvilken jente som går med hvilken gutt, selv om det er de samme tre guttene. Vi ønsker da å finne hvor mange <i>permutasjoner</i> det er av tre ut av de tolv guttene, eller \(\mathrm{nPr}(12, 3)\). Dette kan regnes ut som \(12\cdot 11\cdot 10=1320\). Altså kan de tre jentene ta med seg hver sin gutt fra klassen på kino på 1320 forskjellige måter.</dd>
 </dl>
 </div>
-</div>
-<div id="outline-container-org03e6096" class="outline-5">
-<h5 id="org03e6096">Oppgave 5</h5>
+</li>
+<li><a id="org03e6096"></a>Oppgave 5<br />
 <div class="outline-text-5" id="text-org03e6096">
 <dl class="org-dl">
 <dt>a</dt><dd>Med 30 elever i klassen, er sannsynligheten for å bli trykket ut \(p=\frac{1}{30}\). Sannsynligheten for <i>ikke</i> å bli trukket ut er da \(1 - p = \frac{29}{30}\). Sannsynligheten for ikke å bli trukket ut to ganger på rad er \((1 - p)^2\) osv. Sannsynligheten for at Anne ikke blir hørt i det hele tatt, er da \[(1-p)^{100} = \left(\frac{29}{30}\right)^{100}=0.034=3.4\,\%\] Sannsynligheten for at Anne <i>ikke</i> blir trukket ut er altså 3.4 %.</dd>
@@ -1105,27 +1085,26 @@ I klasse 2STA er det 18 jenter og 12 gutter. Vi trekker tilfeldig to elever og i
 <dt>d</dt><dd>Her kan vi altså enten ha rekkefølga Anne &#x2013; Berit, eller Berit &#x2013; Anne. Sannsynligheten for hver av dem er \(\frac{1}{30}\cdot \frac{1}{30}\), og vi får da totallt \[P(\textrm{Anne og Berit de to første}) = 2\cdot \frac{1}{30}\frac{1}{30} = 0.002 = 0.2\,\%\] Sannsynligheten for at både Anne og Berit blir hørt de to første gangene er altså 0.2 %.</dd>
 </dl>
 </div>
-</div>
+</li>
 
-<div id="outline-container-org0f5e0f1" class="outline-5">
-<h5 id="org0f5e0f1">Oppgave 6</h5>
+<li><a id="org0f5e0f1"></a>Oppgave 6<br />
 <div class="outline-text-5" id="text-org0f5e0f1">
 <dl class="org-dl">
 <dt>a</dt><dd>Her er det tilfelig utvalg <i>uten</i> tilbakelegging, og vi får en hypergeometrisk sannsynlighetsmodell. Sannsynligheten for at fem jenter blir hørt de ti første gangene, er da \[\frac{ \binom{18}{5} \cdot \binom{12}{5} } {\binom{30}{10}} = 0.226 = 23\,\%\] Sannsynligheten for at det blir trukket ut nøyaktig fem jenter de ti første gangene er altså 23 %.</dd>
 <dt>b</dt><dd>For at Anne skal bli hørt fire ganger, må hun bli hørt i løpet av de første 30, så fram til 60, så fram til 90, så i løpet av de siste 10 gangene. De første tre «etappene» her er like, og det er 100 % sikkert at Anne blir hørt i hver av dem, siden det er tretti elever i klassen. Vi lurer altså på hva sannsynligheten er for at Anne blir hørt i løpet av de første ti gangene i  siste «etappe». Her vil det enkleste være å finne sannsynligheten for at hun <i>ikke</i> blir hørt, og så ta 100 % minus denne sannsynligheten. Sannsynligheten for at Anne <i>ikke</i> blir hørt første gang er \(\frac{29}{30}\), for at hun ikke blir hørt de to første gangene er \(\frac{29}{30}\cdot\frac{28}{29}\), osv. Sannsynligheten for at hun ikke blir hørt de <i>ti</i> første gangene er da \[\frac{29}{30}\cdot\frac{28}{29}\cdot \ldots \cdot \frac{20}{21} = \frac{ 29!\cdot 20!}{30! \cdot 19!} = 0.667 = 67 \%\] Sannsynligheten for at Anne blir hørt fire ganger i løpet av året er altså 100 % - 67 %, eller 33 %.</dd>
 </dl>
 </div>
-</div>
+</li>
 
-<div id="outline-container-org8b30ddd" class="outline-5">
-<h5 id="org8b30ddd">Oppgave 7</h5>
+<li><a id="org8b30ddd"></a>Oppgave 7<br />
 <div class="outline-text-5" id="text-org8b30ddd">
 <dl class="org-dl">
 <dt>a</dt><dd>For å finne sannsynligheten for at ingen av elevene har bursdag på samme dag, må vi finne antall måter vi kan gi hver elev en <i>unik</i> dag i året på. Da vil den første eleven kunne få 365 forskjellige dager, den andre 364, osv., helt til den tredevte eleven kan velge mellom 336 forskjellige dager. Dette notererer vi vanligvis \(\textrm{nPr}(365, 30)\), som kan regnes ut som \(\frac{365!}{(365-30)!}=21710\ldots\) (dette tallet er 77 siffer langt). Totalt kan elevene har bursdager på \(365^{30}\) forskjellige måter. Sannsynligheten for at alle elevene har bursdag på forskjellige dager er da \[\frac{\textrm{nPr}(365, 30)}{365^{30}}=29.4\,\%\] Sannsynligheten for at ingen av elevene har bursdag på samme dag, er altså 29 %. Sannsynligheten for at minst to elever har bursdag på samme dag, er altså 71 %.</dd>
 <dt>b</dt><dd>Sannsynligheten for at minst én elev har bursdag på samme dag som Anne, er \(1 - P(\textrm{Ingen har bursdag samme dag som Anne})\). Sannsynligheten for at en gitt elev skal ha en annen bursdag enn Anne, er \(\frac{364}{365}\), sannsynligheten for at alle de øvrige 29 elevene har bursdag på andre dager er da, \[\left(\frac{364}{365}\right)^{29}=0.924 = 92\,\%\] Vi får da at sannsynligheten for at minst én har bursdag samme dag som Anne til å være 8 %.</dd>
 </dl>
 </div>
-</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1133,9 +1112,9 @@ I klasse 2STA er det 18 jenter og 12 gutter. Vi trekker tilfeldig to elever og i
 <h2 id="org6535fa5">uke 38</h2>
 <div class="outline-text-2" id="text-org6535fa5">
 </div>
-<div id="outline-container-org66abdb3" class="outline-3">
-<h3 id="org66abdb3">mandag</h3>
-<div class="outline-text-3" id="text-org66abdb3">
+<div id="outline-container-org74ac7aa" class="outline-3">
+<h3 id="org74ac7aa">mandag</h3>
+<div class="outline-text-3" id="text-org74ac7aa">
 <p>
 <b>Øveprøve gitt klassen til Fredrik</b>
 </p>
@@ -1154,9 +1133,9 @@ Det kan også være en idé å se på Cappelen Damms nettsted for boka. Der finn
 </div>
 </div>
 
-<div id="outline-container-org8b91b9a" class="outline-3">
-<h3 id="org8b91b9a">torsdag</h3>
-<div class="outline-text-3" id="text-org8b91b9a">
+<div id="outline-container-org68ac957" class="outline-3">
+<h3 id="org68ac957">torsdag</h3>
+<div class="outline-text-3" id="text-org68ac957">
 <p>
 Oppstartsoppgave: <a href="oppgaver.html#orgcd2e103">Luremynten</a>
 </p>
@@ -1167,9 +1146,9 @@ Oppstartsoppgave: <a href="oppgaver.html#orgcd2e103">Luremynten</a>
 <h2 id="org2c2afd0">uke 37</h2>
 <div class="outline-text-2" id="text-org2c2afd0">
 </div>
-<div id="outline-container-org5903e4d" class="outline-3">
-<h3 id="org5903e4d">mandag</h3>
-<div class="outline-text-3" id="text-org5903e4d">
+<div id="outline-container-org000f5a2" class="outline-3">
+<h3 id="org000f5a2">mandag</h3>
+<div class="outline-text-3" id="text-org000f5a2">
 </div>
 <div id="outline-container-org97cbd4c" class="outline-4">
 <h4 id="org97cbd4c">Hypergeometriske forsøk</h4>
@@ -1216,9 +1195,9 @@ I et hypergeometrisk forsøk har vi \(n\) gjenstander av to typer. Det er \(n_1\
 </div>
 </div>
 
-<div id="outline-container-org3b40917" class="outline-3">
-<h3 id="org3b40917">torsdag</h3>
-<div class="outline-text-3" id="text-org3b40917">
+<div id="outline-container-org6cd037a" class="outline-3">
+<h3 id="org6cd037a">torsdag</h3>
+<div class="outline-text-3" id="text-org6cd037a">
 </div>
 <div id="outline-container-orgc8ed648" class="outline-4">
 <h4 id="orgc8ed648">Oppstartsoppgave</h4>
@@ -1382,17 +1361,17 @@ Samlingen av de rasjonale og de irrasjonale tallene kaller vi de <i>reelle</i> t
 <h2 id="org979e0b3">uke 36</h2>
 <div class="outline-text-2" id="text-org979e0b3">
 </div>
-<div id="outline-container-orgf955995" class="outline-3">
-<h3 id="orgf955995">mandag</h3>
-<div class="outline-text-3" id="text-orgf955995">
+<div id="outline-container-orgf25c5fc" class="outline-3">
+<h3 id="orgf25c5fc">mandag</h3>
+<div class="outline-text-3" id="text-orgf25c5fc">
 </div>
 <div id="outline-container-orge4a6adc" class="outline-4">
 <h4 id="orge4a6adc">Oppgavejobbing</h4>
 </div>
 </div>
-<div id="outline-container-orgfc4d7d2" class="outline-3">
-<h3 id="orgfc4d7d2">torsdag</h3>
-<div class="outline-text-3" id="text-orgfc4d7d2">
+<div id="outline-container-org3446cba" class="outline-3">
+<h3 id="org3446cba">torsdag</h3>
+<div class="outline-text-3" id="text-org3446cba">
 </div>
 <div id="outline-container-org67f83d0" class="outline-4">
 <h4 id="org67f83d0">Statusoppdatering</h4>
@@ -1494,9 +1473,9 @@ I et binomisk forsøk gjør vi \(n\) uavhengige delforsøk og teller hvor mange 
 <h2 id="orgb4a0726">uke 35</h2>
 <div class="outline-text-2" id="text-orgb4a0726">
 </div>
-<div id="outline-container-org797ebd4" class="outline-3">
-<h3 id="org797ebd4">mandag</h3>
-<div class="outline-text-3" id="text-org797ebd4">
+<div id="outline-container-org69e56ad" class="outline-3">
+<h3 id="org69e56ad">mandag</h3>
+<div class="outline-text-3" id="text-org69e56ad">
 </div>
 <div id="outline-container-orgc11ccd3" class="outline-4">
 <h4 id="orgc11ccd3">Til neste gang</h4>
@@ -1511,8 +1490,8 @@ Se på utfordringsoppgaven, <a href="oppgaver.html#orgfe12892">De to terningene<
 <h4 id="org915ff66">Oppklaring oppgave 3.11</h4>
 <div class="outline-text-4" id="text-org915ff66">
 </div>
-<div id="outline-container-org5fdb649" class="outline-5">
-<h5 id="org5fdb649"><a id="ID-9639d8d8-cdce-4d7c-9941-8f1c27af8fef"></a>Oppgavetekst</h5>
+<ul class="org-ul">
+<li><a id="org5fdb649"></a><a id="ID-9639d8d8-cdce-4d7c-9941-8f1c27af8fef"></a>Oppgavetekst<br />
 <div class="outline-text-5" id="text-org5fdb649">
 <p>
 For en tilfeldig valg familie med to barn har vi definert disse hendingene:
@@ -1527,10 +1506,9 @@ For en tilfeldig valg familie med to barn har vi definert disse hendingene:
 Regn ut \(P(A)\), \(P(B)\), \(P(C)\), \(P(A|B)\) og \(P(A|C)\).
 </p>
 </div>
-</div>
+</li>
 
-<div id="outline-container-orgd846fec" class="outline-5">
-<h5 id="orgd846fec"><a id="ID-cd085f8e-590c-4d19-bec1-084559d7d22e"></a>Mulig løsning</h5>
+<li><a id="orgd846fec"></a><a id="ID-cd085f8e-590c-4d19-bec1-084559d7d22e"></a>Mulig løsning<br />
 <div class="outline-text-5" id="text-orgd846fec">
 <p>
 En grei måte å sortere informasjonen på her, er å si at vi har to barn født uavhengig av hverandre, hvor \(J_1\) og \(\overline{J_1}\) er at første barn (eldst) er henholdsvis jente og ikke-jente (gutt), og \(J_2\) og \(\overline{J_2}\) er at andre barn (yngst) er henholdsvis jente og ikke-jente (gutt).
@@ -1599,7 +1577,8 @@ Alternativt kan vi vise det i et <i>venndiagram</i> som følger:
 <dt>\(P(A|C)\)</dt><dd>Her lurer vi altså på sannsynligheten for at ett barn er jente og ett barn er gutt, <i>gitt at</i> minst ett av barna er gutt. En av utregningene vi kan se på er \[P(A|C) = \frac{P(A\cap C)}{P(C)}\] hvor vi allerede kjenner \(P(C)=0.75\). Vi lurer altså på \((P(A\cap C)\) i første omgang. Vi har \(A\cap C\) når ett av barna er jente og ett av barna er gutt <i>og</i> minst ett av barna er gutt <b>kun</b> når ett av barna er jente og ett av barna er gutt. (Vi kan ikke ha flere enn én gutt, og fremdeles ha at ett barn er jente og ett barn er gutt.) Vi får da at \(P(A\cap C) = P(A) = 0.50\). Vi kan da finne \(P(A|C)\) som \[P(A|C)=\frac{P(A)}{P(C)} = \frac{0.50}{0.75}=0.67=67 \%\]</dd>
 </dl>
 </div>
-</div>
+</li>
+</ul>
 </div>
 
 <div id="outline-container-org1e9589a" class="outline-4">
@@ -1687,16 +1666,16 @@ Finn et eksempel som viser at denne formelen stemmer.
 </div>
 </div>
 </div>
-<div id="outline-container-orgcad0bee" class="outline-3">
-<h3 id="orgcad0bee">torsdag</h3>
-<div class="outline-text-3" id="text-orgcad0bee">
+<div id="outline-container-orgb58d633" class="outline-3">
+<h3 id="orgb58d633">torsdag</h3>
+<div class="outline-text-3" id="text-orgb58d633">
 </div>
 <div id="outline-container-org5e9a634" class="outline-4">
 <h4 id="org5e9a634">Oppklaring oppgave 3.33</h4>
 <div class="outline-text-4" id="text-org5e9a634">
 </div>
-<div id="outline-container-org8e2094f" class="outline-5">
-<h5 id="org8e2094f"><b>Oppgavetekst</b></h5>
+<ul class="org-ul">
+<li><a id="org8e2094f"></a><b>Oppgavetekst</b><br />
 <div class="outline-text-5" id="text-org8e2094f">
 <p>
 På en skole er det 60 % jenter og 40 % gutter. Blant jentene er det 8 % som har hatt kyssesyke. Blant guttene er det 6 % som har hatt kyssesyke. 12 % av elevene på skolen har hatt mer enn 10 dagers fravær. Blant dem som har hatt kyssesyke, er det 60 % som har hatt mer enn 10 dagers fravær.
@@ -1707,9 +1686,8 @@ På en skole er det 60 % jenter og 40 % gutter. Blant jentene er det 8 % som 
 <dt>b</dt><dd>Finn sannsynligheten for at en tilfeldig valgt elev har hatt kyssesyke når vi vet at eleven har hatt mer enn 10 dagers fravær.</dd>
 </dl>
 </div>
-</div>
-<div id="outline-container-org47a1ceb" class="outline-5">
-<h5 id="org47a1ceb"><b>Mulig løsning</b></h5>
+</li>
+<li><a id="org47a1ceb"></a><b>Mulig løsning</b><br />
 <div class="outline-text-5" id="text-org47a1ceb">
 <p>
 I denne løsningen har jeg satt følgende hendelser:
@@ -1738,7 +1716,8 @@ Fra oppgaveteksten får vi da følgende opplysninger:
 <dt>b</dt><dd>Vi er ute etter \(P(K|F)\). Siden vi kjenner \(P(F|K)\), kan vi her bruke Bayes' setning. Vi får \[P(K|F)=\frac{P(F|K) \cdot P(K)}{P(F)} = \frac{0.60\cdot 0.072}{0.12}=0.36\] Altså er sannsynligheten for at en tilfeldig valgt eleven med mer enn 10 dagers fravær har hatt kyssesyken 36 %.</dd>
 </dl>
 </div>
-</div>
+</li>
+</ul>
 </div>
 
 <div id="outline-container-orga680472" class="outline-4">
@@ -1814,9 +1793,9 @@ To hendinger \(A\) og \(B\) er uavhengige hvis \(P(A|B)=P(A)\), eller hvis \(P(B
 <h2 id="org7419fb5"><a id="ID-9f7f7c52-ccf4-4334-8c22-72d692282bca"></a>uke 34</h2>
 <div class="outline-text-2" id="text-org7419fb5">
 </div>
-<div id="outline-container-orgc07f086" class="outline-3">
-<h3 id="orgc07f086"><a id="ID-43e85ab6-9e4c-40f8-8a5e-637bd8831124"></a>torsdag</h3>
-<div class="outline-text-3" id="text-orgc07f086">
+<div id="outline-container-org42451f8" class="outline-3">
+<h3 id="org42451f8"><a id="ID-43e85ab6-9e4c-40f8-8a5e-637bd8831124"></a>torsdag</h3>
+<div class="outline-text-3" id="text-org42451f8">
 </div>
 <div id="outline-container-orgd4406fb" class="outline-4">
 <h4 id="orgd4406fb"><a id="ID-e45a1d58-5cb3-4a21-87a4-f36521a367e1"></a>Introdukosjon</h4>

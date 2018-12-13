@@ -1,4 +1,4 @@
-2#+SETUPFILE:orgheader.org
+#+SETUPFILE:orgheader.org
 #+TITLE:Matemamtikk R1 - økter 2018-19
 #+LATEXHEADER:\usepackage{yhmath}
 
