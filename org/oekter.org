@@ -26,6 +26,51 @@ Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer
 #+END_QUOTE
 
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
+* uke 37 :noexport:
+* uke 36 :noexport:
+* uke 35 :noexport:
+* uke 34 :noexport:
+* uke 33 :noexport:
+* uke 32 :noexport:
+* uke 31 :noexport:
+* uke 30 :noexport:
+* uke 29 :noexport:
+* uke 28 :noexport:
+* uke 27 :noexport:
+* uke 26 :noexport:
+* uke 25 :noexport:
+* uke 24 :noexport:
+* uke 23 :noexport:
+* uke 22 :noexport:
+* uke 21 :noexport:
+* uke 20 :noexport:
+* uke 19 :noexport:
+* uke 18 :noexport:
+* uke 17 :noexport:
+* uke 16 :noexport:
+* uke 15 :noexport:
+* uke 14 :noexport:
+* uke 13 :noexport:
+* uke 12 :noexport:
+* uke 11 :noexport:
+* uke 10 :noexport:
+* uke 9  :noexport:
+* uke 8  :noexport:
+* uke 7  :noexport:
+* uke 6  :noexport:
+* uke 5  :noexport:
+* uke 4  :noexport:
+* uke 3  :noexport:
+* uke 2  :noexport:
+* uke 1
+** 5.34
+Figuren under viser utsnittet av [[ggb:5.34.ggb][denne]] Geogebra-fila.
+[[fig:ggb-5.34.png]]
+
+- a :: Vi ser at $\vec{AD} = \vec{AB} + \vec{BC} + \vec{CD} = \vec{a} + \vec{b} + \vec{c}$.
+- b :: Vi kan bruke at $\vec{M_1 M_2} = \vec{M_1 A} + \vec{A M_2} = -\vec{A M_1} + \vec{A B} + \vec{B M_2} = -\frac{1}{2}\vec{a} + \vec{a} + \frac{1}{2}\vec{b} = \frac{1}{2}\left(\vec{a} + \vec{b}\right)$. Videre kan vi bruke $\vec{M_4 M_3} = \vec{M_4 A} + \vec{A M_3} = -\frac{1}{2}\vec{AD} + \vec{a} + \vec{b} + \frac{1}{2}\vec{c} = -\frac{1}{2}\left(\vec{a} + \vec{b} + \vec{c}\right) + \vec{a} + \vec{b} + \frac{1}{2}\vec{c} = \frac{1}{2}\left(\vec{a} + \vec{b}\right)$. Vi ser altså at $\vec{M_1 M_2} = \vec{M_4 M_3}$. De to vektorene er altså like, og sidene har samme lengde og er parallelle.
+- c :: Ved å gjenta øvelsen fra b for $\vec{M_2 M_3}$ og $\vec{M_1 M_4}$ kan vi vise at også disse vektorene er like. Vi har altså en figur med fire sider, hvor de motstående har parvis samme retning (parallelle) og lengde, altså er figuren et parallellogram.
+
 * uke 51                                                                            :noexport:
 ** Juleverksted
 * uke 50
@@ -548,7 +593,6 @@ To hendinger $A$ og $B$ er uavhengige hvis $P(A|B)=P(A)$, eller hvis $P(B|A)=P(B
 | *utenhjelpemidler* | 3.202 (hopp over denne om du heter Dag), 204     |
 *** Ordnede utvalg
 *** Uordnede utvalg
-
 
 * uke 34
 :PROPERTIES:
