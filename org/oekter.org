@@ -3,7 +3,7 @@
 #+LATEXHEADER:\usepackage{yhmath}
 
 #+BEGIN_SRC emacs-lisp :eval query-export :exports none
-(add-to-list 'org-html-infojs-options '(sdepth . "2"))
+(add-to-list 'org-html-infojs-options '(sdepth . "1"))
 #+END_SRC
 
 * Notater                                                                           :noexport:
@@ -26,20 +26,7 @@ Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer
 #+END_QUOTE
 
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
-* uke 37 :noexport:
-* uke 36 :noexport:
-* uke 35 :noexport:
-* uke 34 :noexport:
-* uke 33 :noexport:
-* uke 32 :noexport:
-* uke 31 :noexport:
-* uke 30 :noexport:
-* uke 29 :noexport:
-* uke 28 :noexport:
-* uke 27 :noexport:
-* uke 26 :noexport:
-* uke 25 :noexport:
-* uke 24 :noexport:
+
 * uke 23 :noexport:
 * uke 22 :noexport:
 * uke 21 :noexport:
@@ -47,21 +34,97 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 19 :noexport:
 * uke 18 :noexport:
 * uke 17 :noexport:
-* uke 16 :noexport:
+** Heldags
 * uke 15 :noexport:
+** Repetisjon
 * uke 14 :noexport:
+** Kurver og vektorfunksjoner
+** Derivasjon av vektorfunksjoner
+** Fartsvektor og akselerasjonsvektor
 * uke 13 :noexport:
+** Logaritmefunksjoner
+** Eksponentialfunksjoner
+** Derivasjon av et produkt
+** Derivasjon av en kvotient
 * uke 12 :noexport:
+** Potensfunksjoner og rotfunksjoner:mandag:
+** Sammensatte funksjoner :torsdag:
 * uke 11 :noexport:
+** Vurdering
 * uke 10 :noexport:
-* uke 9  :noexport:
-* uke 8  :noexport:
-* uke 7  :noexport:
-* uke 6  :noexport:
+* uke 9 :noexport:
+** Fart og akselerasjon :mandag:
+* uke 7 :noexport:
+** Derivasjon :mandag:
+** Derivasjon av polynomer :torsdag:
+** Funksjonsdrøfting :torsdag:
+** Krumning og vendepunkter :torsdag:
 * uke 5  :noexport:
-* uke 4  :noexport:
-* uke 3  :noexport:
-* uke 2  :noexport:
+** Grenseverdier :mandag:
+** Kontinuerlige funksjoner :mandag:
+** Vertikale asymptoter :torsdag:
+** Horisontale og skrå asymptoter :torsdag:
+* uke 4
+** Mandag vurdering :mandag:
+** Skalarproduktet :torsdag:
+** Regneregler for skalarproduktet :torsdag:
+** Mer om lengder og vinkler :torsdag:
+* uke 3
+** Sirkelligningen :mandag:
+** Sirkelen som grafen til to funksjoner :mandag:
+** Parallelle vektorer i koordinatsystemet :torsdag:
+** Parameterfremstillinger :torsdag:
+** Parallelle vektorer uten koordinater :torsdag:
+* uke 2
+** Regning med vektorkoordinater
+*** Eksempel 1
+La $\vec{u} = [2, 3]$ og $\vec{v} = [4,-1]$.
+
+*a* Finn $\vec{u}-\vec{v}$ ved regning.
+*b* Finn $\vec{u}-\vec{v}$ ved tegning.
+
+*** Eksempel 2
+La $\vec{a}=[-2, 4]$, $\vec{b}=[3,-1]$ og $\vec{v}=[x,y]$.
+
+Finn $x$ og $y$ slik at
+\[2\vec{v} - 4\vec{a} = 6\vec{b}.\]
+
+** Vektoren mellom to punkter
+*** Overkomplisering
+Vær obs på at vi noen ganger har en tendens til å overkomplisere litt. La oss se på eksempelet på side 204 i boka.
+
+*Boka*
+Punktene $A(3, 1)$ og $B(1,5)$ er gitt. Finn koordinatene til midtpunktet $M$ på $AB$.
+
+#+BEGIN_EXPORT html
+<img src="figurer/eksempel204.png" width=30%>
+#+END_EXPORT
+
+Figuren er fra [[ggb:eksempel204.ggb][denne]] Geogebra-fila
+
+*Løsning*
+Her er
+\[\vec{AB} = \left[1-3, 5-1\right] = \left[-2, 4\right]\]
+Ettersom $M$ ligger midt på $AB$, har $\vec{AM}$ samme retning som $\vec{AB}$, men bare halve lengden. Det gir
+\[\vec{AM}=\frac{1}{2}\cdot \vec{AB}=\frac{1}{2}\cdot\left[-2, 4\right]=\left[-1, 2\right]\]
+La $O$ være origo i koordinatsystemet. Da er
+\[\vec{OM} = \vec{OA} + \vec{AM} = \left[3, 1\right] + \left[-1, 2\right] = \left[2,3\right]\]
+
+Midtpunktet $M$ har koordinatene $\left(2, 3\right)$.
+
+Det følgende er en alternativ måte å løse oppgaven på:
+
+Siden $M$ skal være midtpunktet mellom $A$ og $B$ må x-verdien til $M$ ligge midt mellom x-verdiene til $A$ og $B$ og tilsvarende for y-verdiene.
+
+Vi får altså $M\left(\frac{3+1}{2}, \frac{1+5}{2}\right)=M\left(2, 3\right)$.
+** Lengde og avstand
+Lengden av vektoren $\vec{v} = [x, y]$ er
+\[|\vec{v}| = \sqrt{x^2 + y^2}\]
+
+Avstanden mellom punktene $(x_1, y_1)$ og $(x_2, y_2)$ er
+\[d=\sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2}\]
+
+
 * uke 1
 ** 5.34
 Figuren under viser utsnittet av [[ggb:5.34.ggb][denne]] Geogebra-fila.
@@ -70,9 +133,7 @@ Figuren under viser utsnittet av [[ggb:5.34.ggb][denne]] Geogebra-fila.
 - a :: Vi ser at $\vec{AD} = \vec{AB} + \vec{BC} + \vec{CD} = \vec{a} + \vec{b} + \vec{c}$.
 - b :: Vi kan bruke at $\vec{M_1 M_2} = \vec{M_1 A} + \vec{A M_2} = -\vec{A M_1} + \vec{A B} + \vec{B M_2} = -\frac{1}{2}\vec{a} + \vec{a} + \frac{1}{2}\vec{b} = \frac{1}{2}\left(\vec{a} + \vec{b}\right)$. Videre kan vi bruke $\vec{M_4 M_3} = \vec{M_4 A} + \vec{A M_3} = -\frac{1}{2}\vec{AD} + \vec{a} + \vec{b} + \frac{1}{2}\vec{c} = -\frac{1}{2}\left(\vec{a} + \vec{b} + \vec{c}\right) + \vec{a} + \vec{b} + \frac{1}{2}\vec{c} = \frac{1}{2}\left(\vec{a} + \vec{b}\right)$. Vi ser altså at $\vec{M_1 M_2} = \vec{M_4 M_3}$. De to vektorene er altså like, og sidene har samme lengde og er parallelle.
 - c :: Ved å gjenta øvelsen fra b for $\vec{M_2 M_3}$ og $\vec{M_1 M_4}$ kan vi vise at også disse vektorene er like. Vi har altså en figur med fire sider, hvor de motstående har parvis samme retning (parallelle) og lengde, altså er figuren et parallellogram.
-
-* uke 51                                                                            :noexport:
-** Juleverksted
+       
 * uke 50
 ** Tidligere terminprøve
 [[pdf:Terminpr_ve_R1_H2014.pdf][Forlagets terminprøve høsten 2014]]

@@ -10,7 +10,7 @@ pre  {
     /* border-bottom: 1px solid #ccc; */
     border: 1px solid #cdcdcd;
     border-radius: 4px;
-    background-color: #f7f7f7;
+    background-color: #ecf0f1;
     padding: 11.5px;
     font-family: "Source Code Pro",  monospace;
     font-weight: 400;
@@ -31,8 +31,61 @@ pre  {
     padding: 11.5px;
 }
 
+.NOTES {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    overflow: auto;
+    /* margin: 1.2em; */
+    margin: auto;
+    align: center;
+    display: none;
+  }
+
+.LOESNING {
+    border-left: 6px solid #aaa;
+    background-color: #eee;
+    padding: 8pt;
+    max-width: 100%;
+}
+
+.task {
+    border-left: 6px solid #aaa;
+    background-color: #ccc;
+    padding: 8pt;
+    width: 100%;
+    overflow: auto;
+    text-align: left;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 0px !important;
+}
+
+
+div.loesning:before {
+    content: 'løsning';
+    font-weight: bold;
+}
+
+/* bruker '+' for å velge direkte påfølgende, se */
+/* https://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean */
+input[type=checkbox]:checked + .LOESNING {
+   display: inline-block;
+}
+
+input[type=checkbox]:not(:checked) + .LOESNING {
+   display: none;
+}
+
+
+
+.task .src {
+    padding: 0pt;
+}
+
 code {
     font-family: "Source Code Pro", monospace;
+    font-weight: bold;
 }
 
 #text-table-of-contents a {
@@ -59,6 +112,7 @@ h1 {
 }
 h2 {
     margin: 0;
+    border-bottom: 2px solid;
     font-size: 1.5em;
     line-height: 1em;
     margin-bottom: 1em;
@@ -66,6 +120,7 @@ h2 {
 h3 {
     margin: 0;
     font-size: 1.3333333333333333em;
+    border-bottom: 2px dashed;
     line-height: 1.125em;
     margin-bottom: 1.125em;
 }
@@ -82,6 +137,15 @@ p, ul, blockquote, td, th, label {
     line-height: 1.5em;
     margin-bottom: 1.5em;
 }
+
+blockquote {
+    margin: 3em;
+}
+
+ul {
+    list-style-type: disc;
+}
+
 p.small, #postamble {
     margin: 0;
     font-size: 0.8333333333333334em;
@@ -113,7 +177,7 @@ table {
 /* #main { */
 div.outline-2 {
     max-width: 70em;
-    float: right;
+    /* float: right; */
     /* The lines below are useful if the "main" div isn't available and
        div.outline-2 has to be used. */
     position: relative;
@@ -209,67 +273,6 @@ dd {
 	/* target for links */
 }
 
-.NOTES {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
-    padding: 8pt;
-    overflow: auto;
-    /* margin: 1.2em; */
-    margin: auto;
-    align: center;
-    display: none;
-  }
-
-.LOESNING {
-    border-left: 6px solid #aaa;
-    background-color: #eee;
-    padding: 8pt;
-    max-width: 100%;
-}
-
-
-div.loesning:before {
-    content: 'løsning';
-    font-weight: bold;
-}
-
-/* bruker '+' for å velge direkte påfølgende, se */
-/* https://stackoverflow.com/questions/10782054/what-does-the-tilde-squiggle-twiddle-css-selector-mean */
-input[type=checkbox]:checked + .LOESNING {
-   display: inline-block;
-}
-
-input[type=checkbox]:not(:checked) + .LOESNING {
-   display: none;
-}
-
-
-.task {
-    border-left: 6px solid #aaa;
-    background-color: #ccc;
-    padding: 8pt;
-    width: 100%;
-    overflow: auto;
-    text-align: left;
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 0px !important;
-}
-.TASK {
-    border-left: 6px solid #aaa;
-    background-color: #ccc;
-    padding: 8pt;
-    width: 100%;
-    overflow: auto;
-    text-align: left;
-    display: inline-block;
-    font-weight: bold;
-    margin-bottom: 0px !important;
-}
-
-.task .src {
-    padding: 0pt;
-}
 
 /* @end */
 
@@ -339,11 +342,11 @@ span.tag:before {
 
 a {
     text-decoration: none;
-    color: #6699ff;
+    color: #2492db;
 }
 
 a:hover {
-    border-bottom: 1px dotted #57d;
+    border-bottom: 1px dotted #2492db;
 }
 
 #postamble p {
@@ -427,7 +430,7 @@ a:hover {
 
 body {
     color: #333333;
-    background-color: #ffffff;
+    background-color: #ecf0f1;
 }
 .org-bold {
     /* bold */
@@ -2148,7 +2151,7 @@ pre.src:before {
     padding: 3px;
     border: 1px solid black;
 }
-pre.src:hover:before { display: inline;}
+/* pre.src:hover:before { display: inline;} */
 /* Languages per Org manual */
 pre.src-asymptote:before { content: 'Asymptote'; }
 pre.src-awk:before { content: 'Awk'; }
@@ -2180,7 +2183,7 @@ pre.src-org:before { content: 'Org mode'; }
 pre.src-oz:before { content: 'OZ'; }
 pre.src-plantuml:before { content: 'Plantuml'; }
 pre.src-processing:before { content: 'Processing.js'; }
-pre.src-python:before { content: 'Python'; }
+/* pre.src-python:before { content: 'Python'; } */
 pre.src-R:before { content: 'R'; }
 pre.src-ruby:before { content: 'Ruby'; }
 pre.src-sass:before { content: 'Sass'; }
