@@ -1,4 +1,4 @@
-#+SETUPFILE:orgheader.org
+
 #+TITLE:Matemamtikk R1 - økter 2018-19
 #+LATEXHEADER:\usepackage{yhmath}
 
@@ -22,7 +22,7 @@ De går så videre og presentere en av hovedbrukene for polynomdivisjon, likning
 
 Det interessant kommer på side 6, hvor vi får vite at
 #+BEGIN_QUOTE
-Denne sammenhengen mellom polynomdivisjon og ligningsløsning kan vi utnytte mer systematisk. Anta at vi deler et polynom $P(x)$ på førstegradspolynomet $x-a$ (der $a$) er et tall. Siden resten skal ha lavere grad enn divisoren $x-a$, må den være en konstant $r$ (se Eksempel 2 ovenfor dersom du synes dette er forvirrende). Det betyr at $$P(x)=K(x)(x-a)+r\quad \textrm{for alle} x$$ (husk setning 1). Setter vi $x=a$ i dette uttrykket, får vi $$P(a)=r$$ Det betyr at dersom $a$ er en rot i polynomet $P(x)$, så må $r$ være lik 0. Omvendt, hvis $r$ er lik null, så er $a$ en rot i polynomet $P(x)$. Vi har dermed vist følgende setning.
+Denne sammenhengen mellom polynomdivisjon og likningsløsning kan vi utnytte mer systematisk. Anta at vi deler et polynom $P(x)$ på førstegradspolynomet $x-a$ (der $a$) er et tall. Siden resten skal ha lavere grad enn divisoren $x-a$, må den være en konstant $r$ (se Eksempel 2 ovenfor dersom du synes dette er forvirrende). Det betyr at $$P(x)=K(x)(x-a)+r\quad \textrm{for alle} x$$ (husk setning 1). Setter vi $x=a$ i dette uttrykket, får vi $$P(a)=r$$ Det betyr at dersom $a$ er en rot i polynomet $P(x)$, så må $r$ være lik 0. Omvendt, hvis $r$ er lik null, så er $a$ en rot i polynomet $P(x)$. Vi har dermed vist følgende setning.
 #+END_QUOTE
 
 Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller komplekst) er rot i polynomet $P(x)$ hvis og bare hvis $P(x)$ er delelig med $x-a$./
@@ -65,12 +65,61 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Vertikale asymptoter :torsdag:
 ** Horisontale og skrå asymptoter :torsdag:
 * uke 4
-** Mandag vurdering :mandag:
+** Vurdering :mandag:
 ** Skalarproduktet :torsdag:
 ** Regneregler for skalarproduktet :torsdag:
 ** Mer om lengder og vinkler :torsdag:
 * uke 3
-** Sirkelligningen :mandag:
+** Sirkellikningen :mandag:
+Om vi har to punkter, $(x_1, y_1)$ og $(x_2, y_2)$, kan vi finne avstanden, $d$, mellom disse som
+\[d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}.\]
+
+La oss for enkelhets skyld la det ene punktet være origo, vi får da at avstanden fra origo til et vilkårlig punkt $(x, y)$ blir
+\[d = \sqrt{(x - 0)^2 + (y - 0)^2} = \sqrt{x^2 + y^2}.\]
+
+De $x$- og $y$-verdiene som oppfyller likningen over, er altså alle punktene som har en gitt avstand $d$ fra origo. *Dette er definisjonen på en sirkel.* En sirkel er nettopp alle punkter som har en gitt avstand fra et senter, og vi kaller da denne avstanden for sirkelens radius. Om vi da bytter ut $d$ med $r$, for radius, og opphøyer begge sider i andre, for å slippe kvadratroten, får vi
+\[r^2 = x^2 + y^2.\]
+
+Dersom vi nå ønsker å finne likningen for en sirkel som /ikke/ har senter i origo, men i $S(x_0, y_0)$, får vi da
+\[r^2 = (x - x_0)^2 + (y - y_0)^2.\]
+
+Legg merke til at dette er alle punkter $(x, y)$ som har en avstand $r$ fra et senter i $(x_0, y_0)$. Jeg forsøker å vise dette i Geogebra-feltet under. Du kan laste ned geogebrafila [[ggb:sirkellikningen.ggb][her]].
+
+#+BEGIN_EXPORT html
+<meta name=viewport content="width=device-width,initial-scale=1">
+<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+
+<div id="ggb-element"></div>
+<script type="text/javascript">
+var parameters = {
+"id":"ggbApplet",
+"appName":"graphing",
+"width":800,
+"height":600,
+"showToolBar":false,
+"borderColor":null,
+"showMenuBar":false,
+"allowStyleBar":false,
+"showAlgebraInput":false,
+"enableLabelDrags":false,
+"enableShiftDragZoom":true,
+"capturingThreshold":null,
+"showToolBarHelp":false,
+"errorDialogsActive":true,
+"showTutorialLink":false,
+"showLogging":false,
+"useBrowserForJS":false,
+"material_id":"drvhzhff"
+};
+
+var ggbApp =new GGBApplet(parameters, '5.0', 'ggb-element');
+window.addEventListener("load", function() {
+ggbApp.inject('ggb-element');
+});
+</script>
+#+END_EXPORT
+
+
 ** Sirkelen som grafen til to funksjoner :mandag:
 ** Parallelle vektorer i koordinatsystemet :torsdag:
 ** Parameterfremstillinger :torsdag:
@@ -89,7 +138,7 @@ La $\vec{a}=[-2, 4]$, $\vec{b}=[3,-1]$ og $\vec{v}=[x,y]$.
 Finn $x$ og $y$ slik at
 \[2\vec{v} - 4\vec{a} = 6\vec{b}.\]
 
-** Vektoren mellom to punkter
+** Vektoren mellom to punkter :torsdag:
 *** Overkomplisering
 Vær obs på at vi noen ganger har en tendens til å overkomplisere litt. La oss se på eksempelet på side 204 i boka.
 
@@ -117,7 +166,7 @@ Det følgende er en alternativ måte å løse oppgaven på:
 Siden $M$ skal være midtpunktet mellom $A$ og $B$ må x-verdien til $M$ ligge midt mellom x-verdiene til $A$ og $B$ og tilsvarende for y-verdiene.
 
 Vi får altså $M\left(\frac{3+1}{2}, \frac{1+5}{2}\right)=M\left(2, 3\right)$.
-** Lengde og avstand
+** Lengde og avstand :torsdag:
 Lengden av vektoren $\vec{v} = [x, y]$ er
 \[|\vec{v}| = \sqrt{x^2 + y^2}\]
 
