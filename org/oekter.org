@@ -1,7 +1,6 @@
-#+SETUP:oekterheader.org
+#+SETUPFILE:oekterheader.org
 #+TITLE:Matemamtikk R1 - økter 2018-19
 #+LATEXHEADER:\usepackage{yhmath}
-
 #+BEGIN_SRC emacs-lisp :eval query-export :exports none
 (add-to-list 'org-html-infojs-options '(sdepth . "1"))
 #+END_SRC
