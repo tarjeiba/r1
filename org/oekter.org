@@ -85,7 +85,7 @@ y = y_0 + bt
 
 [[fig:parameterframstilling.png]]
 
-Du finner geogebrafila til figuren over [[ggb:parameterframstilling.ggb][her]].
+Du finner geogebrafila til figuren over [[ggb:parameterframstilling.ggb][her]]. Du finner en mer interaktiv utgave [[ggb:parameterframstilling_utforsk.ggb][her]].
 #+END_DEFINITION
 
 *Oppgave 6.21* Denne oppgava kan løses tilsvarende det andre eksempelet på side 225.
