@@ -63,11 +63,59 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Kontinuerlige funksjoner :mandag:
 ** Vertikale asymptoter :torsdag:
 ** Horisontale og skrå asymptoter :torsdag:
-* uke 4 :noexport:
-** Vurdering :mandag:
 ** Skalarproduktet :torsdag:
 ** Regneregler for skalarproduktet :torsdag:
 ** Mer om lengder og vinkler :torsdag:
+* uke 4
+** Parallelle vektorer i koordinatsystemet :torsdag:
+#+BEGIN_DEFINITION
+$\vec{u}$ og $\vec{v}$ er parallelle hvis og bare hvis det finnes et tall $t$ slik at $t\cdot \vec{u} = \vec{v}$.
+#+END_DEFINITION
+
+| *minimum*     | 6.10, 11, 12, 13 |
+| *ytterligere* | 6.110, 112       |
+
+** Parameterfremstillinger :torsdag:
+#+BEGIN_DEFINITION
+Ei linje $l$ som går gjennom punktet $A(x_0, y_0)$ og er parallell med retningsvektoren $\vec{v} = [a, b]$, har parameterframstillingen
+\[l: \begin{cases}
+x = x_0 + at \\
+y = y_0 + bt
+\end{cases}\]
+
+[[fig:parameterframstilling.png]]
+
+Du finner geogebrafila til figuren over [[ggb:parameterframstilling.ggb][her]].
+#+END_DEFINITION
+
+*Oppgave 6.21* Denne oppgava kan løses tilsvarende det andre eksempelet på side 225.
+Ei linje $l$ har parameterframstillingen
+\[l: \begin{cases} x = -1 + 2t \\ y = 3 - 2t\end{cases}\]
+
+*a)* Tegn linja.
+
+*b)* Finn skjæringspunktene mellom linja og koordinataksene.
+
+
+| *minimum*     | 6.20, 21, 22, 23, 24 |
+| *ytterligere* | 6.120, 122, *125*    |
+
+
+** Parallelle vektorer uten koordinater :torsdag:
+#+BEGIN_DEFINITION
+La $\vec{a}$ og $\vec{b}$ være to vektorer som ikke er parallelle. La $\vec{v}$ være en tredje vektor. Da fins det to tall $$ og $y$ slik at
+\[\vec{v} = x\vec{a} + y\vec{b}.\]
+#+END_DEFINITION
+
+Vi har også snakket om /dekomponerte vektorer/, hvor vi skriver $\vec{v}$ som en kombinasjon av to /basisvektorer/ $\vec{a}$ og $\vec{b}$. Vi kan kun dekomponere vektorer på én måte med en gitt basis, og vi får da regelen under.
+
+#+BEGIN_DEFINITION
+La $\vec{a}$ og $\vec{b}$ være to vektorer som ikke er parallelle, og la $\vec{u} = x_1 \vec{a} + y_1 \vec{b}$ og $\vec{v} = x_2 \vec{a} + y_2 \vec{b}$. Da gjelder
+\[\vec{u} = \vec{v} \iff x_1 = x_2 \wedge y_1 = y_2\]
+#+END_DEFINITION
+ 
+| *minimum*     | 6.30, 31, 32, 33 |
+| *ytterligere* | 6.130, 133, 134  |
 * uke 3
 ** Informasjon om vurdering
 Prøven på mandag dekker hele kapittel 5 og er kun del 1. Vær forberedt på å kunne...
@@ -139,9 +187,6 @@ ggbApp.inject('ggb-element');
 #+END_EXPORT
 
 ** Sirkelen som grafen til to funksjoner :mandag:
-** Parallelle vektorer i koordinatsystemet :torsdag:
-** Parameterfremstillinger :torsdag:
-** Parallelle vektorer uten koordinater :torsdag:
 * uke 2
 ** Regning med vektorkoordinater
 *** Eksempel 1
@@ -190,7 +235,6 @@ Lengden av vektoren $\vec{v} = [x, y]$ er
 
 Avstanden mellom punktene $(x_1, y_1)$ og $(x_2, y_2)$ er
 \[d=\sqrt{(x_2-x_1)^2 + (y_2 - y_1)^2}\]
-
 
 * uke 1
 ** 5.34
