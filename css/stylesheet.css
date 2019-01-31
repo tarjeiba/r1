@@ -109,6 +109,7 @@ h1 {
     font-size: 1.6666666666666667em;
     line-height: 0.9em;
     margin-bottom: 0.9em;
+    visibility: hidden;
 }
 h2 {
     margin: 0;
@@ -255,7 +256,7 @@ dd {
     color: gray;
     text-transform: lowercase;
     /* this will be obscured by the surrounding span tag, so blank everything. */
-    background: #fff;
+    background: #ecf0f1;
     border: none;
 	/* position: relative;
 	text-align: right;
@@ -317,24 +318,6 @@ td {
 .org-right {
     text-align: right;
 } 
-
-
-/* h1 span, h2 span, h3 span, h4 span, h5 span, h6 span { */
-/*     background-color: #eee; */
-/*     padding: 2px; */
-/*     border: 1px solid #eee; */
-/* } */
-
-span.tag:before {
-    content: 'emner: ';
-}
-
-/* span:not(.tag):before { */
-/*     content: '('; */
-/* } */
-/* span:not(.tag):after { */
-/*     content: ')'; */
-/* } */
 
 .outline-1, .outline-2, .outline-3, .outline-4, .outline-5, .outline-6 {
     margin-left: 0em;
@@ -416,17 +399,6 @@ a:hover {
     to {opacity:1 ;}
 }
 
-/* foreslått css for inputfelt */
-
-/* #txt { */
-/*     border:none; */
-/*     outline:none; */
-/* } */
-/* label[for="txt"] { */
-/*     border:solid 1px #d5d5d5; */
-/*     padding: 0 0 0 5px; */
-/* } */
-
 
 body {
     color: #333333;
@@ -443,6 +415,7 @@ body {
 }
 .org-border {
 }
+
 .org-buffer-menu-buffer {
     /* buffer-menu-buffer */
     font-weight: bold;

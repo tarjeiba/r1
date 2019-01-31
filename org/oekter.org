@@ -5,7 +5,7 @@
 (add-to-list 'org-html-infojs-options '(sdepth . "1"))
 #+END_SRC
 
-* Notater                                                                           :noexport:
+* Notater :noexport:
 ** Fredriks periodeplan
 - Til uke 47: [[https://udeoslokommuneno-my.sharepoint.com/:w:/r/personal/frwoa003_osloskolen_no/_layouts/15/Doc.aspx?sourcedoc=%257B7B9B6F50-5A41-45C2-ADDC-13645CBCC975%257D&file=R1%2520-%2520Gjeldende%2520periodeplan.docx&action=default&mobileredirect=true][Forhåpentligvis fungerende lenke]]
 - [[https://udeoslokommuneno-my.sharepoint.com/:w:/r/personal/frwoa003_osloskolen_no/_layouts/15/Doc.aspx?sourcedoc=%257B7B9B6F50-5A41-45C2-ADDC-13645CBCC975%257D&file=R1%2520-%2520Gjeldende%2520periodeplan.docx&action=default&mobileredirect=true][Oppdatert periodeplan (Fredrik)]]
@@ -58,12 +58,18 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Derivasjon av polynomer :torsdag:
 ** Funksjonsdrøfting :torsdag:
 ** Krumning og vendepunkter :torsdag:
-* uke 5  :noexport:
+* uke 6
 ** Grenseverdier :mandag:
 ** Kontinuerlige funksjoner :mandag:
 ** Vertikale asymptoter :torsdag:
 ** Horisontale og skrå asymptoter :torsdag:
-** Skalarproduktet :torsdag:
+* uke 5
+** Skalarproduktet :mandag:
+| *minimum*     | 6.40, 41, 42, 43 |
+| *ytterligere* | 6.140, 144       |
+** Skalarproduktet i koordinatsystemet :torsdag:
+| *minimum*     | 6.50, 51, 52 |
+| *ytterligere* | 6.150, 152   |
 ** Regneregler for skalarproduktet :torsdag:
 ** Mer om lengder og vinkler :torsdag:
 * uke 4
