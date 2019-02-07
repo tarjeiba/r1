@@ -58,11 +58,24 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Derivasjon av polynomer :torsdag:
 ** Funksjonsdrøfting :torsdag:
 ** Krumning og vendepunkter :torsdag:
+** Vertikale asymptoter :mandag:
+| *minimum*     |   |
+| *ytterligere* |   |
+
+** Horisontale og skrå asymptoter :mandag:
+| *minimum*     |   |
+| *ytterligere* |   |
+
 * uke 6
-** Grenseverdier :mandag:
-** Kontinuerlige funksjoner :mandag:
-** Vertikale asymptoter :torsdag:
-** Horisontale og skrå asymptoter :torsdag:
+** Grenseverdier :torsdag:
+| *minimum*     | 7.10, 11, 12, 13, 14 |
+| *ytterligere* | 7.110, 111, 113, 116 |
+
+** Kontinuerlige funksjoner :torsdag:
+| *minimum*     | 7.20, 21, 22, 23,    |
+| *ytterligere* | 7.120, 122, 123, 218 |
+
+
 * uke 5
 ** Skalarproduktet :mandag:
 | *minimum*     | 6.40, 41, 42, 43 |
