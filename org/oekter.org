@@ -53,7 +53,7 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 10 :noexport:
 * uke 9 :noexport:
 ** Fart og akselerasjon :mandag:
-* uke 7 :noexport:
+* uke 7
 ** Derivasjon :mandag:
 ** Derivasjon av polynomer :torsdag:
 ** Funksjonsdrøfting :torsdag:
@@ -63,9 +63,28 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 | *ytterligere* |   |
 
 ** Horisontale og skrå asymptoter :mandag:
-| *minimum*     |   |
-| *ytterligere* |   |
+*På tavla*
 
+Funksjonen $f$ er gitt ved\[f(x) = \frac{x^2}{x^2 - 1}.\]
+- a :: Finn eventuelle vertikale asymptoter.
+- b :: Finn eventuelle horisontale asymptotetr.
+- c :: Tegn grafen
+
+
+*Mininum*
+
+For hver av funksjonene under, skal du bestemme asymptotene og tegne grafen.
+- a :: $f(x) = \dfrac{x+1}{x-1}$
+- b :: $f(x) = \dfrac{2x^2}{x^2 + 1}$
+- c :: $f(x) = \dfrac{x}{x^2 - 1}$
+- d :: $f(x) = \dfrac{2x^2}{x^2 - 1}$
+- e :: $f(x) = \dfrac{x^3 - 1}{x^2 - 1}$
+
+*Ytterligere*
+
+Funksjonen $f$ er gitt ved \[f(x) = \frac{e^x + 1}{e^x - 1}.\]
+- a :: Finn den vertikale asymptoten.
+- b :: Finn den horisontale asymptoten når *1* $x \rightarrow -\inf$ og *2* $x \rightarrow \inf$
 * uke 6
 ** Grenseverdier :torsdag:
 | *minimum*     | 7.10, 11, 12, 13, 14 |
