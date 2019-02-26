@@ -49,12 +49,11 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Potensfunksjoner og rotfunksjoner:mandag:
 ** Sammensatte funksjoner :torsdag:
 * uke 11 :noexport:
-** Vurdering
 * uke 10 :noexport:
 ** Vurdering
 * uke 9
 ** Neste ukes vurdering
-Fra kapittel 6: Dere får en oppgave à la 6.214 og 6.215. Ingen parameterframstilling.
+Fra kapittel 6: Dere får en oppgave à la 6.215 og 6.224. Ingen parameterframstilling.
 
 Fra kapittel 7: *Grenseverdier* 7.111, 7.114; *kontinuerlige funksjoner*, 7.120, 7.124; *asymptoter* 7.134, 7.145; og *derivasjon og funksjonsdrøfting* 7.164, 7.177, 7.184.
 
