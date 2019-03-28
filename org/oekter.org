@@ -40,11 +40,15 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Kurver og vektorfunksjoner
 ** Derivasjon av vektorfunksjoner
 ** Fartsvektor og akselerasjonsvektor
-* uke 13 :noexport:
-** Logaritmefunksjoner
-** Eksponentialfunksjoner
-** Derivasjon av et produkt
-** Derivasjon av en kvotient
+* uke 13
+** Minitest: Derivasjon
+- [[pdf:1819_minitest_derivering.pdf][Testen]]
+- [[pdf:1819_minitest_derivering_lf.pdf][Løsningsforslag]]
+
+** Tidligere eksamenssett
+- [[pdf:r1_eksamen_18h.pdf][Høsten 2018]]
+- [[https://matematikk.net/side/R1_2018_h%25C3%25B8st_L%25C3%2598SNING][Løsningsside]]
+
 * uke 12 :noexport:
 ** Potensfunksjoner og rotfunksjoner:mandag:
 ** Sammensatte funksjoner :torsdag:
