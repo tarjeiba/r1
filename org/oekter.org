@@ -36,7 +36,7 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 ** Heldags
 * uke 15 :noexport:
 ** Repetisjon
-* uke 14 :noexport:
+* uke 14
 ** CAS-oppgaver
 De følgende oppgavene er fra..
 - [[pdf:r1_eksamen_17h.pdf][Høsten 2017]]
