@@ -8,7 +8,7 @@
 #+END_EXPORT
 
 - a :: Tegn grafen til \[\vec{r}(t) = [t^2 + 2, 9t - t^3]\]
-- b :: Finn en parameterframstilling for tagnenten $T$ i det punktet på grafen som svarer til $t = 1$.
+- b :: Finn en parameterframstilling for tangenten $T$ i det punktet på grafen som svarer til $t = 1$.
 - c :: Et annet punkt på grafen til $\vec{r}$ har en tangent som er parallell med tangenten til $T$. Finn en parameterframstilling for denne tangenten.
  
 
