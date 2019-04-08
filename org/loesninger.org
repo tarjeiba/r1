@@ -1,4 +1,4 @@
-#+SETUP:orgheader.org
+#+SETUPFILE:orgheader.org
 #+Title: Oppgaveløsninger
 
 * Sinus R1
@@ -57,7 +57,7 @@ Vi kan gjøre den siste parameterframstillinga penere ved å se at størrelsen t
 Vi får da
 \[K : \begin{cases}
 x(t) = t + 11 \\
-y(t) = 3t \end{case}\]
+y(t) = 3t \end{cases}\]
 Dette kunne vi også gjort for $T$.
 
 
