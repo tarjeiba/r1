@@ -34,8 +34,10 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 18 :noexport:
 * uke 17 :noexport:
 ** Heldags
-* uke 15 :noexport:
-** Repetisjon
+* uke 15
+** Forberedelse
+- [[pdf:r1_heldags_v18.pdf]]
+
 * uke 14
 ** Veiledning til H18 - del 2
 *Filer*
