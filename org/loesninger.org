@@ -1,6 +1,29 @@
 #+SETUPFILE:orgheader.org
 #+Title: Oppgaveløsninger
 
+* Heldagsprøver og eksamener
+** Heldagsprøve - våren 2018
+Oppgaveteksten finner du [[pdf:r1_heldags_v18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1_heldags_v18.zip][zip-fil]].
+*** Oppgave 9
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-aGrtlCiX-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+*** Oppgave 10
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ojwKbykIwTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+*** Oppgave 11
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TQVXMTOw1-M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+*** Oppgave 12
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bKW5SorR7wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
 * Sinus R1
 ** 8.183
 #+BEGIN_EXPORT html
