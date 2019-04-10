@@ -2,6 +2,30 @@
 #+Title: Oppgaveløsninger
 
 * Heldagsprøver og eksamener
+** Eksamen - høsten 2018
+Oppgaveteksten finner du [[pdf:r1_eksamen_h18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1h18.zip][zip-fil]].
+*** Del 2 - Oppgave 1
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ePSgjx39xmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+Her er det mange minutter med klabb og babb midt i. Jeg beklager.
+
+*** Del 2 - Oppgave 2
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/S5MCZpST2y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+*** Del 2 - Oppgave 3
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YRb97ZSsv4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
+*** Del 2 - Oppgave 4
+#+BEGIN_EXPORT html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/no_2gAu3YTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+END_EXPORT
+
 ** Heldagsprøve - våren 2018
 Oppgaveteksten finner du [[pdf:r1_heldags_v18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1_heldags_v18.zip][zip-fil]].
 *** Oppgave 9

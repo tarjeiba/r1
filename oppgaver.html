@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2018-10-15 Mon 11:48 -->
+<!-- 2019-04-10 Wed 12:24 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgavesamling i R1</title>
@@ -73,7 +73,7 @@ for the JavaScript code in this tag.
 */
 
 <!--/*--><![CDATA[/*><!--*/
-org_html_manager.set("TOC_DEPTH", "2");
+org_html_manager.set("TOC_DEPTH", "1");
 org_html_manager.set("LINK_HOME", "");
 org_html_manager.set("LINK_UP", "");
 org_html_manager.set("LOCAL_TOC", "1");
@@ -161,26 +161,9 @@ for the JavaScript code in this tag.
 <h2>Innhold</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#sannsynlighetsregning">Sannsynlighetsregning</a>
-<ul>
-<li><a href="#sanns-regnvaersdagene">Regnværsdagene</a></li>
-<li><a href="#luremynten">Luremynten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span></span></a></li>
-<li><a href="#sanns-detoterningene">De to terningene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="betinget">betinget</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#sannsynlighet-zombietesten">Zombietesten&#xa0;&#xa0;&#xa0;<span class="tag"><span class="bayes">bayes</span>&#xa0;<span class="utfordring">utfordring</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#sannsynlighet-laderne">Laderne&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span>&#xa0;<span class="l_sning">løsning</span></span></a></li>
-<li><a href="#sannsynlighet-flyselskapet">Flyselskapet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del2">del2</span></span></a></li>
-<li><a href="#sannsynlighet-noekkelboksene">Nøkkelboksene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#sannsynlighet-spillelista">Spillelista&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h17">h17</span>&#xa0;<span class="del2">del2</span></span></a></li>
-<li><a href="#sannsynlighet-noeklene">Nøklene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#sannsynlighet-lottospillet">Lottospillet&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del2">del2</span></span></a></li>
-</ul>
-</li>
-<li><a href="#algebra">Algebra</a>
-<ul>
-<li><a href="#forenkling">Forenkling&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span></span></a></li>
-<li><a href="#divisjonsomgaaropp">Divisjon som går opp&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="v18">v18</span>&#xa0;<span class="del1">del1</span></span></a></li>
-</ul>
-</li>
+<li><a href="#sannsynlighetsregning">Sannsynlighetsregning</a></li>
+<li><a href="#algebra">Algebra</a></li>
+<li><a href="#org27220cd">CAS</a></li>
 </ul>
 </div>
 </div>
@@ -677,7 +660,6 @@ Tore ser lottotrekningen på TV. etter at det er trukket ut fire tall, går str�
 </div>
 </div>
 
-
 <div id="outline-container-org364a329" class="outline-2">
 <h2 id="algebra"><a id="org364a329"></a>Algebra</h2>
 <div class="outline-text-2" id="text-algebra">
@@ -700,6 +682,59 @@ Funksjonen \(f\) er gitt ved \[f(x) = x^3 + k\cdot x + 12\]
 <dt>a</dt><dd>Bestem \(k\) slik at divisjonen \(f(x):(x-1)\) går opp.</dd>
 <dt>b</dt><dd>Sett inn verdien for \(k\) fra oppgave a), og bruk blant annet polynomdivisjon til skrive \(f(x)\) som et produkt av lineære faktorer.</dd>
 <dt>c</dt><dd>Løs ulikheten \[\frac{x^2 - x - 12}{x - 1} > 0\]</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-orge94fd23" class="outline-3">
+<h3 id="orge94fd23">Likninger&#xa0;&#xa0;&#xa0;<span class="tag"><span class="eksamen">eksamen</span>&#xa0;<span class="h16">h16</span>&#xa0;<span class="del1">del1</span></span></h3>
+<div class="outline-text-3" id="text-orge94fd23">
+<p>
+Løs likningene
+</p>
+<dl class="org-dl">
+<dt>a</dt><dd>\(2^{3x-2}-13=13\)</dd>
+<dt>b</dt><dd>\((\lg x)^2 + \lg x - 2 = 0\)</dd>
+</dl>
+</div>
+</div>
+</div>
+<div id="outline-container-org27220cd" class="outline-2">
+<h2 id="org27220cd">CAS</h2>
+<div class="outline-text-2" id="text-org27220cd">
+</div>
+<div id="outline-container-orgaecdda1" class="outline-3">
+<h3 id="orgaecdda1">Vektor-punktene&#xa0;&#xa0;&#xa0;<span class="tag"><span class="v16">v16</span>&#xa0;<span class="del2">del2</span></span></h3>
+<div class="outline-text-3" id="text-orgaecdda1">
+<p>
+Gitt tre punkt \(A(1,3)\), \(B(4,0)\), og \(C(5,5)\).
+</p>
+<dl class="org-dl">
+<dt>a</dt><dd>Bestem en parameterframstilling av linja \(l\) gjennom \(B\) og \(C\).</dd>
+<dt>b</dt><dd>Et punkt \(P\) ligger på linja \(l\). Forklar at vi kan skrive \(\vec{AP} ) \left[3 + t, -3 + 5t\right]\) for en \(t\in \doubleR\).</dd>
+<dt>c</dt><dd>Bruk blant annet skalarproduktet til å finne koordinatene til \(P\) slik at \(\vec{AB} \norm \vec{AP}\).</dd>
+<dt>d</dt><dd>Bruk CAS til å bestemme hvilke koordinater \(P\) kan ha når \(\angle BAP = 45^\circ\).</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-org78ccff9" class="outline-3">
+<h3 id="org78ccff9">Logaritmefunksjon</h3>
+<div class="outline-text-3" id="text-org78ccff9">
+<p>
+Funksjonen \(f\) er gitt ved \[f(x) = 2 \ln (x^2 - 4) - \frac{1}{2} x\]
+</p>
+<dl class="org-dl">
+<dt>a</dt><dd>Bruk graftegner til å tegne grafen til \(f\) når \(x \in \langle -4, 16 \rangle\).</dd>
+<dt>b</dt><dd>Bestem eventuelle topp- og bunnpunkter på grafen til \(f\).</dd>
+</dl>
+
+<p>
+Funksjonen \(g\) er gitt ved \[g(x) = 2\ln (x^2 + k) - \frac{1}{2}x,\quad k>0.\]
+</p>
+<dl class="org-dl">
+<dt>c</dt><dd>Bruk CAS til å bestemme \(k\) slik at \(g\) har et ekstremalpunkt i \(x-1\).</dd>
+<dt>d</dt><dd>Bruk blant annet CAS til å bestemme hvor mange ekstremalpunkt \(g\) har for ulike verdier av \(k\).</dd>
 </dl>
 </div>
 </div>

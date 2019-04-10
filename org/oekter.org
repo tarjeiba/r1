@@ -39,32 +39,6 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 - [[pdf:r1_heldags_v18.pdf]]
 
 * uke 14
-** Veiledning til H18 - del 2
-*Filer*
-Du finner alle filene som blir produsert i gjennomgangene som [[zip:r1h18.zip]].
-
-*Oppgave 1*
-#+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ePSgjx39xmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+END_EXPORT
-
-Her er det mange minutter med klabb og babb midt i. Jeg beklager.
-
-*Oppgave 2*
-#+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/S5MCZpST2y0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+END_EXPORT
-
-*Oppgave 3*
-#+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YRb97ZSsv4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+END_EXPORT
-
-*Oppgave 4*
-#+BEGIN_EXPORT html
-<iframe width="560" height="315" src="https://www.youtube.com/embed/no_2gAu3YTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-#+END_EXPORT
-
 ** CAS-oppgaver
 De følgende oppgavene er fra..
 - [[pdf:r1_eksamen_17h.pdf][Høsten 2017]]
