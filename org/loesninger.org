@@ -3,7 +3,7 @@
 
 * Heldagsprøver og eksamener
 - [[*Eksamen - h%C3%B8sten 2018][Eksamen - høsten 2018]]
-- Eksamen - våren 2018
+- [[*Eksamen - v%C3%A5ren 2018][Eksamen - våren 2018]]
 - [[*Heldagspr%C3%B8ve - v%C3%A5ren 2018][Heldagsprøve - våren 2018]]
 
 
