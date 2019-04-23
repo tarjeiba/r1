@@ -35,43 +35,22 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 17 :noexport:
 ** Heldags
 * uke 15
+** Dots and boxes
 ** Forberedelse
 - [[pdf:r1_heldags_v18.pdf]]
-
-* uke 14
-** CAS-oppgaver
-De følgende oppgavene er fra..
-- [[pdf:r1_eksamen_17h.pdf][Høsten 2017]]
-- [[https://matematikk.net/side/R1_2017_h%C3%B8st_L%C3%98SNING][Løsningsside]]
-
-
-*** Høsten 2017 - del 2 - oppgave 3
-Funksjonen $f$ er gitt ved \[f(x) = 2\ln (x^2 + 4) - \frac{1}{2}x\]
-
-- a :: Bruk graftegner til å tegne grafen til $f$ når $x \in \langle -4, \rangle$
-- b :: Bestem eventuelle topp- og bunnpunkter på grafen til $f$.
-
-Funksjonen $g$ er gitt ved \[g(x)=2\ln (x^2 + k) - \frac{1}{2}x,\quad k>0.\]
-
-- c :: Bruk CAS til å bestemme $k$ slik at $g$ har et ekstremalpunkt i $x=1$.
-- d :: Bruk blant annet CAS til å bestemme hvor mange ekstremalpunkt $g$ har for ulike verdier av $k$.
-
-*** Høsten 2017 - del 2 - oppgave 4
-Skipet Euler sender ut en melding om at det har fått motorstopp. Kapteinen oppgir at posisjonen er $P_0 (80, 16)$ i et bestemt koordinatsystem. På grunn av avdriften vil posisjonen $P$ (i nm) $t$ timer senere være gitt ved \[\vec{OP} = \left[80 + 4t, 16 +3t\right]\]
-
-- a :: Hvilken fartsvektor $\vec{v}$ driver skipet med? Hvor stor er farten (banefarten)?
-
-[[fig:h17_del2_4.png]]
-
-Info: På havet måles avstander i nautiske mil (nm), hvor 1 nm 1852 m.
-
-En redningsbåt som i ligger i $O$ sier at den er klar til å gå mot skipet og kan være ved /Euler/ om 4 timer.
-
-- b :: Hvor stor fart holder redningsbåten?
-
-En annen redningsbåd er i posisjonen $Q(-10, 50)$ når meldingen blir sendt. Den kan holde en fart på 35 nm/h.
-
-- c :: Bruk CAS til å bestemme hvor lang tid det vil gåfør denne redningsbåten kan være framme ved Euler.
+- [[pdf:r1_eksamen_18v.pdf]]
+- [[pdf:r1_eksamen_18h.pdf]]
+- [[pdf:r1_eksamen_17v.pdf]]
+- [[pdf:r1_eksamen_17h.pdf]]
+- [[pdf:r1_eksamen_16v.pdf]]
+- [[pdf:r1_eksamen_16h.pdf]]
+- [[pdf:r1_eksamen_15v.pdf]]
+- [[pdf:r1_eksamen_15v_eksempel.pdf]]
+- [[pdf:r1_eksamen_15h.pdf]]
+- [[pdf:r1_eksamen_14v.pdf]]
+- [[pdf:r1_eksamen_14h.pdf]]
+- [[pdf:r1_eksamen_13v.pdf]]
+- [[pdf:r1_eksamen_13h.pdf]]
 
 * uke 13
 ** Minitest: Derivasjon
