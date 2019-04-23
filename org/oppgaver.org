@@ -1,14 +1,6 @@
 #+SETUPFILE:orgheader.org
 #+TITLE:Oppgavesamling i R1
 
-#+BEGIN_EXPORT html
-<script type="text/javascript" language="JavaScript"> org_html_manager.set("BASE_URL_QUESTIONS", "https://github.com/tarjeiba/r1/issues/new/");</script>
-#+END_EXPORT
-
-#+BEGIN_SRC emacs-lisp :eval export :exports none
-(add-to-list 'org-html-infojs-options '(sdepth . "2"))
-#+END_SRC
-
 * Sannsynlighetsregning
 :PROPERTIES:
 :custom_id: sannsynlighetsregning
@@ -262,8 +254,8 @@ Løs likningene
 ** Vektor-punktene :v16:del2:
 Gitt tre punkt $A(1,3)$, $B(4,0)$, og $C(5,5)$.
 - a :: Bestem en parameterframstilling av linja $l$ gjennom $B$ og $C$.
-- b :: Et punkt $P$ ligger på linja $l$. Forklar at vi kan skrive $\vec{AP} ) \left[3 + t, -3 + 5t\right]$ for en $t\in \doubleR$.
-- c :: Bruk blant annet skalarproduktet til å finne koordinatene til $P$ slik at $\vec{AB} \norm \vec{AP}$.
+- b :: Et punkt $P$ ligger på linja $l$. Forklar at vi kan skrive $\vec{AP} ) \left[3 + t, -3 + 5t\right]$ for en $t\in \mathbb{R}$.
+- c :: Bruk blant annet skalarproduktet til å finne koordinatene til $P$ slik at $\vec{AB} \perp \vec{AP}$.
 - d :: Bruk CAS til å bestemme hvilke koordinater $P$ kan ha når $\angle BAP = 45^\circ$.
 
 ** Logaritmefunksjon

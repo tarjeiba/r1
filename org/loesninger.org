@@ -2,6 +2,11 @@
 #+Title: Oppgaveløsninger
 
 * Heldagsprøver og eksamener
+- [[*Eksamen - h%C3%B8sten 2018][Eksamen - høsten 2018]]
+- Eksamen - våren 2018
+- [[*Heldagspr%C3%B8ve - v%C3%A5ren 2018][Heldagsprøve - våren 2018]]
+
+
 ** Eksamen - høsten 2018
 Oppgaveteksten finner du [[pdf:r1_eksamen_h18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1h18.zip][zip-fil]].
 *** Del 2 - Oppgave 1
@@ -25,6 +30,37 @@ Her er det mange minutter med klabb og babb midt i. Jeg beklager.
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/no_2gAu3YTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
+
+** Eksamen - våren 2018
+*** Del 2 - Oppgave 5
+**** a
+Tegner grafen i Geogebra ved å bruke ~r = Kurve(t^3 - 2t, t^2 + 1, t, -2, 2)~. Vi får da en figur som ser ut som følger.
+
+[[fig:v18_del2_5a.png]]
+
+**** b
+Finner fartsvektoren ved å derivere posisjonsvektoren med hensyn på tiden, og får dermed \[\vec{r}'(t) = \vec{v}(t) = \left[ 3t^2-2, 2t],\quad t\in \mathbb{R}.\] Fartsvektoren ved $t=-1$ er da $\vec{v}(-1) = \left[1, -2\right]$. Vi finner banefarten ved å ta absoluttverdien av denne $|\vec{v}(-1)|=\sqrt{1^2 + (-2)^2} = \sqrt{5}$. Vi kan tegne denne fra punktet gitt av $\vec{r}(1)$ ved å bruke kommandoen ~Vektor~ og angi start- og sluttpunkt, altså ~v_1  = Vektor(r(1), r(1) + r'(1))~ (merk at vi her finner fartsvektoren ved å derivere posisjonsvektoren direkte i uttrykket).
+
+[[fig:v18_del2_5b.png]]
+
+**** c
+Dette kan løses i CAS som vist under. Her har vi først definert fartsvektoren som en funksjon av tiden (vi kunne også funnet denne via å derivere posisjonsvektoren), før vi løser likningen \[|\vec{v}(t)|=2\] ved å bruke ~Løs~-kommandoen og gi ~t~ som variabel til denne.
+
+[[fig:v18_del2_5c.png]]
+
+Som vi ser av figuren over er banefarten til partikkelen lik 2 når \[t = -2\cdot\frac{\sqrt{2}}{3}\vee t=0\vee t=2\cdot\frac{\sqrt{2}}{3}\]
+
+**** d
+Banefarten til partikkelens ekstremalverdier kan vi finne ved å lage en ny funksjon for banefarten til partikkelen, som da er absoluttverdien til fartsvektoren, dette gjør vi i celle 3 i figuren under.
+
+Banefarten har altså ekstremalverdier for $t=-\frac{2}{3}\vee t=0\vee t=\frac{2}{3}$ ($y$ -verdiene til disse punktene, som vist i celle 4 gir oss partikkelens fart, siden dette er funksjonsverdiene til banefartfunksjonen vår).
+
+For å vise at dette samsvarer med tidspunktene partikkelens farts- og akselerasjonsvektor står vinkelrett på hverandre, kan vi forsøke å løse likningen $\vec{v}'(t) \cdot \vec{v}(t) = 0$, siden akselerasjonsvektoren er den deriverte av fartsvektoren. Som vist i celle 5 under, får vi da de samme $t$ -verdiene som ekstremalpunktene til banefarten.
+
+Vi har da vist det oppgavenber oss om å vise.
+
+[[fig:v18_del2_5d.png]]
+
 
 ** Heldagsprøve - våren 2018
 Oppgaveteksten finner du [[pdf:r1_heldags_v18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1_heldags_v18.zip][zip-fil]].
@@ -71,19 +107,19 @@ en parameterframstilling for tanten med retningsvektor $\vec{v}=$ gjennom punkte
 hvor koeffisientene 2 og 6 er hentet fra $\vec{v}(1)=[2,6]$ og konstantleddene 3 og 8 er hentet fra punktet linja skal gjennom, $(3,8)$.
 
 vi ønsker å finne en verdi for $t$ som gjør at $\vec{v}(t) = k \cdot [2, 6]$. altså er
-\[\begin{align}
+\[\begin{align*}
 2t &= 2k \\
 9 - 3 t^2 &= 6k
-\end{align}\]
+\end{align*}\]
 
 da er $6k = 6t$, og får $9 - 3 t^2 = 6t$. vi skal da løse
-\[\begin{align}
+\[\begin{align*}
 &3t^2 + 6t - 9 = 0 \\
 &t = \frac{-6 \pm \sqrt{6^2 - 4\cdot 3\cdot (-9)}}{2\cdot 3} \\
 &t = \frac{-6 \pm \sqrt{144}}{6} \\
 &t = -1 \pm 2 \\
 &t = -3 \vee t = 1
-\end{align}\]
+\end{align*}\]
 
 $t = 1$ er definisjonen på oppgaven, altså uinteressant, $t = -3$ gir den nye parameterframstillinga.
 
