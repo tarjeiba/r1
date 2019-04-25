@@ -5,7 +5,7 @@
 - [[*Eksamen - h%C3%B8sten 2018][Eksamen - høsten 2018]]
 - [[*Eksamen - v%C3%A5ren 2018][Eksamen - våren 2018]]
 - [[*Heldagspr%C3%B8ve - v%C3%A5ren 2018][Heldagsprøve - våren 2018]]
-- Heldagsprøve - våren 2017
+- [[*Heldagspr%C3%B8ve - v%C3%A5ren 2017][Heldagsprøve - våren 2017]]
 
 ** Eksamen - høsten 2018
 Oppgaveteksten finner du [[pdf:r1_eksamen_h18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1h18.zip][zip-fil]].
