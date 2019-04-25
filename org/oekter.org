@@ -34,7 +34,7 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 18 :noexport:
 * uke 17
 ** Siste forberedelser
-- Heldagsprøve våren 2017: [[pdf:17v_r1_heldagsproeve.pdf]]
+- Heldagsprøve våren 2017: [[pdf:r1_heldags_v17.pdf]] (Løsningsforslag: [[pdf:r1_heldags_v17_LF_del1.pdf][del 1]], [[pdf:r1_heldags_v17_LF_del2.pdf][del 2]])
 * uke 15
 ** Dots and boxes
 ** Forberedelse
