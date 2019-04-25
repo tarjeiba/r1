@@ -9,6 +9,12 @@
 
 ** Eksamen - høsten 2018
 Oppgaveteksten finner du [[pdf:r1_eksamen_h18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1h18.zip][zip-fil]].
+
+*** Del 1 - Oppgave 8
+Vi har $f(x) = e^(x-1)$, og at $f'(x) = e^(x-1)\cdot (x-1)' = e^(x-1) = f(x)$.
+
+Vi kan så sette opp ettpunktsformelen, som sier at en linje gjennom et punkt $(x_0, y_0)$ med stigningstall $a$ er på formen \[y - y_0 = a(x - x_0).\] Vi kan si at tangenten til grafen går gjennom origo $(0,0)$ når tangentent tangerer i $x=b$. Ettpunktsformelen gir oss da \[y - f(b) = f'(b) (x - b).\] Dette kan vi uttrykke som \[y = f'(b)x + (f(b) - f'(b)\cdot b).\] Vi har tidligere sett at $f(x)=f'(x)$ og vi får da \[y = f(b)x + f(b)(1-b).\] Siden linja skal gjennom origo, må konstantleddet $f(b)(1-b)$ være null, altså er $(1-b)=0$ eller $b = 1$ ($f(x)$ er aldri null). Likninga til linja er da \[y = f(1)x = e^(1-1)x.\] Siden $e^0=1$ får vi da det endelige svaret at likninga til linja er \[y=x.\]
+
 *** Del 2 - Oppgave 1
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ePSgjx39xmk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -30,7 +36,6 @@ Her er det mange minutter med klabb og babb midt i. Jeg beklager.
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/no_2gAu3YTI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
-
 ** Eksamen - våren 2018
 *** Del 2 - Oppgave 5
 **** a
