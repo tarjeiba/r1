@@ -32,8 +32,9 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 20 :noexport:
 * uke 19 :noexport:
 * uke 18 :noexport:
-* uke 17 :noexport:
-** Heldags
+* uke 17
+** Siste forberedelser
+- Heldagsprøve våren 2017: [[pdf:17v_r1_heldagsproeve.pdf]]
 * uke 15
 ** Dots and boxes
 ** Forberedelse
