@@ -35,6 +35,7 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 17
 ** Siste forberedelser
 - Heldagsprøve våren 2017: [[pdf:r1_heldags_v17.pdf]] (Løsningsforslag: [[pdf:r1_heldags_v17_LF_del1.pdf][del 1]], [[pdf:r1_heldags_v17_LF_del2.pdf][del 2]])
+- Tillegg til Del 1 - 7 c: For at en funksjon skal være deriverbar i et punkt, må også funksjonen være /kontinuerlig/ i punktet.
 * uke 15
 ** Dots and boxes
 ** Forberedelse
