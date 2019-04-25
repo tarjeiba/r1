@@ -5,7 +5,7 @@
 - [[*Eksamen - h%C3%B8sten 2018][Eksamen - høsten 2018]]
 - [[*Eksamen - v%C3%A5ren 2018][Eksamen - våren 2018]]
 - [[*Heldagspr%C3%B8ve - v%C3%A5ren 2018][Heldagsprøve - våren 2018]]
-
+- Heldagsprøve - våren 2017
 
 ** Eksamen - høsten 2018
 Oppgaveteksten finner du [[pdf:r1_eksamen_h18.pdf][her]], alle løsningsfiler ligger tilgjengelig i en [[zip:r1h18.zip][zip-fil]].
@@ -88,6 +88,42 @@ Oppgaveteksten finner du [[pdf:r1_heldags_v18.pdf][her]], alle løsningsfiler li
 #+BEGIN_EXPORT html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bKW5SorR7wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+END_EXPORT
+
+** Heldagsprøve - våren 2017
+Oppgaveteksten finner du [[pdf:r1_heldags_v17.pdf][her]], løsninger til del 1 er [[pdf:r1_heldags_v17_LF_del1.pdf][her]] og del 2 [[pdf:r1_heldags_v17_LF_del2.pdf][her]]. Følgende er tillegg til løsningsforslagene:
+*** Del 1 - Oppgave 7
+**** c
+For at en funksjon skal være dervierbar i et punkt, holder det ikke at den deriverte er lik om du nærmer deg punktet fra høyere og lavere verdier av $x$, funksjonen må også være kontinuerlig.
+
+I vårt tilfelle, trenger vi ikke se på dette, da $\lim_{x\to 2^+} f'(x) \neq \lim_{x\to 2^-}f'(x)$, noe som er tilstrekkelig for å avgjøre at funksjonen ikke er deriverbar for alle verdier av $x$.
+
+***  Del 2 - Oppgave 4
+(Her har løsningsforslaget en svært uelegant løsning. Vi kunne også løst det algebraisk, som vist under.)
+
+I det følgende er en vektor uten pilnotasjon /absoluttverdien/ til vektoren, altså $|\vec{a}| = a$, da er også $\vec{a}^2=a^2$, setter også $\angle (\vec{a},\vec{b})=\alpha$.
+
+**** a
+Vi har
+\begin{align*}
+\vec{u}\cdot \vec{v} &= (\vec{a} + \vec{b})\cdot (2\vec{a} - \vec{b}) \\
+&= 2a^2 - \vec{a}\cdot\vec{b} + 2\vec{a}\cdot\vec{b} - b^2 \\
+&= 2a^2 + \vec{a}\cdot\vec{b} - b^2 \\
+&= 2a^2 + ab\cos\alpha - b^2 \\
+&= 2\cdot6^2 + 6\cdot 5 \cos 120^\circ - 5^2 = 72 + 30\cdot \left(-\frac{1}{2}\right) - 25 \\
+\vec{u}\cdot\vec{v} &= 32
+\end{align*}
+
+**** b
+For å finne $u$ (som altså er $|\vec{u}|$), kan vi bruke at $u = \sqrt{\vec{u}^2}$, og vi får da følgende:
+
+\begin{align*}
+u &= \sqrt{\vec{u}^2} = \sqrt{(\vec{a} + \vec{b})^2} \\
+&= \sqrt{a^2 + 2\vec{a}\cdot\vec{b} + b^2} \\
+&= \sqrt{6^2 - 2\cdot 15 + 5^2} \\
+u &= \sqrt{31}
+\end{align*}
+
+Vi kan på tilsvarende måte vise at $v=\sqrt{229}$.
 
 * Sinus R1
 ** 8.183

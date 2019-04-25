@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no" xml:lang="no">
 <head>
-<!-- 2019-04-25 Thu 13:07 -->
+<!-- 2019-04-25 Thu 18:32 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Oppgaveløsninger</title>
@@ -174,9 +174,9 @@ for the JavaScript code in this tag.
 <li><a href="#org6f5e115">Eksamen - høsten 2018</a></li>
 <li><a href="#org207fec0">Eksamen - våren 2018</a></li>
 <li><a href="#org07073df">Heldagsprøve - våren 2018</a></li>
+<li>Heldagsprøve - våren 2017</li>
 </ul>
 </div>
-
 
 <div id="outline-container-org6f5e115" class="outline-3">
 <h3 id="org6f5e115">Eksamen - høsten 2018</h3>
@@ -341,6 +341,83 @@ Oppgaveteksten finner du <a href="pdf/r1_heldags_v18.pdf">her</a>, alle løsning
 <div class="outline-text-4" id="text-org90882e8">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bKW5SorR7wo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+</div>
+</div>
+
+<div id="outline-container-org77b208f" class="outline-3">
+<h3 id="org77b208f">Heldagsprøve - våren 2017</h3>
+<div class="outline-text-3" id="text-org77b208f">
+<p>
+Oppgaveteksten finner du <a href="pdf/r1_heldags_v17.pdf">her</a>, løsninger til del 1 er <a href="pdf/r1_heldags_v17_LF_del1.pdf">her</a> og del 2 <a href="pdf/r1_heldags_v17_LF_del2.pdf">her</a>. Følgende er tillegg til løsningsforslagene:
+</p>
+</div>
+<div id="outline-container-org6dc8239" class="outline-4">
+<h4 id="org6dc8239">Del 1 - Oppgave 7</h4>
+<div class="outline-text-4" id="text-org6dc8239">
+</div>
+<ul class="org-ul">
+<li><a id="orgffec9d0"></a>c<br />
+<div class="outline-text-5" id="text-orgffec9d0">
+<p>
+For at en funksjon skal være dervierbar i et punkt, holder det ikke at den deriverte er lik om du nærmer deg punktet fra høyere og lavere verdier av \(x\), funksjonen må også være kontinuerlig.
+</p>
+
+<p>
+I vårt tilfelle, trenger vi ikke se på dette, da \(\lim_{x\to 2^+} f'(x) \neq \lim_{x\to 2^-}f'(x)\), noe som er tilstrekkelig for å avgjøre at funksjonen ikke er deriverbar for alle verdier av \(x\).
+</p>
+</div>
+</li>
+</ul>
+</div>
+
+<div id="outline-container-org2e3fc2f" class="outline-4">
+<h4 id="org2e3fc2f">Del 2 - Oppgave 4</h4>
+<div class="outline-text-4" id="text-org2e3fc2f">
+<p>
+(Her har løsningsforslaget en svært uelegant løsning. Vi kunne også løst det algebraisk, som vist under.)
+</p>
+
+<p>
+I det følgende er en vektor uten pilnotasjon <i>absoluttverdien</i> til vektoren, altså \(|\vec{a}| = a\), da er også \(\vec{a}^2=a^2\), setter også \(\angle (\vec{a},\vec{b})=\alpha\).
+</p>
+</div>
+
+<ul class="org-ul">
+<li><a id="orgae7306d"></a>a<br />
+<div class="outline-text-5" id="text-orgae7306d">
+<p>
+Vi har
+</p>
+\begin{align*}
+\vec{u}\cdot \vec{v} &= (\vec{a} + \vec{b})\cdot (2\vec{a} - \vec{b}) \\
+&= 2a^2 - \vec{a}\cdot\vec{b} + 2\vec{a}\cdot\vec{b} - b^2 \\
+&= 2a^2 + \vec{a}\cdot\vec{b} - b^2 \\
+&= 2a^2 + ab\cos\alpha - b^2 \\
+&= 2\cdot6^2 + 6\cdot 5 \cos 120^\circ - 5^2 = 72 + 30\cdot \left(-\frac{1}{2}\right) - 25 \\
+\vec{u}\cdot\vec{v} &= 32
+\end{align*}
+</div>
+</li>
+
+<li><a id="org5b5fc9a"></a>b<br />
+<div class="outline-text-5" id="text-org5b5fc9a">
+<p>
+For å finne \(u\) (som altså er \(|\vec{u}|\)), kan vi bruke at \(u = \sqrt{\vec{u}^2}\), og vi får da følgende:
+</p>
+
+\begin{align*}
+u &= \sqrt{\vec{u}^2} = \sqrt{(\vec{a} + \vec{b})^2} \\
+&= \sqrt{a^2 + 2\vec{a}\cdot\vec{b} + b^2} \\
+&= \sqrt{6^2 - 2\cdot 15 + 5^2} \\
+u &= \sqrt{31}
+\end{align*}
+
+<p>
+Vi kan på tilsvarende måte vise at \(v=\sqrt{229}\).
+</p>
+</div>
+</li>
+</ul>
 </div>
 </div>
 </div>
