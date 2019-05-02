@@ -30,8 +30,21 @@ Her går de videre til å vise *Setning 2* Som sier at /et tall $a$ (reelt eller
 * uke 22 :noexport:
 * uke 21 :noexport:
 * uke 20 :noexport:
-* uke 19 :noexport:
-* uke 18 :noexport:
+
+* uke 18
+Vi er nå i uke 18, i uke 18 og 19 kan dere velge mellom følgende to opplegg: (Dere kan ikke mixe og matche.)
+
+** Frivillig programmeringsopplegg
+*Møt opp i timene.*
+Vi jobber videre med programmeringa vi startet med på mandag, vi kommer til å jobbe med ~if~-setninger, ~while~-løkker og funksjoner.
+
+Bli med på dette om du syntes mandagen var interessant eller har valgt programmmeringsfaget til nesteår.
+
+** Alternativ oppgavejobbing
+Jeg legger ut oppgaver dere skal levere på It's Learning. Disse leveres i løpet av dagen det gjelder, og brukes som fraværsføring.
+
+Om dere velger oppgavejobbealternativet, er det altså /ikke/ behov for å møte i timen.
+
 * uke 17
 ** Siste forberedelser
 - Heldagsprøve våren 2017: [[pdf:r1_heldags_v17.pdf]] (Løsningsforslag: [[pdf:r1_heldags_v17_LF_del1.pdf][del 1]], [[pdf:r1_heldags_v17_LF_del2.pdf][del 2]])
